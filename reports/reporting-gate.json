@@ -1,0 +1,23 @@
+{
+  "review_date": "2026-10-03",
+  "decision": "do-not-submit",
+  "reason": "No valid coding trials or confirmed client failure; official access requires authentication. Existing reports already cover broad candidate symptoms.",
+  "max_new_issues_this_cycle": 1,
+  "new_issues_submitted": 0,
+  "independent_infrastructure_review": "passed after prospective design amendment; no observed case reviewed",
+  "checks": {
+    "current_version_prepared": true,
+    "current_official_templates_reviewed": true,
+    "realistic_synthetic_fixture_prepared": true,
+    "failure_criteria_preregistered": true,
+    "actual_failure_observed": false,
+    "frequency_established": false,
+    "control_executed": false,
+    "ablations_executed": false,
+    "clean_official_reproduction": false,
+    "nonduplicate_case_established": false,
+    "E3_or_E4": false,
+    "independent_case_review": false,
+    "privacy_safe_observed_evidence": false
+  }
+}

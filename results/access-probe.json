@@ -1,0 +1,12 @@
+{
+  "version": "2.1.288 (Claude Code)",
+  "date": "2026-10-03T10:44:45.077080+00:00",
+  "endpoint": "official",
+  "status": "blocked",
+  "reason": "authentication_required",
+  "process_exit_code": 1,
+  "result_subtype": "success",
+  "model_usage_keys": [],
+  "cost_usd": 0,
+  "is_coding_run": false
+}

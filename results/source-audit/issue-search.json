@@ -1,0 +1,615 @@
+[
+  {
+    "query": "hook duplicate",
+    "hits": [
+      {
+        "number": 10871,
+        "state": "closed",
+        "title": "[BUG] Plugin-registered hooks are executed twice with different PIDs",
+        "updatedAt": "2026-02-07T14:14:30Z",
+        "url": "https://github.com/anthropics/claude-code/issues/10871"
+      },
+      {
+        "number": 9602,
+        "state": "closed",
+        "title": "[BUG] Hook Regression in 2.0.17-2.0.22 - UI Shows Duplicate Messages for Stop, UserPromptSubmit, SessionStart (worked in 2.0.15)",
+        "updatedAt": "2025-10-31T14:06:54Z",
+        "url": "https://github.com/anthropics/claude-code/issues/9602"
+      }
+    ]
+  },
+  {
+    "query": "tests pass",
+    "hits": [
+      {
+        "number": 95345,
+        "state": "open",
+        "title": "[BUG] Implementer sub-agent modified production authentication (login/MFA) to make a test pass \u2014 undisclosed except in a footnote",
+        "updatedAt": "2026-09-18T22:16:11Z",
+        "url": "https://github.com/anthropics/claude-code/issues/95345"
+      },
+      {
+        "number": 92803,
+        "state": "open",
+        "title": "Feature request: spoken responses (TTS with Claude's voice) in Claude Code",
+        "updatedAt": "2026-09-08T07:51:42Z",
+        "url": "https://github.com/anthropics/claude-code/issues/92803"
+      },
+      {
+        "number": 95495,
+        "state": "open",
+        "title": "Agent stated unverified work as fact, and hedged about itself to deflect accountability",
+        "updatedAt": "2026-09-26T06:34:28Z",
+        "url": "https://github.com/anthropics/claude-code/issues/95495"
+      },
+      {
+        "number": 97155,
+        "state": "open",
+        "title": "[BUG] Model reports a fix as done without running the failing tests, and the fix was incomplete",
+        "updatedAt": "2026-09-30T11:37:45Z",
+        "url": "https://github.com/anthropics/claude-code/issues/97155"
+      },
+      {
+        "number": 94650,
+        "state": "open",
+        "title": "[Bug] Claude Code agent fabricates data field significance and overclaims fix adequacy without verification",
+        "updatedAt": "2026-10-02T04:43:04Z",
+        "url": "https://github.com/anthropics/claude-code/issues/94650"
+      },
+      {
+        "number": 95494,
+        "state": "open",
+        "title": "Agent repeatedly overrode explicit scope, presented fake test results as real, and committed without permission",
+        "updatedAt": "2026-10-02T04:43:00Z",
+        "url": "https://github.com/anthropics/claude-code/issues/95494"
+      },
+      {
+        "number": 96937,
+        "state": "open",
+        "title": "Plugin submission: message-queue for rate-limit recovery across messaging channels",
+        "updatedAt": "2026-09-25T02:07:02Z",
+        "url": "https://github.com/anthropics/claude-code/issues/96937"
+      },
+      {
+        "number": 92103,
+        "state": "open",
+        "title": "[Plugin Submission] Agent Grow \u2014 Governed cross-project memory for Claude Code",
+        "updatedAt": "2026-09-04T14:35:53Z",
+        "url": "https://github.com/anthropics/claude-code/issues/92103"
+      }
+    ]
+  },
+  {
+    "query": "AGENTS.md",
+    "hits": [
+      {
+        "number": 97261,
+        "state": "open",
+        "title": "/doctor's CLAUDE.md checks skip AGENTS.md content",
+        "updatedAt": "2026-09-25T20:18:04Z",
+        "url": "https://github.com/anthropics/claude-code/issues/97261"
+      },
+      {
+        "number": 95795,
+        "state": "open",
+        "title": "[Feature Request] Add global AGENTS.md configuration support alongside project-level",
+        "updatedAt": "2026-09-29T07:45:12Z",
+        "url": "https://github.com/anthropics/claude-code/issues/95795"
+      },
+      {
+        "number": 98796,
+        "state": "open",
+        "title": "Nested `AGENTS.md` not loaded when a file in its directory is `@`-mentioned (nested `CLAUDE.md` is)",
+        "updatedAt": "2026-10-01T19:24:53Z",
+        "url": "https://github.com/anthropics/claude-code/issues/98796"
+      },
+      {
+        "number": 96466,
+        "state": "open",
+        "title": "[FEATURE] Always load AGENTS.md by default, even when CLAUDE.md exists, and make CLAUDE.md optional",
+        "updatedAt": "2026-09-30T18:25:30Z",
+        "url": "https://github.com/anthropics/claude-code/issues/96466"
+      },
+      {
+        "number": 96544,
+        "state": "open",
+        "title": "[BUG] agents-md: don't report when AGENTS.md was loaded instead of CLAUDE.md",
+        "updatedAt": "2026-09-24T00:48:48Z",
+        "url": "https://github.com/anthropics/claude-code/issues/96544"
+      },
+      {
+        "number": 95690,
+        "state": "open",
+        "title": "[MODEL] Claude Code's AGENTS.md Support: A Local Feature Locked Behind a Remote Switch",
+        "updatedAt": "2026-09-23T17:23:59Z",
+        "url": "https://github.com/anthropics/claude-code/issues/95690"
+      },
+      {
+        "number": 96117,
+        "state": "open",
+        "title": "[BUG] CLAUDE.local.md switches off the AGENTS.md fallback, so a personal note silently drops all shared project instructions",
+        "updatedAt": "2026-09-22T18:56:18Z",
+        "url": "https://github.com/anthropics/claude-code/issues/96117"
+      },
+      {
+        "number": 97924,
+        "state": "open",
+        "title": "Projects: coordinator + thread sessions merged PRs with red CI and ignored AGENTS.md during multi-thread implementation",
+        "updatedAt": "2026-09-28T16:58:40Z",
+        "url": "https://github.com/anthropics/claude-code/issues/97924"
+      }
+    ]
+  },
+  {
+    "query": "compaction resume",
+    "hits": [
+      {
+        "number": 90913,
+        "state": "open",
+        "title": "Auto-compaction resume message fabricates a false prompt-injection claim instead of summarizing the real prior turn",
+        "updatedAt": "2026-09-24T15:33:29Z",
+        "url": "https://github.com/anthropics/claude-code/issues/90913"
+      },
+      {
+        "number": 91858,
+        "state": "open",
+        "title": "[Major Bug] 30% session exhausted in 2 seconds. Issue happening after the latest claude update(on fable 5.1 launch) Also Compaction invalidates cache on session resume, breaking cache efficiency",
+        "updatedAt": "2026-09-03T17:06:37Z",
+        "url": "https://github.com/anthropics/claude-code/issues/91858"
+      },
+      {
+        "number": 92736,
+        "state": "open",
+        "title": "Long-session analytics: request for task-episode metadata alongside compact_boundary (796-turn design sessions observed)",
+        "updatedAt": "2026-09-09T16:21:34Z",
+        "url": "https://github.com/anthropics/claude-code/issues/92736"
+      },
+      {
+        "number": 89248,
+        "state": "open",
+        "title": "ScheduleWakeup, session cron, and background-task notifications can all go silent across a context compaction (no catch-up, no delivery guarantee)",
+        "updatedAt": "2026-08-28T14:54:35Z",
+        "url": "https://github.com/anthropics/claude-code/issues/89248"
+      },
+      {
+        "number": 80372,
+        "state": "open",
+        "title": "[Bug] Background bash tasks killed after ~30 minutes during active sessions with context compaction",
+        "updatedAt": "2026-08-31T03:56:00Z",
+        "url": "https://github.com/anthropics/claude-code/issues/80372"
+      },
+      {
+        "number": 95760,
+        "state": "open",
+        "title": "Background shell watcher orphaned by session restart/compaction \u2014 CI-gated autonomous flow silently stalls, resume context self-contradicts (running vs stopped)",
+        "updatedAt": "2026-09-21T16:20:17Z",
+        "url": "https://github.com/anthropics/claude-code/issues/95760"
+      },
+      {
+        "number": 76981,
+        "state": "open",
+        "title": "Feature request: auto-return to plan mode after an approved plan finishes executing",
+        "updatedAt": "2026-10-03T10:10:17Z",
+        "url": "https://github.com/anthropics/claude-code/issues/76981"
+      },
+      {
+        "number": 85764,
+        "state": "open",
+        "title": "ListAgents omits running in-process subagents despite cross-session messaging being enabled (v2.1.227)",
+        "updatedAt": "2026-09-20T22:09:29Z",
+        "url": "https://github.com/anthropics/claude-code/issues/85764"
+      }
+    ]
+  },
+  {
+    "query": "PostToolUse",
+    "hits": [
+      {
+        "number": 98744,
+        "state": "open",
+        "title": "[BUG] PostToolUse hooks no longer fire for MCP tools",
+        "updatedAt": "2026-10-01T23:02:18Z",
+        "url": "https://github.com/anthropics/claude-code/issues/98744"
+      },
+      {
+        "number": 97977,
+        "state": "open",
+        "title": "PostToolUse hooks never fire from the desktop Code-tab surface",
+        "updatedAt": "2026-09-28T20:21:34Z",
+        "url": "https://github.com/anthropics/claude-code/issues/97977"
+      },
+      {
+        "number": 91574,
+        "state": "open",
+        "title": "PreToolUse hook on Write/Edit/MultiEdit/NotebookEdit is not enforced (PostToolUse on same matcher fires reliably)",
+        "updatedAt": "2026-09-20T08:25:53Z",
+        "url": "https://github.com/anthropics/claude-code/issues/91574"
+      },
+      {
+        "number": 91468,
+        "state": "open",
+        "title": "[FEATURE] Honor hookSpecificOutput.sessionTitle from PostToolUse/Stop hooks (mid-turn session rename)",
+        "updatedAt": "2026-09-02T11:48:23Z",
+        "url": "https://github.com/anthropics/claude-code/issues/91468"
+      },
+      {
+        "number": 83913,
+        "state": "open",
+        "title": "Prompt cache invalidated when PreToolUse/PostToolUse additionalContext changes during history rebuild",
+        "updatedAt": "2026-09-15T15:15:36Z",
+        "url": "https://github.com/anthropics/claude-code/issues/83913"
+      },
+      {
+        "number": 97847,
+        "state": "open",
+        "title": "Synced plugin update moves the plugin folder of an open session to .trash; its hooks then fail open",
+        "updatedAt": "2026-09-29T15:43:09Z",
+        "url": "https://github.com/anthropics/claude-code/issues/97847"
+      },
+      {
+        "number": 97820,
+        "state": "open",
+        "title": "[harness] PostToolUse hooks run synchronously for subagents with no agent or worktree context; a per-edit test hook starved a builder for two hours",
+        "updatedAt": "2026-09-28T09:18:08Z",
+        "url": "https://github.com/anthropics/claude-code/issues/97820"
+      },
+      {
+        "number": 77851,
+        "state": "open",
+        "title": "PostToolUse hooks cannot recover the original tool_input after a PreToolUse hook rewrites it via updatedInput",
+        "updatedAt": "2026-09-07T16:34:33Z",
+        "url": "https://github.com/anthropics/claude-code/issues/77851"
+      }
+    ]
+  },
+  {
+    "query": "permission auto",
+    "hits": [
+      {
+        "number": 93416,
+        "state": "open",
+        "title": "[DOCS] Label which interface supports the /permissions Auto mode editor",
+        "updatedAt": "2026-09-10T17:22:51Z",
+        "url": "https://github.com/anthropics/claude-code/issues/93416"
+      },
+      {
+        "number": 98395,
+        "state": "open",
+        "title": "[Bug] Permissions auto-mode classifier returns empty verdict, causing headless -p runs to fail",
+        "updatedAt": "2026-09-30T12:26:54Z",
+        "url": "https://github.com/anthropics/claude-code/issues/98395"
+      },
+      {
+        "number": 94312,
+        "state": "open",
+        "title": "[BUG] Scheduled tasks: updateScheduledTask strips unknown SKILL.md frontmatter keys, from 3 different triggers (MCP tool, permission auto-approve, GUI edit)",
+        "updatedAt": "2026-09-14T15:28:00Z",
+        "url": "https://github.com/anthropics/claude-code/issues/94312"
+      },
+      {
+        "number": 95106,
+        "state": "open",
+        "title": "[DOCS] Clarify whether Recently denied approval is one-time or persistent",
+        "updatedAt": "2026-09-17T09:45:58Z",
+        "url": "https://github.com/anthropics/claude-code/issues/95106"
+      },
+      {
+        "number": 97766,
+        "state": "open",
+        "title": "[Bug] Anthropic API Error: Auto mode classifier unavailable blocks Bash/Edit calls",
+        "updatedAt": "2026-09-28T17:44:30Z",
+        "url": "https://github.com/anthropics/claude-code/issues/97766"
+      },
+      {
+        "number": 96219,
+        "state": "open",
+        "title": "[BUG] Routine API trigger ignores the model selector and runs Sonnet; Run now and schedule honor it",
+        "updatedAt": "2026-09-23T02:56:48Z",
+        "url": "https://github.com/anthropics/claude-code/issues/96219"
+      },
+      {
+        "number": 97219,
+        "state": "open",
+        "title": "[FEATURE] Declare local scripts and CLIs as first-class tools, without an MCP server (reopen of #31165)",
+        "updatedAt": "2026-09-25T18:05:51Z",
+        "url": "https://github.com/anthropics/claude-code/issues/97219"
+      },
+      {
+        "number": 90912,
+        "state": "open",
+        "title": "[BUG] Desktop: send_message rejects a normal interactive session as \"unattended (scheduled-task run or dispatched session)\" \u2014 regression, worked 21 Aug, broken now",
+        "updatedAt": "2026-09-02T13:57:49Z",
+        "url": "https://github.com/anthropics/claude-code/issues/90912"
+      }
+    ]
+  },
+  {
+    "query": "diff stale",
+    "hits": [
+      {
+        "number": 43434,
+        "state": "closed",
+        "title": "Feature request: Dregbot companion \u2014 add useful hints alongside humor",
+        "updatedAt": "2026-04-18T14:25:54Z",
+        "url": "https://github.com/anthropics/claude-code/issues/43434"
+      },
+      {
+        "number": 55877,
+        "state": "closed",
+        "title": "[BUG] Cowork: Stale rclone FUSE cache (cache_duration_s=3600) causes silent file corruption when Edit/Write tools and bash interact",
+        "updatedAt": "2026-07-25T14:32:39Z",
+        "url": "https://github.com/anthropics/claude-code/issues/55877"
+      }
+    ]
+  },
+  {
+    "query": "MCP timeout",
+    "hits": [
+      {
+        "number": 91414,
+        "state": "open",
+        "title": "[BUG] MCP HTTP: first turn blocks for MCP_TIMEOUT-5000ms awaiting subscriptions/listen after a successful server/discover",
+        "updatedAt": "2026-09-02T06:53:09Z",
+        "url": "https://github.com/anthropics/claude-code/issues/91414"
+      },
+      {
+        "number": 16837,
+        "state": "open",
+        "title": "[BUG] Claude code does not obey values of MCP_TIMEOUT longer than 60 seconds",
+        "updatedAt": "2026-08-14T22:23:35Z",
+        "url": "https://github.com/anthropics/claude-code/issues/16837"
+      },
+      {
+        "number": 83495,
+        "state": "open",
+        "title": "MCP connect has no jitter under concurrent sessions, and ToolSearch then reports the failed servers as nonexistent",
+        "updatedAt": "2026-08-24T19:12:08Z",
+        "url": "https://github.com/anthropics/claude-code/issues/83495"
+      },
+      {
+        "number": 84136,
+        "state": "open",
+        "title": "[BUG] Claude Desktop: hardcoded 60s initialize timeout drops stdio MCP servers whose package-runner cold start exceeds it",
+        "updatedAt": "2026-10-03T10:10:53Z",
+        "url": "https://github.com/anthropics/claude-code/issues/84136"
+      },
+      {
+        "number": 82912,
+        "state": "open",
+        "title": "[Bug] MCP connector startup starvation with large unauthenticated connector pools causes -32001 timeouts",
+        "updatedAt": "2026-10-01T10:12:11Z",
+        "url": "https://github.com/anthropics/claude-code/issues/82912"
+      },
+      {
+        "number": 91898,
+        "state": "open",
+        "title": "[BUG] Claude Desktop MCP: misleading \"server may be unresponsive\" 4-minute timeout message, and application logging lost since ~1.34493",
+        "updatedAt": "2026-09-14T07:15:22Z",
+        "url": "https://github.com/anthropics/claude-code/issues/91898"
+      },
+      {
+        "number": 88178,
+        "state": "open",
+        "title": "Claude Desktop: 5h46 of cumulative waiting in one day \u2014 23 silent ~15-minute stalls across 6 sessions",
+        "updatedAt": "2026-09-24T14:33:10Z",
+        "url": "https://github.com/anthropics/claude-code/issues/88178"
+      },
+      {
+        "number": 90979,
+        "state": "open",
+        "title": "[BUG] VS Code extension: prompts from a remote (HTTP) MCP server never appear in the slash-command picker \u2014 `commands_changed` is stored but never read",
+        "updatedAt": "2026-08-31T14:11:26Z",
+        "url": "https://github.com/anthropics/claude-code/issues/90979"
+      }
+    ]
+  },
+  {
+    "query": "subagent failure",
+    "hits": [
+      {
+        "number": 91043,
+        "state": "open",
+        "title": "Structured-output subagent failures are silently dropped from workflow results",
+        "updatedAt": "2026-08-31T18:25:34Z",
+        "url": "https://github.com/anthropics/claude-code/issues/91043"
+      },
+      {
+        "number": 91419,
+        "state": "open",
+        "title": "[BUG] StopFailure fires for internal helper queries and subagent failures on the parent session; under low-priority mode every excluded helper 429 reports a failed turn that never happened",
+        "updatedAt": "2026-09-02T12:05:31Z",
+        "url": "https://github.com/anthropics/claude-code/issues/91419"
+      },
+      {
+        "number": 91044,
+        "state": "open",
+        "title": "Built-in bounded auto-retry with schema degradation for structured-output subagents",
+        "updatedAt": "2026-08-31T17:56:47Z",
+        "url": "https://github.com/anthropics/claude-code/issues/91044"
+      },
+      {
+        "number": 75318,
+        "state": "open",
+        "title": "[BUG] \"Connection closed mid-response\" (error=server_error) terminates Agent-tool (Task) subagents mid-turn with no in-agent recovery \u2014 macOS, 2.1.201/2.1.202",
+        "updatedAt": "2026-08-25T07:34:20Z",
+        "url": "https://github.com/anthropics/claude-code/issues/75318"
+      },
+      {
+        "number": 87489,
+        "state": "closed",
+        "title": "[BUG] Subagent rate-limit failures are surfaced as a user prompt after the limit has already reset",
+        "updatedAt": "2026-09-20T22:13:29Z",
+        "url": "https://github.com/anthropics/claude-code/issues/87489"
+      },
+      {
+        "number": 74530,
+        "state": "closed",
+        "title": "[Bug] Transient advisor() failure permanently disables tool for entire session",
+        "updatedAt": "2026-08-31T10:18:05Z",
+        "url": "https://github.com/anthropics/claude-code/issues/74530"
+      },
+      {
+        "number": 87246,
+        "state": "closed",
+        "title": "[Bug] Anthropic API Error: Response Stream Terminated Unexpectedly",
+        "updatedAt": "2026-08-18T16:32:33Z",
+        "url": "https://github.com/anthropics/claude-code/issues/87246"
+      },
+      {
+        "number": 83412,
+        "state": "closed",
+        "title": "[BUG] Subagents (Task/Agent tool) die silently on spend/usage limit hit, with no partial-result handoff or wait-for-reset behavior",
+        "updatedAt": "2026-09-08T10:18:35Z",
+        "url": "https://github.com/anthropics/claude-code/issues/83412"
+      }
+    ]
+  },
+  {
+    "query": "instructions ignored",
+    "hits": [
+      {
+        "number": 98133,
+        "state": "open",
+        "title": "Code Review: REVIEW.md language instruction ignored; base-branch REVIEW.md is the one applied (undocumented)",
+        "updatedAt": "2026-09-29T11:33:09Z",
+        "url": "https://github.com/anthropics/claude-code/issues/98133"
+      },
+      {
+        "number": 30675,
+        "state": "open",
+        "title": "Feature request: shared context between Claude Code, Claude.ai and Cowork",
+        "updatedAt": "2026-09-23T05:48:07Z",
+        "url": "https://github.com/anthropics/claude-code/issues/30675"
+      },
+      {
+        "number": 44648,
+        "state": "open",
+        "title": "[FEATURE] Persistent governance context to address context dilution",
+        "updatedAt": "2026-09-10T04:26:14Z",
+        "url": "https://github.com/anthropics/claude-code/issues/44648"
+      },
+      {
+        "number": 83338,
+        "state": "open",
+        "title": "[Bug] Fake system notifications injected into model context without transcript records",
+        "updatedAt": "2026-09-03T12:55:44Z",
+        "url": "https://github.com/anthropics/claude-code/issues/83338"
+      },
+      {
+        "number": 82184,
+        "state": "open",
+        "title": "[BUG] Project rules treated as advisory: enforcement hooks self-neutralize, compaction drops governance while preserving narrative, and auto-memory outranks project instructions",
+        "updatedAt": "2026-09-24T15:40:50Z",
+        "url": "https://github.com/anthropics/claude-code/issues/82184"
+      },
+      {
+        "number": 65316,
+        "state": "closed",
+        "title": "[Bug] Safety instructions ignored in agentic execution",
+        "updatedAt": "2026-08-09T14:17:25Z",
+        "url": "https://github.com/anthropics/claude-code/issues/65316"
+      },
+      {
+        "number": 90613,
+        "state": "open",
+        "title": "Opus 5 long agent session: repeated instruction narrowing, unverified assertions stated as fact, unrequested side-work",
+        "updatedAt": "2026-09-02T08:02:37Z",
+        "url": "https://github.com/anthropics/claude-code/issues/90613"
+      },
+      {
+        "number": 60046,
+        "state": "closed",
+        "title": "[MODEL] Repeated unresearched API changes broke production business system; explicit welfare instructions ignored throughout",
+        "updatedAt": "2026-08-19T14:17:53Z",
+        "url": "https://github.com/anthropics/claude-code/issues/60046"
+      }
+    ]
+  },
+  {
+    "query": "tool retry",
+    "hits": [
+      {
+        "number": 98770,
+        "state": "open",
+        "title": "[Bug] /permissions whitelist not respected on tool retry",
+        "updatedAt": "2026-10-01T17:47:51Z",
+        "url": "https://github.com/anthropics/claude-code/issues/98770"
+      },
+      {
+        "number": 64774,
+        "state": "open",
+        "title": "Opus claude-opus-4-8 emits unparseable tool calls at ~1.5% rate; opus-4-7 and sonnet-4-6 have 0% failure rate",
+        "updatedAt": "2026-09-04T15:31:47Z",
+        "url": "https://github.com/anthropics/claude-code/issues/64774"
+      },
+      {
+        "number": 69049,
+        "state": "closed",
+        "title": "Misleading _noargs parameter in TaskList tool schema causes repeated agent errors",
+        "updatedAt": "2026-09-22T14:18:46Z",
+        "url": "https://github.com/anthropics/claude-code/issues/69049"
+      },
+      {
+        "number": 67168,
+        "state": "closed",
+        "title": "[Bug] Subagent websearch failures causing excessive token usage",
+        "updatedAt": "2026-08-31T14:18:03Z",
+        "url": "https://github.com/anthropics/claude-code/issues/67168"
+      },
+      {
+        "number": 55627,
+        "state": "closed",
+        "title": "[BUG] Cowork cannot read Drive Desktop placeholder files; failed reads burn tokens on retries",
+        "updatedAt": "2026-09-13T14:17:18Z",
+        "url": "https://github.com/anthropics/claude-code/issues/55627"
+      },
+      {
+        "number": 54392,
+        "state": "closed",
+        "title": "[Bug] Session CPU usage spikes to 100% repeatedly",
+        "updatedAt": "2026-08-17T14:17:08Z",
+        "url": "https://github.com/anthropics/claude-code/issues/54392"
+      },
+      {
+        "number": 67486,
+        "state": "closed",
+        "title": "[BUG] /copy fails silently on Wayland when wl-clipboard is missing; clipboard tool detection cached at startup (regression from OSC 52 fallback, ~2.1.161)",
+        "updatedAt": "2026-08-17T14:15:38Z",
+        "url": "https://github.com/anthropics/claude-code/issues/67486"
+      },
+      {
+        "number": 18532,
+        "state": "open",
+        "title": "[BUG] Claude Code v2.1.9 Complete Freeze - 100% CPU, Main Thread Stuck in Infinite Loop (macOS ARM64)",
+        "updatedAt": "2026-08-24T03:08:26Z",
+        "url": "https://github.com/anthropics/claude-code/issues/18532"
+      }
+    ]
+  },
+  {
+    "query": "remote reconnect",
+    "hits": [
+      {
+        "number": 99199,
+        "state": "open",
+        "title": "[BUG] VS Code extension: prompt-cache indicator restarts at full TTL when the webview processes frames late (remote window, display off)",
+        "updatedAt": "2026-10-03T09:49:18Z",
+        "url": "https://github.com/anthropics/claude-code/issues/99199"
+      },
+      {
+        "number": 71158,
+        "state": "closed",
+        "title": "Plugin HTTP/OAuth MCP (e.g. Linear) with a valid stored token does not connect on session cold-start \u2014 only /reload-plugins (no re-auth) brings it up",
+        "updatedAt": "2026-09-28T14:15:33Z",
+        "url": "https://github.com/anthropics/claude-code/issues/71158"
+      },
+      {
+        "number": 62069,
+        "state": "closed",
+        "title": "`claude remote-control` daemon leaks idle `--print` child sessions (never reaped)",
+        "updatedAt": "2026-07-26T14:34:10Z",
+        "url": "https://github.com/anthropics/claude-code/issues/62069"
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Failure card (a candidate is not a finding)",
+  "type": "object",
+  "required": ["id", "title", "classification", "status", "evidence_level", "issue_url"],
+  "properties": {
+    "id": {"type": "string"}, "title": {"type": "string"},
+    "classification": {"enum": ["software", "model-behavior", "github-integration", "environment", "security-private", "unknown"]},
+    "status": {"enum": ["candidate", "confirmed", "reported", "triaged", "fixed", "verified", "duplicate", "not-reproducible", "model-dependent", "blocked-not-run"]},
+    "evidence_level": {"enum": [null, "E1", "E2", "E3", "E4"]},
+    "issue_url": {"type": ["string", "null"]}
+  }
+}

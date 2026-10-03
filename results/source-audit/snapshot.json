@@ -1,0 +1,204 @@
+{
+  "retrieved_at": "2026-10-03T11:00:13.924336+00:00",
+  "upstream_sha": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "release": "v2.1.288",
+  "release_published_at": "2026-10-02T20:19:57Z",
+  "docs": [
+    {
+      "topic": "overview",
+      "url": "https://code.claude.com/docs/en/overview.md",
+      "status": "retrieved",
+      "bytes": 16430,
+      "sha256": "6649f2482143e140de016c416474989804fd300a0acfc27fd6a0ee653a863553"
+    },
+    {
+      "topic": "cli-reference",
+      "url": "https://code.claude.com/docs/en/cli-reference.md",
+      "status": "retrieved",
+      "bytes": 46824,
+      "sha256": "82f96e4b4b44c634d0c69443c3fcd745c340968879d0758fa4dc1778d5ea1328"
+    },
+    {
+      "topic": "headless",
+      "url": "https://code.claude.com/docs/en/headless.md",
+      "status": "retrieved",
+      "bytes": 32189,
+      "sha256": "a411aefc8f03483089bdf650335c0ce53a74b7f9c64d046623e1c1987df9290a"
+    },
+    {
+      "topic": "hooks",
+      "url": "https://code.claude.com/docs/en/hooks.md",
+      "status": "retrieved",
+      "bytes": 249100,
+      "sha256": "755e30355fb80abada5a6a5ec10fe491cc1a57bf123232c80d1cc68312869ae5"
+    },
+    {
+      "topic": "hooks-guide",
+      "url": "https://code.claude.com/docs/en/hooks-guide.md",
+      "status": "retrieved",
+      "bytes": 61377,
+      "sha256": "1cd8d9956c1526bd9142ec462903a950834d64aa94847bb0038ae7c13f798f81"
+    },
+    {
+      "topic": "permissions",
+      "url": "https://code.claude.com/docs/en/permissions.md",
+      "status": "retrieved",
+      "bytes": 78480,
+      "sha256": "998f954e7ba578251e44a75c8d70ad39c5ba75ee60d3edb04c269a3a4a45eef6"
+    },
+    {
+      "topic": "settings",
+      "url": "https://code.claude.com/docs/en/settings.md",
+      "status": "retrieved",
+      "bytes": 56970,
+      "sha256": "41ea72eb329492a8530f2d4730b093e930151422003f161656297e44cecbf074"
+    },
+    {
+      "topic": "memory",
+      "url": "https://code.claude.com/docs/en/memory.md",
+      "status": "retrieved",
+      "bytes": 50587,
+      "sha256": "fe99e50e312feae327c1e16847bc5853c71aaf2755fa554f9014c9008850e2cb"
+    },
+    {
+      "topic": "sub-agents",
+      "url": "https://code.claude.com/docs/en/sub-agents.md",
+      "status": "retrieved",
+      "bytes": 107680,
+      "sha256": "436c792e87396a1c929af41f4dbae943d61757e9575728ad40ac5fa7c48a4393"
+    },
+    {
+      "topic": "plugins",
+      "url": "https://code.claude.com/docs/en/plugins.md",
+      "status": "retrieved",
+      "bytes": 14823,
+      "sha256": "eb8b9f92d75d42d777d3bdbc89273c2df881b6a3cf58afaa63418d55a70538f5"
+    },
+    {
+      "topic": "mcp",
+      "url": "https://code.claude.com/docs/en/mcp.md",
+      "status": "retrieved",
+      "bytes": 117761,
+      "sha256": "df42327c1ca56cc7c921fdf8ba317a903e652d0c11dd5a77963e74400ddf0c0c"
+    },
+    {
+      "topic": "remote-control",
+      "url": "https://code.claude.com/docs/en/remote-control.md",
+      "status": "retrieved",
+      "bytes": 54861,
+      "sha256": "a5cb8aeba1b76d866defbd99adbb8e14e0b92955e7ce02faa77cc493bcfde004"
+    },
+    {
+      "topic": "github-actions",
+      "url": "https://code.claude.com/docs/en/github-actions.md",
+      "status": "retrieved",
+      "bytes": 29052,
+      "sha256": "a5ea6a641a187c3201e3072a8d126be5b7bb2d4057bf8a82a30af3ef60d74316"
+    },
+    {
+      "topic": "permission-modes",
+      "url": "https://code.claude.com/docs/en/permission-modes.md",
+      "status": "retrieved",
+      "bytes": 87091,
+      "sha256": "e26b4a1a8d2885c00215e0ccbb8c027583b1d031f606158a4b01d6992b41b1ae"
+    },
+    {
+      "topic": "auto-mode-config",
+      "url": "https://code.claude.com/docs/en/auto-mode-config.md",
+      "status": "retrieved",
+      "bytes": 30831,
+      "sha256": "012057bef3bfdb529a32a26fa9eecc994cf498d6085750537f64ce32eb28792f"
+    },
+    {
+      "topic": "sandboxing",
+      "url": "https://code.claude.com/docs/en/sandboxing.md",
+      "status": "retrieved",
+      "bytes": 92057,
+      "sha256": "89b54972d1f18ed225bdeab27f7b5247178e4883b0cc79c75c238a15648d295f"
+    },
+    {
+      "topic": "how-claude-code-works",
+      "url": "https://code.claude.com/docs/en/how-claude-code-works.md",
+      "status": "retrieved",
+      "bytes": 19664,
+      "sha256": "9312e0563616cdf1069122fba36f5b3b9c60eb6c63d09777135a49c79955fe5e"
+    },
+    {
+      "topic": "common-workflows",
+      "url": "https://code.claude.com/docs/en/common-workflows.md",
+      "status": "retrieved",
+      "bytes": 18034,
+      "sha256": "1cc840cc29b0e0fcc169730f60b729ba70e55c9b2d9561f2d48054b565310eaa"
+    },
+    {
+      "topic": "model-config",
+      "url": "https://code.claude.com/docs/en/model-config.md",
+      "status": "retrieved",
+      "bytes": 114352,
+      "sha256": "a1f50535ee52a612cfebcd0e5718a3f4fd30e3bfb0e71a7b2558206fd0175a67"
+    },
+    {
+      "topic": "context-window",
+      "url": "https://code.claude.com/docs/en/context-window.md",
+      "status": "retrieved",
+      "bytes": 60500,
+      "sha256": "6beaae83294f55c48b58daea16de7ef005648a3d8415863ac962facb9c5c50cd"
+    }
+  ],
+  "repository_files": [
+    {
+      "path": "README.md",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/README.md",
+      "sha256": "aa0d8b80ac083e1591be0789273f447058cc9187b4331634a5614155da27778d",
+      "bytes": 2873
+    },
+    {
+      "path": "SECURITY.md",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/SECURITY.md",
+      "sha256": "682ab87da77179b60028989b97fa03f0caa063ef16cb9b6cc7b3317146d04503",
+      "bytes": 674
+    },
+    {
+      "path": "CHANGELOG.md",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/CHANGELOG.md",
+      "sha256": "c2073a2eb811b9322317fe8496bfa38634984a3de1147cc8ef3439f91e0be9a1",
+      "bytes": 900935
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/.github/ISSUE_TEMPLATE/bug_report.yml",
+      "sha256": "ad727a431e8ace6cc5eaa216117dbdd842e55d64de79cbabdba839072ebea94c",
+      "bytes": 5851
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/model_behavior.yml",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/.github/ISSUE_TEMPLATE/model_behavior.yml",
+      "sha256": "0441ea7b5d486cc4296f705fc59447e101577e1b5ba885f6ef95e347dc71ad4d",
+      "bytes": 6952
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/github_connection.yml",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/.github/ISSUE_TEMPLATE/github_connection.yml",
+      "sha256": "ff92b5a72539c22703aaf0ebe882deb2977c0d2dfd13f9b8f9468eb588af1eae",
+      "bytes": 1235
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/.github/ISSUE_TEMPLATE/feature_request.yml",
+      "sha256": "2286f60a8ea0adf523ad9ba4ba8dac423fd3e9ad4f2c52703696e2be8d88bc8b",
+      "bytes": 4208
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/documentation.yml",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/.github/ISSUE_TEMPLATE/documentation.yml",
+      "sha256": "dced259933471276e07a2204131a320d41964203e5f4a72d30a09d932c4d6b99",
+      "bytes": 3489
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "url": "https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/.github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "c56ee23aaea23eeeb07058db9c25aa3c2356316902c65b29abe211f3cb8a0129",
+      "bytes": 619
+    }
+  ]
+}

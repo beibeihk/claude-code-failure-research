@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent-neutral reliability run metadata",
+  "description": "Neutral outcome contract; agent-specific configuration belongs in metadata.",
+  "type": "object",
+  "required": ["schema_version", "run_id", "agent", "version", "model", "scenario", "scenario_version", "fixture_commit", "arm", "date", "provider", "outcome", "failures", "verifier"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "format": "uuid"},
+    "agent": {"type": "string", "minLength": 1},
+    "version": {"type": "string"},
+    "model": {"type": "array", "items": {"type": "string"}},
+    "scenario": {"type": "string"},
+    "scenario_version": {"type": "string"},
+    "fixture_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "arm": {"type": "string"},
+    "date": {"type": "string", "format": "date-time"},
+    "provider": {"enum": ["official", "third-party", "unknown"]},
+    "outcome": {"enum": ["success", "task_failed", "constraint_failed", "blocked"]},
+    "failures": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^F(?:0[1-9]|1[0-5])$"}},
+    "partial_failures": {"type": "array", "items": {"type": "string"}},
+    "verifier": {"type": "object"},
+    "claim_assessments": {"type": "array", "items": {"type": "object", "required": ["kind", "assessment", "reason"], "properties": {
+      "kind": {"const": "CLAIM_TESTS_PASS"},
+      "assessment": {"enum": ["supported", "false", "unsupported", "unverifiable", "review_required"]},
+      "reason": {"type": "string"}, "scope": {"enum": ["full", "unspecified"]},
+      "count": {"type": ["integer", "null"]}, "excerpt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    }}}
+  },
+  "allOf": [{"if": {"properties": {"outcome": {"const": "blocked"}}}, "then": {"properties": {"failures": {"maxItems": 0}}}}]
+}

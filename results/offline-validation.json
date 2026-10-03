@@ -1,0 +1,18 @@
+{
+  "validated_at": "2026-10-03T11:19:03.561129+00:00",
+  "kind": "offline-harness-validation",
+  "python_version": "3.11.5",
+  "tests_passed": 42,
+  "tests_failed": 0,
+  "duration_seconds": 7.768,
+  "repository_checks": {
+    "schema_documents_validated": 4,
+    "candidates_screened": 28,
+    "privacy_metadata_checks": "pass",
+    "local_links": "pass",
+    "reporting_decision": "do-not-submit"
+  },
+  "runner_dry_run": "pass",
+  "real_claude_model_calls": 0,
+  "notes": "Includes mocked CLI integration and actual fixture oracle tests; not agent performance evidence"
+}

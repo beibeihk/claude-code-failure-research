@@ -1,0 +1,19 @@
+{
+  "id": "H01",
+  "scenario_version": "0.1.0-plan",
+  "title": "Passive hook lifecycle delivery (fixture prepared; live runner not implemented)",
+  "claude_code_version": "2.1.288",
+  "surface": "CLI",
+  "model": "sonnet",
+  "platform": "Anthropic official endpoint",
+  "fixture": "fixtures/hooks-ledger",
+  "task": "Read sample.py without edits and report add(2,3)",
+  "constraints": ["No file edits", "One local observer registration per event", "No external plugins"],
+  "treatment": "Passive local hooks enabled",
+  "control": "Same task with hooks removed",
+  "success_criteria": ["One delivery per documented event and local registration", "Pre-tool timestamp before corresponding post-tool timestamp"],
+  "failure_criteria": ["Excess invocation after accounting for event identity, registration, session resumes and parent/child context"],
+  "repetitions": 10,
+  "status": "prepared-fixture; not run; run_study currently executes V01 only",
+  "planned_ablations": ["local hook only", "plugin observer only", "no hooks", "builtin versus synthetic MCP tools"]
+}

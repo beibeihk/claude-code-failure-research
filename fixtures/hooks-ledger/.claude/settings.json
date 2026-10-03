@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "SessionStart": [{"hooks": [{"type": "command", "command": "python", "args": ["${CLAUDE_PROJECT_DIR}/record_hook.py"]}]}],
+    "PreToolUse": [{"matcher": ".*", "hooks": [{"type": "command", "command": "python", "args": ["${CLAUDE_PROJECT_DIR}/record_hook.py"]}]}],
+    "PostToolUse": [{"matcher": ".*", "hooks": [{"type": "command", "command": "python", "args": ["${CLAUDE_PROJECT_DIR}/record_hook.py"]}]}],
+    "PostToolUseFailure": [{"matcher": ".*", "hooks": [{"type": "command", "command": "python", "args": ["${CLAUDE_PROJECT_DIR}/record_hook.py"]}]}],
+    "Stop": [{"hooks": [{"type": "command", "command": "python", "args": ["${CLAUDE_PROJECT_DIR}/record_hook.py"]}]}],
+    "SubagentStop": [{"hooks": [{"type": "command", "command": "python", "args": ["${CLAUDE_PROJECT_DIR}/record_hook.py"]}]}]
+  }
+}
