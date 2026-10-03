@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "ea5ce38c-aa64-449c-a205-721f6e708a58",
+  "date": "2026-10-03T16:56:45.392949+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "upstream-focused",
+  "version": "2.1.288 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "1ee5709b7356c208cedd6fb7c5e4e931852455fa2470cae8f15a6e2b2550d5ff",
+  "hooks_implementation_unchanged": true,
+  "per_test_timeout_ms": 5000,
+  "instrumented": false,
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "network_observation": "not packet-captured; no model invocations in this command; loopback provider guard and nonessential traffic disabled",
+  "repetitions": [
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1277.91,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1219.84,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.69,
+      "log_sha256": "a4a937553bf5f7fb088cb550225cc541f462d7fe225ea5b289df6cff727f2ac4"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false,
+    "note": "exploratory focused smoke; 2 original case executions pass at default deadline"
+  }
+}

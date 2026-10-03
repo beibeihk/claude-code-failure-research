@@ -56,3 +56,32 @@ substitute for the main researcher's measured runs and 50 offline checks.
 **Decision after the count-unit correction: publish the scoped client-contract
 study and original infrastructure. No production bug, official issue or release
 is approved.** `independent_case_review` remains false for production reporting.
+
+## Timeout follow-up review, 2026-10-04
+
+The same separate reviewer statically inspected the control implementation,
+versioned protocol, eight new public records, privacy/license boundaries and
+remaining-work document. It did not rerun the client, API or offline checks,
+inspect private raw logs or independently measure network traffic.
+
+The review accepted the case-execution units: each focused deadline arm passes
+20 executions, the separate timing arm passes four, full default dispatch has
+205 passes and five timeouts, the sampled arm has 206 passes and four timeouts,
+and the serial-file arm passes 210 cases across 30 files at unchanged 5000 ms.
+The restored serial overlay hash matches the complete control. The partial
+parser-aborted batch is explicitly invalid and excluded from the full comparison;
+the singular-footer repair has a regression check and the full arm was rerun.
+
+The reviewer requested narrower summary wording: the evidence supports
+dispatch/full-suite context sensitivity. Both focused deadline arms already
+passed, so expanding the deadline did not demonstrate a rescue effect. The
+sampled peak of 27 CLI descendant processes is neither an exact worker count
+nor an upper bound on the true peak. These limitations are stated in the report.
+Sampler invocation provenance is disclosed and upstream source stays private
+with its original license. No publication blocker was identified in the stated
+scope. The main researcher's 57 passing offline checks were not rerun by the
+reviewer and are not model-behavior evidence.
+
+**Decision: publish the scoped timeout study, original controls and reviewed
+metadata. No production fix, official issue, release or overall-goal completion
+is approved.** `independent_case_review` remains false for production reporting.

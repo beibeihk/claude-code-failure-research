@@ -1,7 +1,7 @@
 {
-  "review_date": "2026-10-03",
+  "review_date": "2026-10-04",
   "decision": "do-not-submit",
-  "reason": "No model coding trials or confirmed production client failure. Active no-account/no-spend client contracts diagnose a Windows test-fixture path mismatch, not a reportable product defect. Existing reports cover broad candidate symptoms.",
+  "reason": "No model coding trials or confirmed production client failure. Timeout investigation supports test-dispatch/full-suite context sensitivity: full default dispatch times out, focused cases pass, serial-file full suite passes 210/210 at default 5000 ms. Internal latency cause is unproven; no production issue or release justified.",
   "max_new_issues_this_cycle": 1,
   "new_issues_submitted": 0,
   "independent_infrastructure_review": "passed after prospective design amendment; no observed case reviewed",
@@ -19,5 +19,6 @@
     "E3_or_E4": false,
     "independent_case_review": false,
     "privacy_safe_observed_evidence": false
-  }
+  },
+  "check_scope": "Checks refer to a selected reportable production case, not completed free diagnostic controls."
 }

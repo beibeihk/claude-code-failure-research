@@ -1,0 +1,50 @@
+{
+  "version": "1.1.1",
+  "registered_date": "2026-10-04",
+  "status_at_registration": "No new timeout-investigation runs executed",
+  "platform": "native Windows",
+  "claude_code_version": "2.1.288",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "model_calls": 0,
+  "targets": [
+    "register > the start asks nothing of git and registers /diff",
+    "detail-view > each hunk draws as a diff Code named by the path"
+  ],
+  "design": [
+    "Extract the two upstream cases and imports into private source overlays without changing assertions or hooks; preserve their original relative paths.",
+    "Exploratory smoke run at the original 5000 ms deadline, one repetition.",
+    "Compare focused default 5000 ms and explicit 15000 ms deadlines, 10 repetitions per arm, sequential CLI execution; deadline change is a diagnostic, never a repair claim.",
+    "Use a separate 15000 ms timing arm to measure body entry, first engine call completion and assertion completion. Do not mix instrumented and original-case pass totals.",
+    "Retest the full portable-fixture suite at its original 5000 ms deadline after focused diagnosis; preserve any new failures.",
+    "If a functional assertion fails or a case still exceeds 15000 ms, investigate its earliest observed step before attributing a production defect."
+  ],
+  "outcomes": {
+    "functional_failure": "An original expected output or state assertion fails",
+    "test_timeout": "The official engine reports timed out after its configured per-test deadline",
+    "harness_invalid": "Extraction, instrumentation, imports or runtime probes throw before intended assertions",
+    "nonreproduction": "The two original cases pass under the original 5000 ms deadline; prior timeout cause remains unproven"
+  },
+  "prospective_extension": {
+    "registered_before_additional_execution": true,
+    "trigger": "Focused original 5000 ms cases pass 20/20, but the full unchanged portable-fixture tree again yields 205 pass / 5 test timeouts, including both targets.",
+    "arms": [
+      "Separate Windows process-tree sampler during a full default-deadline run; collect descendant counts only, never command lines or process paths. Observer overhead excludes this run from an uninstrumented latency comparison.",
+      "Dispatch all original 30 test files one at a time through the same official engine, with default 5000 ms case deadlines, portable virtual-merge fixture adaptation and unchanged hooks/assertions. Aggregate case executions and preserve per-file results."
+    ],
+    "limits": "A descendant-worker count plus a passing serial dispatch can support a suite-scheduling explanation, but cannot isolate OS scheduling, resource contention or engine initialization internally, and is not proof of a production bug or fix."
+  },
+  "parser_amendment": {
+    "registered_before_serial_rerun": true,
+    "invalid_serial_run_id": "4e34b387-ecc0-4a45-937b-bc579f9ada7f",
+    "reason": "The first serial attempt stopped at file 21/30 because the metadata parser accepted 'Ran N tests' but not the engine's valid singular 'Ran 1 test' footer. The CLI case passed; this is our parser failure, not a native test failure.",
+    "change": "Accept singular/plural test grammar and add a regression check; rerun all files from the original private overlay state without changing deadlines, hooks or assertions.",
+    "eligibility": "The partial attempt is retained but excluded from full-suite comparison."
+  },
+  "limits": [
+    "Testing-budget sensitivity is not evidence that a production client bug is fixed.",
+    "Deterministic repetitions are not independent model samples.",
+    "No changes to authentication, account settings, system security or machine-wide performance settings.",
+    "No packet capture; no claims about all possible runtime traffic.",
+    "The study cycle retains its no-issue gate without a novel E3/E4 production case and independent review."
+  ]
+}

@@ -8,13 +8,17 @@ Community research project, unaffiliated with Anthropic. This repository studies
 reproducible failure patterns, controls, and evaluation methods. It does not
 assume that a reported symptom is a Claude Code defect.
 
-**Status — 2026-10-03:** active **no-account, no-paid-model** client research.
+**Status — 2026-10-04:** active **no-account, no-paid-model** client research.
 Claude Code 2.1.288's official `plugin test` engine runs locally without login.
 We have executed instruction-loading contracts and controlled Git-pane fixture
 diagnostics. **Zero valid Claude model coding trials, zero confirmed production
 failures, zero submitted Anthropic issues.** 28 existing reports were screened.
 See the [no-cost study](docs/no-cost-research.md) for actual counts and scope.
 No model failure rate or long-horizon performance estimate is claimed.
+The [two-timeout investigation](docs/timeout-investigation.md) now distinguishes
+full-suite dispatch/context sensitivity from functional defects: the complete
+serial-file control passed 210/210 with the original 5000 ms case deadline.
+Original failing runs remain public; no production bug or fix is confirmed.
 
 ## What is implemented
 
@@ -67,10 +71,13 @@ python -m runners.run_client_tests --upstream .private/upstream --suite agents-m
 python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream
 python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection research --repetitions 10
 python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream-portable-control
+python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream-serial-files
 ```
 
-Run the commands sequentially: the engine's per-test timeout is sensitive to
-concurrent load. The authored diff diagnostic is registered for native Windows;
+Run the commands sequentially. The engine can still dispatch child test files
+concurrently inside one command; `upstream-serial-files` runs one original file
+per native invocation without increasing the 5000 ms case deadline. This scoped
+workaround passed locally and is not a guarantee on other hardware. The authored diff diagnostic is registered for native Windows;
 the upstream suites and authored instruction tests also have other-platform
 entry points, not yet validated here. The runner clears inherited provider
 credentials/overrides in child memory, points accidental provider requests to a
@@ -109,6 +116,8 @@ No export command pushes to GitHub or files an issue.
 | [Candidate screening](reports/candidate-screening.md) | 28 existing reports, all unconfirmed by this project |
 | [No-cost client study](docs/no-cost-research.md) | Executed component contracts and fixture diagnosis; no model use |
 | [No-cost protocol](reports/no-cost-protocol.json) | Versioned repetitions, controls, limitations and amendment |
+| [Timeout investigation](docs/timeout-investigation.md) | Two preserved cases, deadline controls, worker sampling and complete serial-file retest |
+| [Remaining work](reports/remaining-work.json) | Free research priorities and conditional original-goal gates |
 | [V01 scenario](scenarios/verification-retention.json) | Preserved model protocol; execution disabled by no-spend policy |
 | [Long-horizon protocol](scenarios/long-horizon-plan.json) | Design only; no step-length or compaction result |
 | [Failure card](docs/failures/F001.md) | Reserved study candidate, blocked/not run |

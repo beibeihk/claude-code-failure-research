@@ -62,9 +62,16 @@ The invalid batch is retained privately; its run ID and reason remain public.
 A full-suite portable control initially overlapped another native test run and
 produced **204 pass / 6 per-test timeouts**. Its three merge assertions passed.
 A sequential retest produced **208 pass / 2 per-test timeouts**, also with all
-three merge assertions passing. The remaining timeout causes are unresolved;
-we do not attribute them solely to concurrent load or claim the entire suite
-passes. The upstream engine has a 5-second per-test
+three merge assertions passing. These two timeouts were investigated on
+**2026-10-04**: focused default-deadline and expanded-deadline batches each
+passed 20/20, while a full default-dispatch retest had 205 pass / 5 timeouts.
+A separate worker sampler observed a peak of 27 descendants of the native CLI.
+The corrected serial-file full-suite run passed **210/210 at the original 5-second
+case deadline**. This is a scoped harness workaround; no production bug or fix
+is confirmed, and the internal latency cause remains unresolved. See the
+[timeout investigation](timeout-investigation.md) for original assertions,
+preserved invalid parser attempt, phase timing and the scheduling controls.
+The upstream engine has a 5-second per-test
 timeout, so execution load must be controlled. A complete suite footer does
 not establish that every failed test is a client defect.
 

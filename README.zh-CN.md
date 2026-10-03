@@ -2,11 +2,17 @@
 
 可复现的 Coding Agent 可靠性实验。社区研究项目，与 Anthropic 无隶属关系。
 
-**截至 2026-10-03：正在开展无需账号、无需付费模型的客户端研究。** 官方
+**截至 2026-10-04：正在开展无需账号、无需付费模型的客户端研究。** 官方
 Claude Code 2.1.288 提供 `claude plugin test`，已用真实客户端测试引擎执行
 指令加载契约和 Git pane 的受控诊断。28 个已有报告完成筛查；真实 Claude
 模型 coding trial 为 0，确认生产 failure 为 0，Anthropic issue 为 0。
 实测数量与证据边界见 [免费研究记录](docs/no-cost-research.md)。
+
+两项超时的[专项调查](docs/timeout-investigation.md)已完成：隔离原用例后，
+5 秒与 15 秒时限下分别 20/20 通过；完整套件默认派发仍有超时。采样观察到
+原生 CLI 的子进程并发峰值为 27；按文件逐个派发，在原来的 5 秒时限下
+完成 **210/210 通过**。这支持测试派发与套件上下文敏感性诊断，不构成生产 bug
+或修复证明；旧失败与无效解析器批次均保留。
 
 当前可用交付物：
 
@@ -30,8 +36,9 @@ python -m runners.run_study --repetitions 1
 ```
 
 最后一条仅生成历史协议计划，不调用模型。免费研究使用单独下载、固定版本的
-官方源码与已有 CLI，命令见 [英文 README](README.md)。客户端实验需顺序执行，
-并发负载可能触发测试引擎的 5 秒超时。当前不要求登录，也不运行模型；`--execute`
+官方源码与已有 CLI，命令见 [英文 README](README.md)。外层命令顺序执行也
+不能保证引擎内部 worker 串行；完整套件可用 `upstream-serial-files` 逐文件复测。
+当前不要求登录，也不运行模型；`--execute`
 无法绕过研究策略。整个仓库没有自动提交 issue 的代码。
 
 [离线检查](results/offline-validation.json)已通过。
@@ -48,6 +55,7 @@ python -m runners.run_study --repetitions 1
 长任务、compaction、subagents、MCP、IDE 和 Remote Control 尚未完成实测。
 当前没有可报告 case，故没有 issue、Anthropic 回复或 v0.1.0 release。
 将来达到 E3/E4、排除重复且独立审查通过后，才进入正式报告。
+当前剩余免费工作和原目标的条件门槛见 [待办记录](reports/remaining-work.json)。
 
 求职材料目前可写：搭建受控可靠性研究框架，并用官方客户端测试引擎开展免费
 组件实验、程序化 verifier 和可复现 fixture，识别并控制 Windows 测试路径混杂。

@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "83fc5438-f4b0-458e-9ca0-b2cbe4ae5ddb",
+  "date": "2026-10-03T16:59:41.123769+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "upstream-focused",
+  "version": "2.1.288 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "1ee5709b7356c208cedd6fb7c5e4e931852455fa2470cae8f15a6e2b2550d5ff",
+  "hooks_implementation_unchanged": true,
+  "per_test_timeout_ms": 5000,
+  "instrumented": false,
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "network_observation": "not packet-captured; no model invocations in this command; loopback provider guard and nonessential traffic disabled",
+  "repetitions": [
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1119.96,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1256.76,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.16,
+      "log_sha256": "557ea4d714f0ce5528be7e3cb624ab1625e908dd1f3c08d2f607f6ac5b8f617e"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1191.14,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1310.98,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.44,
+      "log_sha256": "9c72ad4a5139db9d8d50a6dd3b0b593597eef24757ee61c8a84d2237bb7a3367"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1290.76,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1282.59,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 3,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.06,
+      "log_sha256": "db916beb21a84066b699c44a9291995a1f20ee13a0ecc68a134840380d66d763"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1072.58,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1074.16,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 4,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 2.95,
+      "log_sha256": "2f3d069614fcba846d8d384c3cf6587c4ca0aa500c5f117b08087c204c3bedc2"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1110.28,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1117.19,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 5,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 2.81,
+      "log_sha256": "175712c40016002966925e572ca9b867205c2c8d87d64dadfef182b33e122512"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1061.55,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1167.49,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 6,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 2.97,
+      "log_sha256": "fe6643331ad6142dd103ebaff35cdb283e2411d6a7a61a91be81dce5fe2abed5"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1358.42,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1422.0,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 7,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.26,
+      "log_sha256": "e9a5a91a23dbd6d1d5955f29da3878cb1a324e4e79ee95e141d0ea14d34afc43"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1172.26,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1169.23,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 8,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 2.95,
+      "log_sha256": "b8eca799a8828f978888bc77d7fdbcd2d68387193fb3b9940587716ce1c9a150"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1179.14,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1164.89,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 9,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 2.92,
+      "log_sha256": "b5d29ba60d650841c02234d51c58e407754951727dd1ebf936a48787e2fa7e87"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1175.61,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1131.99,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 10,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 2.8,
+      "log_sha256": "43697a332af34daaeb7667f390053bcfca8914db2c982f0cc8009cfb169ff576"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false,
+    "note": "20 original case executions pass at unchanged 5000 ms deadline"
+  }
+}

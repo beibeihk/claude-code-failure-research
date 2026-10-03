@@ -1,0 +1,54 @@
+{
+  "updated_date": "2026-10-04",
+  "project": "Claude Code Core Failure Research",
+  "execution_policy": "No Claude account, no login, no paid model calls; no authentication changes",
+  "overall_goal_complete": false,
+  "current_cycle": "free-client-contract-research",
+  "timeout_followup": {
+    "status": "investigated-with-scoped-harness-workaround",
+    "finding": "Full default dispatch reproduces test timeouts; two original focused cases pass at default deadline; process-tree sampler observes peak 27 concurrent descendants; serial-file control passes 210/210 at unchanged 5000 ms deadline.",
+    "production_bug_confirmed": false,
+    "internal_root_cause_established": false,
+    "report": "docs/timeout-investigation.md"
+  },
+  "completed_deliverables": [
+    "Public research repository, methodology, F01-F15 taxonomy and issue routing",
+    "28 sourced public-report candidates with existing-report risk separated from own findings",
+    "Original MIT invoice fixture, verifier, conservative claim-evidence analyzer and offline CI",
+    "Chinese study guide with 30 interview questions and honest CV wording",
+    "Pinned no-account client runner and policy-blocked model entry points",
+    "110 passing authored test-case executions, separate from model trials",
+    "Original-case deadline controls, worker-count observation, phase timings and complete serial-file full-suite control",
+    "Versioned protocols, invalid-batch preservation, reviewed metadata and no raw transcript/source export"
+  ],
+  "free_remaining_work": [
+    {
+      "id": "C1",
+      "priority": 1,
+      "status": "not-started",
+      "task": "Extend nested AGENTS.md Read delivery and instruction option contracts with positive/negative controls; inspect real delivery rather than model adherence.",
+      "completion_condition": "Versioned original cases run through the official test engine with source hashes and objective expected contexts."
+    },
+    {
+      "id": "C2",
+      "priority": 2,
+      "status": "not-started",
+      "task": "Use actual temporary filesystem/Git state as an oracle for any source-backed diff or instruction-loading candidate; remove mocked-state ambiguity.",
+      "completion_condition": "Minimal realistic fixture, preserved counterexample and matched client/source observation."
+    },
+    {
+      "id": "C3",
+      "priority": 3,
+      "status": "conditional-on-production-candidate",
+      "task": "For a novel reproducible production client candidate, retest current supported version, search duplicates, run relevant ablations and obtain independent case review.",
+      "completion_condition": "E3/E4 production evidence and complete reporting gate; at most one official issue, no threshold reduction."
+    }
+  ],
+  "original_goal_conditional_steps": [
+    {"step": "Claude model coding tasks, long-horizon behavior, model failure frequencies", "status": "excluded-by-current-no-account-no-paid-policy", "note": "Not requested as a future login dependency; client contracts do not substitute for this evidence."},
+    {"step": "High-quality official issue", "status": "evidence-gate-closed", "issue_count": 0},
+    {"step": "Anthropic feedback and verified fix", "status": "no-report-to-follow", "note": "Do not invent feedback or configure a redundant issue monitor."},
+    {"step": "v0.1.0 release", "status": "criteria-unmet", "note": "Requires the original first confirmed-case criterion; no release created."}
+  ],
+  "scope_guard": "Keep the existing allowed project; do not recreate fourth-tier or canceled projects."
+}

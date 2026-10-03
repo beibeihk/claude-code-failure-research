@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "ea60f3a1-161e-4649-b45c-49b9a70de7db",
+  "date": "2026-10-03T17:03:18.525987+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "upstream-focused",
+  "version": "2.1.288 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "da57644538e2348b4ff17b0d23ee8c06f9f4ded80c8c3dd56dea1b428afd4998",
+  "hooks_implementation_unchanged": true,
+  "per_test_timeout_ms": 15000,
+  "instrumented": true,
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "network_observation": "not packet-captured; no model invocations in this command; loopback provider guard and nonessential traffic disabled",
+  "repetitions": [
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [
+        {
+          "case_name": "each hunk draws as a diff Code named by the path",
+          "marks": [
+            {
+              "phase": "before-first-engine-call",
+              "elapsed_ms": 0
+            },
+            {
+              "phase": "after-ui-render",
+              "elapsed_ms": 1400
+            },
+            {
+              "phase": "assertions-complete",
+              "elapsed_ms": 1402
+            }
+          ]
+        },
+        {
+          "case_name": "the start asks nothing of git and registers /diff",
+          "marks": [
+            {
+              "phase": "before-first-engine-call",
+              "elapsed_ms": 1
+            },
+            {
+              "phase": "after-session-start",
+              "elapsed_ms": 1358
+            },
+            {
+              "phase": "assertions-complete",
+              "elapsed_ms": 1381
+            }
+          ]
+        }
+      ],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1388.63,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1410.32,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.38,
+      "log_sha256": "fffb6ea2a1b0bc13549cec0d44e99e947a909639edc7c84f79c31dbede49358b"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 2,
+      "observations": [
+        {
+          "case_name": "each hunk draws as a diff Code named by the path",
+          "marks": [
+            {
+              "phase": "before-first-engine-call",
+              "elapsed_ms": 0
+            },
+            {
+              "phase": "after-ui-render",
+              "elapsed_ms": 1890
+            },
+            {
+              "phase": "assertions-complete",
+              "elapsed_ms": 1901
+            }
+          ]
+        },
+        {
+          "case_name": "the start asks nothing of git and registers /diff",
+          "marks": [
+            {
+              "phase": "before-first-engine-call",
+              "elapsed_ms": 1
+            },
+            {
+              "phase": "after-session-start",
+              "elapsed_ms": 1843
+            },
+            {
+              "phase": "assertions-complete",
+              "elapsed_ms": 1886
+            }
+          ]
+        }
+      ],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1899.39,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 1910.92,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.34,
+      "log_sha256": "f1e667f05813fd6b983ee98e00bdd0f3078499306cfc6c27ed061128a342e993"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false,
+    "note": "separate instrumented arm; 4 case executions pass, synthetic phase timing only"
+  }
+}

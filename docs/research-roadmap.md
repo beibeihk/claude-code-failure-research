@@ -13,6 +13,14 @@ reports supply candidates and duplicate checks, not our own reproduction evidenc
 Local scripted API transport and substitute-model backends are possible later
 client-only designs; neither has been implemented or executed here.
 
+As of 2026-10-04, the [two-timeout investigation](timeout-investigation.md) has
+executed isolated original-case controls, separate phase/worker observations and
+a full serial-file control. The latter passed 210/210 at the original 5000 ms
+case deadline. Internal latency cause and production-bug attribution remain
+unproven. Next free priorities and the original goal's conditional steps are
+tracked in [remaining-work.json](../reports/remaining-work.json), with model
+tasks explicitly excluded under the current policy rather than awaiting login.
+
 | Priority | Question | Current deliverable | Remaining evidence |
 |---|---|---|---|
 | P0 | Instruction/constraint retention | V01 preserved, model execution disabled | Model evidence unavailable under no-spend policy |

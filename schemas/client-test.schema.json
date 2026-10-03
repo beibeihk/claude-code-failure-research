@@ -11,6 +11,8 @@
     "model_calls": {"const": 0},
     "coding_trials": {"const": 0},
     "billed_model_cost_usd": {"const": 0},
+    "per_test_timeout_ms": {"type": "integer", "minimum": 1},
+    "instrumented": {"type": "boolean"},
     "public_review": {"type": "object", "required": ["reviewed", "synthetic_observations_only", "raw_log_exported"], "properties": {
       "reviewed": {"const": true},
       "synthetic_observations_only": {"const": true},
@@ -24,6 +26,15 @@
         "failed": {"type": "integer", "minimum": 0},
         "tests_run": {"type": ["integer", "null"], "minimum": 0},
         "complete": {"type": "boolean"},
+        "test_cases": {"type": "array", "items": {
+          "type": "object", "required": ["name", "status", "elapsed_ms", "error_kind"],
+          "properties": {
+            "name": {"type": "string"},
+            "status": {"enum": ["pass", "fail"]},
+            "elapsed_ms": {"type": ["number", "null"], "minimum": 0},
+            "error_kind": {"enum": [null, "test-timeout", "assertion", "test-runtime-exception", "unknown"]}
+          }
+        }},
         "log_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
       }
     }}

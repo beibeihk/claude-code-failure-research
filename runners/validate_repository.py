@@ -21,6 +21,10 @@ def validate():
         for trial in record['repetitions']:
             if trial['complete'] and trial['passed'] + trial['failed'] != trial['tests_run']:
                 raise ValueError('Client-test count mismatch')
+            cases = trial.get('test_cases')
+            if cases is not None and trial['complete']:
+                if len(cases) != trial['tests_run'] or sum(c['status']=='pass' for c in cases) != trial['passed']:
+                    raise ValueError('Client-test detail/count mismatch')
         checks += 1
     for path in (ROOT/'docs/failures').glob('*.json'):
         Draft202012Validator(schemas['failure-card']).validate(json.loads(path.read_text(encoding='utf-8'))); checks+=1

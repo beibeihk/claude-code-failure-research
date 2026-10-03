@@ -1,6 +1,6 @@
 # Reproducible Failure Analysis for Claude Code
 
-Infrastructure and no-cost client-contract report, 2026-10-03.
+Infrastructure and no-cost client-contract report, updated 2026-10-04.
 **No empirical Claude model or production failure result is claimed.**
 
 ## 1. Motivation
@@ -54,6 +54,8 @@ been measured in Claude.
 | Valid Claude coding trials | 0 |
 | No-cost authored client test-case executions | 110 pass: 11 distinct cases repeated 10 times; separate from model trials |
 | Full-suite portable fixture controls | 204/210 then 208/210; remaining failures are test timeouts, unresolved |
+| Timeout investigation, focused original cases | Default 5000 ms: 20/20; expanded 15000 ms: 20/20; no functional failures |
+| New full-suite execution controls | Default dispatch: 205/210; sampled dispatch: 206/210, peak 27 descendants; serial files: 210/210 at default 5000 ms |
 | Confirmed failures | 0 |
 | Behavioral reproduction rate | N/A |
 | New Anthropic issues / comments | 0 / 0 |
