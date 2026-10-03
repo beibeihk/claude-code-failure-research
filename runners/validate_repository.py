@@ -15,6 +15,13 @@ def validate():
         Draft202012Validator(schemas['scenario'],format_checker=FormatChecker()).validate(json.loads(path.read_text(encoding='utf-8'))); checks+=1
     for path in (ROOT/'results/runs').glob('*.json'):
         Draft202012Validator(schemas['run'],format_checker=FormatChecker()).validate(json.loads(path.read_text(encoding='utf-8'))); checks+=1
+    for path in (ROOT/'results/client-tests').glob('*.json'):
+        record = json.loads(path.read_text(encoding='utf-8'))
+        Draft202012Validator(schemas['client-test'],format_checker=FormatChecker()).validate(record)
+        for trial in record['repetitions']:
+            if trial['complete'] and trial['passed'] + trial['failed'] != trial['tests_run']:
+                raise ValueError('Client-test count mismatch')
+        checks += 1
     for path in (ROOT/'docs/failures').glob('*.json'):
         Draft202012Validator(schemas['failure-card']).validate(json.loads(path.read_text(encoding='utf-8'))); checks+=1
     for folder in ('results','reports'):

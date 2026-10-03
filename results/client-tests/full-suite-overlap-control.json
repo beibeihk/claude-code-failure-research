@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "ee1b8844-8352-4fd4-8608-902c3e85ed08",
+  "date": "2026-10-03T12:54:42.237411+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "upstream-portable-control",
+  "version": "2.1.288 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "c7efdb0b71937f04a25a37e3602d1bc18d01cd049ace07b07c8277128fc3f1ed",
+  "hooks_implementation_unchanged": true,
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "network_observation": "not packet-captured; no model invocations in this command; loopback provider guard and nonessential traffic disabled",
+  "repetitions": [
+    {
+      "passed": 204,
+      "failed": 6,
+      "failed_tests": [
+        "git > each git child names the pin, in the C locale",
+        "record > a read marks how its hunks went, by the same names",
+        "register > the start asks nothing of git and registers /diff",
+        "views > docked, every file has its hunks under the list",
+        "detail-view > each hunk draws as a diff Code named by the path",
+        "pane-view > docked: header, rows, every body, the earlier line"
+      ],
+      "tests_run": 210,
+      "files_run": 30,
+      "observations": [],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 100.91,
+      "log_sha256": "965a0d72b0f49a0b7536513cf63674bf929f00e251e5cc7aed2a8a4cfb82a6ea"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false,
+    "note": "six 5000 ms test timeouts under overlapping native test runs; three merge assertions pass; production causes unknown"
+  }
+}

@@ -17,6 +17,7 @@ from analyzers.claims import extract_claims, assess, tool_evidence
 from analyzers.redact import redact_tree
 from analyzers.verify import snapshot, signature, source_hash, verify
 from runners.probe_access import official_env
+from runners.policy import require_model_access
 
 ROOT = Path(__file__).resolve().parents[1]
 SCENARIO = ROOT / 'scenarios/verification-retention.json'
@@ -86,6 +87,7 @@ def invoke(command, prompt, work, env, timeout):
         return stdout, stderr, process.returncode, True
 
 def run_one(arm, scenario, version, trial, pilot=False):
+    require_model_access()
     run_id = str(uuid.uuid4())
     base, work, commit, prompt = prepare(arm, scenario, run_id)
     before, api_before, initial_source = snapshot(work), signature(work), source_hash(work)
@@ -190,6 +192,7 @@ def main():
                    'nominal_total_cap_usd': upper_budget, 'execute': args.execute, 'pilot': args.pilot}
     if not args.execute:
         print(json.dumps(plan_record, indent=2)); return
+    require_model_access()
     version = subprocess.check_output(['claude', '--version'], text=True).strip()
     if version.split()[0] != s['claude_code_version']:
         parser.error('Version differs from preregistration. Refresh sources and preregister a new scenario version.')

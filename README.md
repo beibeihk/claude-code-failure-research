@@ -8,12 +8,13 @@ Community research project, unaffiliated with Anthropic. This repository studies
 reproducible failure patterns, controls, and evaluation methods. It does not
 assume that a reported symptom is a Claude Code defect.
 
-**Status — 2026-10-03:** research infrastructure published; **zero valid Claude
-coding trials, zero confirmed failures, zero submitted Anthropic issues**.
-28 existing public reports were screened. An isolated official-endpoint access
-probe on Claude Code 2.1.288 required authentication; it made no model call.
-Behavioral experiments are deferred until official access is available.
-No failure rate, causal effect, or root cause has been estimated.
+**Status — 2026-10-03:** active **no-account, no-paid-model** client research.
+Claude Code 2.1.288's official `plugin test` engine runs locally without login.
+We have executed instruction-loading contracts and controlled Git-pane fixture
+diagnostics. **Zero valid Claude model coding trials, zero confirmed production
+failures, zero submitted Anthropic issues.** 28 existing reports were screened.
+See the [no-cost study](docs/no-cost-research.md) for actual counts and scope.
+No model failure rate or long-horizon performance estimate is claimed.
 
 ## What is implemented
 
@@ -27,14 +28,18 @@ No failure rate, causal effect, or root cause has been estimated.
   unverifiable and review-required. Observer tests do not count as agent tests.
 - Source/template hashes, duplicate screening, a hook fixture, neutral schemas,
   privacy safeguards, offline CI and a Chinese study guide with 30 interview answers.
+- A pinned official client-test runner, original instruction contracts, and a
+  Windows virtual-Git-fixture path control. No Anthropic source is redistributed.
+- A [no-spend execution policy](research-policy.json) that blocks both the old
+  access probe and the live coding runner, including direct `run_one` calls.
 
-[42 offline checks](results/offline-validation.json) passed locally, including
+[Offline checks](results/offline-validation.json) passed locally, including
 mocked CLI integration. [Independent review](reports/independent-review.md) approved
 the explicitly unexecuted infrastructure after a prospective design amendment.
 
 The long-horizon, compaction, subagent, MCP, IDE and Remote Control studies are
 **protocols or candidate directions**, not completed experiments. The CLI runner
-has offline validation; live compatibility still needs an authenticated pilot.
+has offline validation; model execution is disabled under the researcher's policy.
 
 ## Local validation — no paid calls
 
@@ -49,26 +54,45 @@ python -m runners.prepare_fixture /path/to/new-fixture
 The last two commands plan or prepare only. `fixtures/reproduce.sh` and
 `fixtures/reproduce.ps1` also prepare only; neither submits an issue.
 
-## After official authentication
+## Run actual client experiments — no account required
 
-Use Anthropic's official login flow locally. Never place credentials in this
-repository. Refresh [upstream rules](docs/official-rules-audit.md) and preregister
-a new scenario version if the CLI version changed. Then run an authenticated
-pilot before committing to the full design:
+Use the installed **2.1.288** official CLI and a separate pinned official source
+checkout. The test engine is an early-access API; other versions need a protocol
+revision. These commands make no model request:
 
 ```bash
-python -m runners.probe_access
-python -m runners.run_study --arms prompt claude-file --repetitions 1 --max-total-budget-usd 1 --pilot --execute
-python -m runners.run_study --arms prompt claude-file --repetitions 10 --max-total-budget-usd 10 --execute
+git clone https://github.com/anthropics/claude-code.git .private/upstream
+git -C .private/upstream checkout --detach 1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528
+python -m runners.run_client_tests --upstream .private/upstream --suite agents-md --selection research --repetitions 10
+python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream
+python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection research --repetitions 10
+python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream-portable-control
 ```
 
-`--execute` invokes real model calls. The nominal budget cap is not a billing
-guarantee: a request already in progress may exceed a CLI cap. The runner removes
-inherited gateway overrides, disables user/local settings, retains the real
-authentication store, and uses the official endpoint. Confirm the resolved model
-and loaded instructions in the pilot. Raw logs stay under ignored `.private/`.
+Run the commands sequentially: the engine's per-test timeout is sensitive to
+concurrent load. The authored diff diagnostic is registered for native Windows;
+the upstream suites and authored instruction tests also have other-platform
+entry points, not yet validated here. The runner clears inherited provider
+credentials/overrides in child memory, points accidental provider requests to a
+closed loopback endpoint, and disables nonessential traffic. It never alters the
+user's credentials or settings. Private source overlays preserve the upstream
+license; the authored tests remain MIT. Raw output stays under `.private/`.
 
-Export reviewed metadata, not transcripts:
+`plugin test` exercises real client hooks/UI and public helper functions against
+scripted world interactions. It does not sample a Claude model or measure coding
+task behavior. Repeated deterministic tests are stability checks, not independent
+model draws. Test failures require environment and fixture diagnosis first.
+
+The old model-study protocol is preserved for audit, but `--execute` and
+`runners.probe_access` now fail before any CLI model invocation. No login is a
+prerequisite for the current research path. A future policy change requires a
+new explicit researcher instruction; CLI flags cannot override it.
+
+Client-test summaries are written to `.private/client-tests/RUN_UUID/summary.json`.
+Review their labels and authored observation payloads before manually copying
+metadata to `results/client-tests` with the schema's `public_review` marker.
+No raw log is exported. The following preserved exporter is for the historical
+model-study schema; it does not accept client-test summaries:
 
 ```bash
 python -m runners.export_run RUN_UUID --reviewed
@@ -83,7 +107,9 @@ No export command pushes to GitHub or files an issue.
 | Record | Meaning |
 |---|---|
 | [Candidate screening](reports/candidate-screening.md) | 28 existing reports, all unconfirmed by this project |
-| [V01 scenario](scenarios/verification-retention.json) | Executable small-task pilot; N=10 per principal arm planned |
+| [No-cost client study](docs/no-cost-research.md) | Executed component contracts and fixture diagnosis; no model use |
+| [No-cost protocol](reports/no-cost-protocol.json) | Versioned repetitions, controls, limitations and amendment |
+| [V01 scenario](scenarios/verification-retention.json) | Preserved model protocol; execution disabled by no-spend policy |
 | [Long-horizon protocol](scenarios/long-horizon-plan.json) | Design only; no step-length or compaction result |
 | [Failure card](docs/failures/F001.md) | Reserved study candidate, blocked/not run |
 | [Reporting gate](reports/reporting-gate.json) | No reportable case; submission forbidden at current evidence level |

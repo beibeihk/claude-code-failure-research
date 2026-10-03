@@ -1,0 +1,59 @@
+{
+  "protocol_version": "1.0.1",
+  "registered_at": "2026-10-03",
+  "stage": "prospective repetition after exploratory diagnostics; not blind discovery",
+  "component": "Claude Code mod test engine and public built-in module source",
+  "claude_code_version": "2.1.288",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "researcher_constraint": "No account, no login, no paid model calls",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "design": [
+    {
+      "suite": "agents-md",
+      "selection": "research",
+      "tests_per_repetition": 8,
+      "repetitions": 10,
+      "criterion": "Instruction fallback, unreadable walk, import/content deduplication, directory boundary and managed filtering meet authored contracts. Three tests exercise engine hooks; five directly exercise public source helpers."
+    },
+    {
+      "suite": "diff",
+      "selection": "research",
+      "tests_per_repetition": 3,
+      "repetitions": 10,
+      "criterion": "On Windows the literal POSIX fs.list stub misses canonical drive paths. The portable virtual-fixture stub must show unavailable during merge and changed after merge. The no-marker control must show ordinary changes.",
+      "classification_if_control_succeeds": "test-fixture platform mismatch; not a confirmed production client failure",
+      "ablation": "Change only the fs.list virtual path matching; retain client, public mod source, Git responses, clock and UI flow."
+    }
+  ],
+  "exploratory_results": {
+    "upstream_agents_md": "5 pass / 0 fail",
+    "upstream_diff": "207 pass / 3 fail; all three use a literal /work/.git fs.list stub",
+    "authored_instruction_tests": "8 pass / 0 fail",
+    "diff_path_probe": "Both literal and slash-only stubs fail; observed requests are C:\\work\\.git. Adding drive adaptation is a prospective fixture control."
+  },
+  "full_suite_control": {
+    "registered_before_execution": true,
+    "suite": "diff",
+    "selection": "upstream-portable-control",
+    "repetitions": 1,
+    "change": "Only tests/register.test.ts fs.list matching for the virtual /work/.git fixture; normalize separators and drive prefix. No hooks implementation changes.",
+    "expected": "All 210 upstream tests pass if the three exploratory failures are fixture path mismatches."
+  },
+  "prospective_amendment": {
+    "registered_before_rerun": true,
+    "reason": "The test engine does not expose a process global. A 10-repeat diagnostic batch had one ReferenceError test failure per repetition despite valid logged observations and two passing cases. Exclude that batch from contract-pass totals.",
+    "change": "Remove process.platform from the authored assertion and restrict the runner's authored diff diagnostic to native Windows, as already covered by this protocol.",
+    "invalid_batch_run_id": "e68c650f-033c-461c-bcdf-20ada5286e01",
+    "remaining_observation_status": "Exploratory only; retained privately and summarized publicly, never counted as product failures.",
+    "invalid_test_case_executions": 10
+  },
+  "limitations": [
+    "The four public mods are not the full proprietary implementation.",
+    "World interactions are scripted by the official test engine; this is component-contract evidence.",
+    "Deterministic repetitions check stability, not independent model draws or a population failure rate.",
+    "No claim of Claude model instruction retention, long-horizon performance or production diff failure is supported.",
+    "No official issue or release is justified by this diagnostic alone."
+  ],
+  "count_unit": "Test-case executions, not individual expect assertions or independent coding trials; final authored batches are 11 distinct cases repeated 10 times."
+}

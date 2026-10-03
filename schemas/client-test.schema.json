@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local client contracts, never Claude model coding trials",
+  "type": "object",
+  "required": ["run_id", "kind", "version", "upstream_commit", "model_calls", "coding_trials", "billed_model_cost_usd", "repetitions", "public_review"],
+  "properties": {
+    "run_id": {"type": "string", "format": "uuid"},
+    "kind": {"const": "official-client-test-engine"},
+    "version": {"type": "string"},
+    "upstream_commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+    "model_calls": {"const": 0},
+    "coding_trials": {"const": 0},
+    "billed_model_cost_usd": {"const": 0},
+    "public_review": {"type": "object", "required": ["reviewed", "synthetic_observations_only", "raw_log_exported"], "properties": {
+      "reviewed": {"const": true},
+      "synthetic_observations_only": {"const": true},
+      "raw_log_exported": {"const": false}
+    }},
+    "repetitions": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "required": ["trial", "passed", "failed", "tests_run", "complete", "log_sha256"],
+      "properties": {
+        "trial": {"type": "integer", "minimum": 1},
+        "passed": {"type": "integer", "minimum": 0},
+        "failed": {"type": "integer", "minimum": 0},
+        "tests_run": {"type": ["integer", "null"], "minimum": 0},
+        "complete": {"type": "boolean"},
+        "log_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    }}
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "e68c650f-033c-461c-bcdf-20ada5286e01",
+  "date": "2026-10-03T12:53:21.191828+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "research",
+  "version": "2.1.288 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "479e773d58c506c668adb36ad8b356875dd4673913c31b91f1d28fddc15554e0",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "network_observation": "not packet-captured; no model invocations in this command; loopback provider guard and nonessential traffic disabled",
+  "repetitions": [
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 2.92,
+      "log_sha256": "8e31b6d883626de38f68fbd02ca2e41dfaa7695cd795bd3e4aaf6f886797296d"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 3.31,
+      "log_sha256": "9d8a931fad0e4fa2fecd579c3151853d561ea85eff711da2d820a6f4dc851965"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 3,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 4.34,
+      "log_sha256": "2f0bf5e97ba3e398d4bcc010826d786fa20958c1a5e79103855ac84573396dfe"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 4,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 4.09,
+      "log_sha256": "14d6fd3d7e799a7c6a1352d37b090cbf39c1ca7d509289a7a1d89b5ef15290c6"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 5,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 2.97,
+      "log_sha256": "0c3761fa2484b775f7aac26d08d2500da393ecafb8a43b96a50e4dc9e266c39e"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 6,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 3.09,
+      "log_sha256": "90f286fd1448f2db59ad036566851b68335298062c6107dc9ff7034ef767a9bd"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 7,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 3.33,
+      "log_sha256": "a1ddbc93eeb9d591be6f2c757a46b93a8201410799adfb64e2142c85a2968d27"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 8,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 3.26,
+      "log_sha256": "dd7e4ad8dbc59d353a260c0a5d18e3fcb4898b2cdf90b0079e395894f0c6c61f"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 9,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 2.94,
+      "log_sha256": "81b5abb6a196fa75ced1a0e818e20c9705069bd4ec978a37708706bf03646d84"
+    },
+    {
+      "passed": 2,
+      "failed": 1,
+      "failed_tests": [
+        "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false"
+      ],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 10,
+      "process_exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 3.36,
+      "log_sha256": "d2ef379f5f17e0d3be06c99b306a3f9e3dc97ccf92a379d37083b6df7f87d135"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false,
+    "note": "excluded: missing process global caused 10 ReferenceError test failures; not product failures"
+  }
+}

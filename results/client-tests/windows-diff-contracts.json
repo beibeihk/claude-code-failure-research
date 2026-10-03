@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "9fbf8f51-3640-4a3d-b459-65c7418e187d",
+  "date": "2026-10-03T12:55:58.802470+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "research",
+  "version": "2.1.288 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "67c2bdb1837c2903b815e674f92c3d73f30b7696aa93e0f4f443577d90d173aa",
+  "hooks_implementation_unchanged": true,
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "network_observation": "not packet-captured; no model invocations in this command; loopback provider guard and nonessential traffic disabled",
+  "repetitions": [
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 6.73,
+      "log_sha256": "8638283ee60bd50d6e170bbfa5f43654a73a1d80497f496dd0c7ef416fdf4308"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 6.42,
+      "log_sha256": "be34fc99f5afe119bc274375c37bedea74329162c87bde0e18a38fa7d35069bf"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 3,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 5.78,
+      "log_sha256": "c513c2ca67c87673615f8ac9d0ad3cafed44991e2aae255cf8ad6d32426d2283"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 4,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 5.61,
+      "log_sha256": "f67366996c879c7dc083c6fc88353fc56da951c580691d307fe7df8e4511248e"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 5,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 5.0,
+      "log_sha256": "b7f9b62c6e1ff3be1303dc86d1e30b248c9361994d63682b2959649c7cf8afec"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 6,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.83,
+      "log_sha256": "359573c9e71792209e3cb83e57d38b53524879259306903413f910034d464f32"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 7,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.41,
+      "log_sha256": "6ad8bb5b186eae9d0e037ba358ca1c650f8b09c2167484439a206c6de915a69a"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 8,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.62,
+      "log_sha256": "ca3754bcbe04095ac8165f27c0e6c41caa9209274638ea04dd3799819049beea"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 9,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.28,
+      "log_sha256": "f35976dd45f8b9bbbf40a6275307060b30d990398302e705f756ad26967a0552"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "complete": true,
+      "trial": 10,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.94,
+      "log_sha256": "a3e7f92fd970936baa0b7c0d11ed73fdea327fae94205f3c6f294f6d8c976500"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false,
+    "note": "valid Windows fixture diagnostics; 30 test-case executions pass"
+  }
+}

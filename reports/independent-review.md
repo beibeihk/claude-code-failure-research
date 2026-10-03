@@ -33,3 +33,26 @@ certification of every runner implementation path or a live compatibility test.
 
 **Decision: publish infrastructure; do not submit an Anthropic issue.**
 `independent_case_review` remains false because no observed case exists.
+
+## No-account client-study review, 2026-10-03
+
+The independent reviewer read the new no-spend policy, model-entry guards,
+client-test runner, original TypeScript tests, protocol, reviewed result metadata,
+README files and no-cost report. No client, model or paid API was run by the
+reviewer; private raw logs and packet traffic were not independently inspected.
+
+The reviewer required one publication correction: the parser counts `(pass)`
+test cases, not individual `expect` assertions. The final authored batches are
+**11 distinct test cases each executed 10 times, giving 110 passing case
+executions**. The report, technical report, protocol and result annotations were
+corrected to use that unit.
+
+The review accepted the model/client distinction, scoped Windows virtual-fixture
+diagnosis, invalid-batch exclusion, both full-suite timeout records, fail-closed
+model-entry guards and public source/license/privacy boundaries. Remaining
+timeouts are unresolved. The static review does not certify network behavior or
+substitute for the main researcher's measured runs and 50 offline checks.
+
+**Decision after the count-unit correction: publish the scoped client-contract
+study and original infrastructure. No production bug, official issue or release
+is approved.** `independent_case_review` remains false for production reporting.

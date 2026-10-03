@@ -1,6 +1,7 @@
 # Reproducible Failure Analysis for Claude Code
 
-Infrastructure report, 2026-10-03. **No empirical Claude failure result is claimed.**
+Infrastructure and no-cost client-contract report, 2026-10-03.
+**No empirical Claude model or production failure result is claimed.**
 
 ## 1. Motivation
 
@@ -27,7 +28,7 @@ reported separately, not scored as successes or ordinary model failures.
 
 ## 4. Experimental harness
 
-The CLI runner pins version 2.1.288, captures a private stream, resolves model IDs,
+The preserved, policy-disabled model runner pins version 2.1.288, captures a private stream, resolves model IDs,
 uses official-provider isolation, sets a per-run budget, and stops after a blocked
 run. The seven-file invoice fixture has ten tests and four intentional baseline
 failures. Offline tests verify the known correct patch, API changes, forbidden
@@ -51,15 +52,21 @@ been measured in Claude.
 | CLI versions inspected | 2.1.169, then current 2.1.288 |
 | Official access diagnostics | One isolated 2.1.288 probe; authentication required; no model use |
 | Valid Claude coding trials | 0 |
+| No-cost authored client test-case executions | 110 pass: 11 distinct cases repeated 10 times; separate from model trials |
+| Full-suite portable fixture controls | 204/210 then 208/210; remaining failures are test timeouts, unresolved |
 | Confirmed failures | 0 |
 | Behavioral reproduction rate | N/A |
 | New Anthropic issues / comments | 0 / 0 |
 | Release | None; v0.1.0 criteria unmet |
 
-The researcher chose to publish the framework and defer experiments until official
-authentication. [Access metadata](../results/access-probe.json) are separate from
-the run schema. [Candidate screening](../reports/candidate-screening.md) cannot be
-used as this project's reproduced-failure count.
+The researcher subsequently declined accounts, login and spending. The active
+path now uses the official `claude plugin test` engine and published module
+source without model access. [Client observations](no-cost-research.md) cover
+instruction contracts and a Windows virtual-fixture path mismatch; they are
+separate from model coding trials and production failure counts. The earlier
+[access metadata](../results/access-probe.json) remain historical.
+[Candidate screening](../reports/candidate-screening.md) cannot be used as this
+project's reproduced-failure count.
 
 ## 6. Controls
 
@@ -92,10 +99,12 @@ failure. The absence of a result after transport failure is a censored observati
 Local plugins, custom MCP servers, permission settings and gateways must be ruled
 out before attributing a symptom to the core client or Anthropic model.
 
-**Root-cause hypothesis: none.** No unexpected Claude task behavior has been
-observed. The only diagnosed prerequisite is unavailable isolated official access.
-Public repository contents do not reveal the complete implementation. A future
-behavioral association would support a hypothesis, not establish internal cause.
+**Production root-cause hypothesis: none.** No unexpected Claude model task
+behavior has been observed. The no-cost diagnostic instead identifies a virtual
+test fixture whose POSIX path comparison misses the Windows engine's canonical
+drive path. The public repository now includes four built-in mods and their test
+contracts; it does not reveal the complete proprietary implementation. Source
+helper checks and scripted engine tests must not become model behavior claims.
 
 ## 9. Limitations
 
@@ -111,7 +120,8 @@ create selection bias. No comparison with Codex, Kimi or other agents was run.
 The lab separates task correctness, constraint compliance, verification execution
 and final claims. Its neutral run contract can later support other agents, while
 the current runner targets Claude only. An honest blocked study is preferable to
-inventing a reportable finding. The next scientific step is an authenticated pilot,
-followed by repeated controlled runs, ablations and independent case review.
+inventing a reportable finding. The current scientific path is further no-cost
+client contracts, deterministic controls and fixture/environment diagnosis.
+The preserved model protocol remains disabled by the researcher's execution policy.
 No issue will be submitted until the [reporting gate](../reports/reporting-gate.json)
 is met. Official feedback monitoring begins only after a real report exists.

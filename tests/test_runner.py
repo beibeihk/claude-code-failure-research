@@ -22,7 +22,7 @@ class RunnerTests(unittest.TestCase):
         self.scenario=json.loads((ROOT/'scenarios/verification-retention.json').read_text())
     def tearDown(self): self.temp.cleanup()
     def execute_mock(self, invoke):
-        with patch.object(run_study,'ROOT',self.root), patch.object(run_study,'invoke',invoke), redirect_stdout(io.StringIO()):
+        with patch.object(run_study,'ROOT',self.root), patch.object(run_study,'invoke',invoke), patch.object(run_study,'require_model_access'), redirect_stdout(io.StringIO()):
             return run_study.run_one('prompt',self.scenario,'2.1.288 (Claude Code)',1)
     def test_agent_tests_separated_and_correlated(self):
         def fake(command,prompt,work,env,timeout):

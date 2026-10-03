@@ -50,3 +50,13 @@ probe explicitly isolated these settings and used the official API endpoint.
 It returned an authentication prerequisite, zero model usage and zero cost.
 Provider variables and credential values were not published or modified.
 This observation establishes access state only, not model or client reliability.
+
+## No-cost client-testing update
+
+The researcher subsequently declined login and spending. The active route is the
+official [mods test engine](https://github.com/anthropics/claude-code/blob/1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528/mods/README.md):
+`claude plugin test` runs local tests in children of the real binary with scripted
+world hooks. Four built-in modules have public source at the pinned commit. This
+is an early-access function-hook API and does not expose the full implementation.
+It requires no Claude account for the tested commands. Original access metadata
+are historical, and both paid runner entry points are now policy-blocked.

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-03",
+  "kind": "exploratory-upstream-mod-tests",
+  "version": "2.1.288",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "records": [
+    {
+      "suite": "agents-md",
+      "passed": 5,
+      "failed": 0,
+      "log_sha256": "b06ffaddc8b885bab60046fdb4efee445b91d31fded5bb2519f523c2962c085b",
+      "log_exported": false
+    },
+    {
+      "suite": "diff",
+      "passed": 207,
+      "failed": 3,
+      "log_sha256": "34c71f3e0675b443d125ef7ba914435fb7050b7a96940c0920c89efc068c0a75",
+      "log_exported": false
+    }
+  ]
+}

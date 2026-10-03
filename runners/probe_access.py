@@ -5,6 +5,7 @@ from pathlib import Path
 import subprocess
 import datetime as dt
 import re
+from runners.policy import require_model_access
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -22,6 +23,7 @@ def official_env():
     return env
 
 def main():
+    require_model_access()
     private = ROOT / '.private'
     private.mkdir(exist_ok=True)
     command = ['claude', '-p', 'Return exactly READY without using tools.',

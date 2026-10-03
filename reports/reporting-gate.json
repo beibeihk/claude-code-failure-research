@@ -1,7 +1,7 @@
 {
   "review_date": "2026-10-03",
   "decision": "do-not-submit",
-  "reason": "No valid coding trials or confirmed client failure; official access requires authentication. Existing reports already cover broad candidate symptoms.",
+  "reason": "No model coding trials or confirmed production client failure. Active no-account/no-spend client contracts diagnose a Windows test-fixture path mismatch, not a reportable product defect. Existing reports cover broad candidate symptoms.",
   "max_new_issues_this_cycle": 1,
   "new_issues_submitted": 0,
   "independent_infrastructure_review": "passed after prospective design amendment; no observed case reviewed",

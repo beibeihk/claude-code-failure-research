@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "effective_date": "2026-10-03",
+  "mode": "no-account-no-paid-models",
+  "allow_model_calls": false,
+  "reason": "Researcher has no Claude account and explicitly declines login and spending. Continue with client tests and public evidence.",
+  "allowed_execution": ["offline-harness", "official-client-test-engine"],
+  "policy_changes_require": "A new explicit researcher instruction authorizing model access; a CLI flag alone is insufficient."
+}

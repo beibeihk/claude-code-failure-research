@@ -1,8 +1,15 @@
 # Claude Code Failure Research 学习与面试指南
 
 规则核查日：2026-10-03；当前准备版本：2.1.288。本项目是社区研究。
-**目前只有框架、28 个已有报告筛查及离线验证；没有真实 coding trials、
-确认 failure、Anthropic issue 或修复。** 面试时首先说清楚这个证据边界。
+**目前包含框架、28 个已有报告筛查、离线验证与无需账号的真实客户端契约
+实验；没有 Claude 模型 coding trials、确认生产 failure、Anthropic issue 或
+修复。** 面试时首先说清楚这个证据边界。
+
+免费研究使用官方 `claude plugin test` 和公开内置 mod 源码。真实引擎负责
+hooks/UI 分发，测试脚本应答下层世界；部分测试直接调用公开源码函数。
+这能够研究组件契约，不能推断 Claude 模型的指令保留或长任务能力。
+Windows 的 `/work/.git` 虚拟路径曾制造测试假阳性：引擎请求 `C:\work\.git`，
+原 stub 未匹配。对照只调整模拟路径；实测记录见 [免费研究报告](docs/no-cost-research.md)。
 
 ## 从一次 coding run 读懂系统
 
@@ -140,15 +147,16 @@ Action/@claude/PR 故障。模板核查与归因细节见 [issue routing](docs/i
 
 30. **加入团队后怎样继续研究？** 先验证仪器与真实任务代表性，再扩展到长期任务和
     版本回归，形成可重复 bug→eval→fix→retest 闭环。跨 agent 比较应固定能力、预算和
-    工具条件。当前项目还未完成 live pilot，回答时必须主动承认。
+    工具条件。当前已执行免费客户端契约实验，但还未完成 Claude 模型 coding pilot。
 
 ## 简历表述：随事实升级
 
 目前可用的英文 bullet：
 
-> Built a preregistered reliability research framework for Claude Code with fresh-repository runners,
-> objective verification checks, conservative claim-evidence analysis, and synthetic MIT fixtures;
-> screened 28 existing reports while keeping authenticated behavioral trials pending.
+> Built a preregistered Claude Code reliability framework and executed 110 local
+> client test-case runs using the official test engine and public module helpers;
+> isolated a Windows virtual-fixture path mismatch through controlled comparisons,
+> with explicit separation from unexecuted Claude model coding trials.
 
 只有实际完成报告后，才能写 reported a reproducible failure。只有官方修复并在
 原 fixture 上验证，才能写 independently verified an Anthropic fix。
