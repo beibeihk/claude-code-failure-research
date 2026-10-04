@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "registered_date": "2026-10-04",
+  "scope": "Bounded screening of exactly three client-component candidates; no model calls, authentication changes or spending",
+  "source_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "cli_version": "2.1.288",
+  "current_remote_head_observed": "2bfb629dfaff0c8318047a4beb93cf1dc5b58b18",
+  "current_changelog_version_observed": "2.1.289",
+  "source_delta_check": "No changes in mods/agents-md, mods/diff, mod types, LICENSE.md, SECURITY.md or issue templates between the pin and observed remote HEAD. Native engine remains the recorded 2.1.288; no latest-engine claim.",
+  "candidates": [
+    {"id": "FS01", "title": "Real merge/rebase state detection and abort recovery, ordinary and linked worktrees", "criterion": "Source component repositoryOf/isTransient must agree with actual rev-parse paths, marker entry kinds and known successful/failed Git operations. Linked worktree state must use its own gitDir rather than commonDir.", "controls": "clean / conflict / abort, ordinary / linked worktree; rebase conflict / abort"},
+    {"id": "FS02", "title": "Raw Git output parsing with supported special filenames and staged rename", "criterion": "dirtyPathsOf, parseNumstat and parseFileDiffs must retain exact supported path spellings, text changes and binary flag. A real staged rename must retain old/new identities.", "controls": "known written text / binary, spaces / non-ASCII names, changed / clean, staged rename / unchanged content", "exclusions": "Windows forbids tab/newline filename characters; they are not silently simulated as real-file tests."},
+    {"id": "FS03", "title": "Nested AGENTS.md delivery and duplicate/recovery guards from actual synthetic files", "criterion": "The native engine must deliver exact nested instruction bytes once after successful Read, not on failed Read or outside the root; a context recomputation allows fresh delivery. Whole versus partial direct instruction reads retain documented behavior.", "controls": "first / repeated Read, failed / successful Read, inside / sibling root, whole / partial instruction read, nested CLAUDE present / absent"}
+  ],
+  "reporting_clarifications_after_execution": [
+    "The failed-Read guard injects a scripted isError result; it is not a captured real filesystem or permission error. Positive contents are actual file bytes. This clarifies scope without changing functional criteria or excluding any execution."
+  ],
+  "execution": {
+    "batches": 2,
+    "fresh_fixture_each_batch": true,
+    "default_test_timeout_ms": 5000,
+    "dispatch": "One authored test file per component suite, native CLI invocations sequential",
+    "world_bridge": "Python creates real temporary files and local Git histories, reads outputs/entry kinds, and injects those snapshots into authored TypeScript tests. Native engine hooks or unchanged public source helpers consume them. This is captured-response replay, not production filesystem/process transport or model inference.",
+    "safety": "Only fresh .private fixture repositories; local neutral Git identity, hooks disabled for fixture commands; user repo, auth and global settings untouched. Upstream source stays private with original license.",
+    "failure_handling": "Preserve every invalid/failed batch; do not weaken functional assertions or retroactively change criteria. Harness exceptions and transport/timeout failures are distinct from assertion signals. Only an actual functional signal advances to minimal reproduction, repeated controls and independent case review.",
+    "escalation": "At most these three candidates. If no new E3/E4 production evidence, gate remains closed; no issue or release. A negative component screen does not prove all production paths correct."
+  }
+}

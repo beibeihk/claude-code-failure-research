@@ -49,13 +49,14 @@ been measured in Claude.
 |---|---|
 | Public reports screened | 28; all have known existing-report/duplicate risk |
 | Official docs reviewed | 20 pages plus nine pinned repository files |
-| CLI versions inspected | 2.1.169, then current 2.1.288 |
+| CLI versions inspected | 2.1.169, then tested 2.1.288; 2.1.289 changelog observed, native engine not tested |
 | Official access diagnostics | One isolated 2.1.288 probe; authentication required; no model use |
 | Valid Claude coding trials | 0 |
 | No-cost authored client test-case executions | 110 pass: 11 distinct cases repeated 10 times; separate from model trials |
 | Full-suite portable fixture controls | 204/210 then 208/210; remaining failures are test timeouts, unresolved |
 | Timeout investigation, focused original cases | Default 5000 ms: 20/20; expanded 15000 ms: 20/20; no functional failures |
 | New full-suite execution controls | Default dispatch: 205/210; sampled dispatch: 206/210, peak 27 descendants; serial files: 210/210 at default 5000 ms |
+| Bounded real-fixture screen | 3 candidates, 18 distinct authored cases, 2 fresh batches: 36/36 passing component-case executions; no functional signal |
 | Confirmed failures | 0 |
 | Behavioral reproduction rate | N/A |
 | New Anthropic issues / comments | 0 / 0 |
@@ -69,6 +70,10 @@ separate from model coding trials and production failure counts. The earlier
 [access metadata](../results/access-probe.json) remain historical.
 [Candidate screening](../reports/candidate-screening.md) cannot be used as this
 project's reproduced-failure count.
+The [real-fixture follow-up](free-candidate-screen.md) uses actual local Git
+operations and synthetic file bytes as captured-response oracles. Git helpers
+and native instruction events passed within that scope; production transport,
+live refresh, non-default option modes and model adherence remain unvalidated.
 
 ## 6. Controls
 

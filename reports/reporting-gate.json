@@ -1,7 +1,7 @@
 {
   "review_date": "2026-10-04",
   "decision": "do-not-submit",
-  "reason": "No model coding trials or confirmed production client failure. Timeout investigation supports test-dispatch/full-suite context sensitivity: full default dispatch times out, focused cases pass, serial-file full suite passes 210/210 at default 5000 ms. Internal latency cause is unproven; no production issue or release justified.",
+  "reason": "No model coding trials or confirmed production client failure. Prior timeout controls support dispatch/full-suite context sensitivity, not an internal root cause. New bounded screen of three real-fixture captured-response candidates passed 36/36 component-case executions without functional signal; production transport and 2.1.289 native engine remain untested. No E3/E4 production case, independent production-case review, official issue or release justified.",
   "max_new_issues_this_cycle": 1,
   "new_issues_submitted": 0,
   "independent_infrastructure_review": "passed after prospective design amendment; no observed case reviewed",

@@ -19,6 +19,11 @@ The [two-timeout investigation](docs/timeout-investigation.md) now distinguishes
 full-suite dispatch/context sensitivity from functional defects: the complete
 serial-file control passed 210/210 with the original 5000 ms case deadline.
 Original failing runs remain public; no production bug or fix is confirmed.
+The subsequent [three-candidate real-fixture screen](docs/free-candidate-screen.md)
+passed 36/36 case executions across two fresh fixture batches. Real filesystem
+and Git captures feed component contracts; production transport remains untested.
+No candidate produced a functional signal. The tested engine is 2.1.288; the
+newly observed 2.1.289 changelog is not a claim of latest-engine validation.
 
 ## What is implemented
 
@@ -72,6 +77,7 @@ python -m runners.run_client_tests --upstream .private/upstream --suite diff --s
 python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection research --repetitions 10
 python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream-portable-control
 python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream-serial-files
+python -m runners.run_free_screen --upstream .private/upstream --batches 2
 ```
 
 Run the commands sequentially. The engine can still dispatch child test files

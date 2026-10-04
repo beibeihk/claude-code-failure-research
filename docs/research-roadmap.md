@@ -39,7 +39,10 @@ tasks explicitly excluded under the current policy rather than awaiting login.
 | P13 | Plugin/hook interaction | Plugin-independent fixtures | Optional instrument arm and clean reproduction |
 
 V01 is the only automated model coding runner implemented and is policy-disabled.
-The active client runner is `runners.run_client_tests`. H01 has a prepared
+The active client runners are `runners.run_client_tests` and the bounded
+`runners.run_free_screen`. The latter completed a three-candidate real-fixture
+response-replay screen with 36/36 passes and no functional signal; see
+[its scope and remaining transport limits](free-candidate-screen.md). H01 has a prepared
 fixture and offline observer/analyzer tests. L01 is design-only. This explicit
 boundary prevents protocols or software unit tests from becoming claimed studies.
 

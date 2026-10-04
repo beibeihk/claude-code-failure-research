@@ -1,12 +1,12 @@
 {
-  "validated_at": "2026-10-03T17:31:38.924209+00:00",
+  "validated_at": "2026-10-04T02:18:08.334898+00:00",
   "kind": "offline-harness-validation",
   "python_version": "3.11.5",
-  "tests_passed": 57,
+  "tests_passed": 60,
   "tests_failed": 0,
-  "duration_seconds": 10.052,
+  "duration_seconds": 11.933,
   "repository_checks": {
-    "schema_documents_validated": 17,
+    "schema_documents_validated": 19,
     "candidates_screened": 28,
     "privacy_metadata_checks": "pass",
     "local_links": "pass",

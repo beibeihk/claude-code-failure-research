@@ -3,7 +3,7 @@
   "project": "Claude Code Core Failure Research",
   "execution_policy": "No Claude account, no login, no paid model calls; no authentication changes",
   "overall_goal_complete": false,
-  "current_cycle": "free-client-contract-research",
+  "current_cycle": "bounded-three-candidate-real-fixture-screen-complete",
   "timeout_followup": {
     "status": "investigated-with-scoped-harness-workaround",
     "finding": "Full default dispatch reproduces test timeouts; two original focused cases pass at default deadline; process-tree sampler observes peak 27 concurrent descendants; serial-file control passes 210/210 at unchanged 5000 ms deadline.",
@@ -19,22 +19,23 @@
     "Pinned no-account client runner and policy-blocked model entry points",
     "110 passing authored test-case executions, separate from model trials",
     "Original-case deadline controls, worker-count observation, phase timings and complete serial-file full-suite control",
-    "Versioned protocols, invalid-batch preservation, reviewed metadata and no raw transcript/source export"
+    "Versioned protocols, invalid-batch preservation, reviewed metadata and no raw transcript/source export",
+    "Three-candidate real-fixture captured-response screen: 18 distinct authored cases in two fresh batches, 36/36 passing executions, no functional signal; production transport untested"
   ],
   "free_remaining_work": [
     {
       "id": "C1",
       "priority": 1,
-      "status": "not-started",
-      "task": "Extend nested AGENTS.md Read delivery and instruction option contracts with positive/negative controls; inspect real delivery rather than model adherence.",
-      "completion_condition": "Versioned original cases run through the official test engine with source hashes and objective expected contexts."
+      "status": "default-nested-delivery-screen-complete; non-default-options-unexecuted",
+      "task": "Default nested Read delivery, duplicate guards, failed/successful recovery, whole/partial instruction reads and context reset were screened with actual file bytes. Next contrast non-default option modes using isolated private manifest defaults; do not alter user settings.",
+      "completion_condition": "Register option-specific expected contexts and unchanged functional hooks, then record current engine/version and positive/negative controls; not model adherence."
     },
     {
       "id": "C2",
       "priority": 2,
-      "status": "not-started",
-      "task": "Use actual temporary filesystem/Git state as an oracle for any source-backed diff or instruction-loading candidate; remove mocked-state ambiguity.",
-      "completion_condition": "Minimal realistic fixture, preserved counterexample and matched client/source observation."
+      "status": "real-oracle-response-replay-screen-complete; production-transport-unvalidated",
+      "task": "Actual merge/rebase conflicts and aborts, ordinary/linked Git directories, special filename status/numstat/patches and staged rename passed component replay. Next screen real HEAD/ref changes against source refresh probes, with command/entry/timestamp oracles.",
+      "completion_condition": "Predeclare refresh-probe criteria and fixed Git operations; capture real state changes with timestamps and source hashes; preserve source-helper versus production-transport distinction."
     },
     {
       "id": "C3",
@@ -45,10 +46,64 @@
     }
   ],
   "original_goal_conditional_steps": [
-    {"step": "Claude model coding tasks, long-horizon behavior, model failure frequencies", "status": "excluded-by-current-no-account-no-paid-policy", "note": "Not requested as a future login dependency; client contracts do not substitute for this evidence."},
-    {"step": "High-quality official issue", "status": "evidence-gate-closed", "issue_count": 0},
-    {"step": "Anthropic feedback and verified fix", "status": "no-report-to-follow", "note": "Do not invent feedback or configure a redundant issue monitor."},
-    {"step": "v0.1.0 release", "status": "criteria-unmet", "note": "Requires the original first confirmed-case criterion; no release created."}
+    {
+      "step": "Claude model coding tasks, long-horizon behavior, model failure frequencies",
+      "status": "excluded-by-current-no-account-no-paid-policy",
+      "note": "Not requested as a future login dependency; client contracts do not substitute for this evidence."
+    },
+    {
+      "step": "High-quality official issue",
+      "status": "evidence-gate-closed",
+      "issue_count": 0
+    },
+    {
+      "step": "Anthropic feedback and verified fix",
+      "status": "no-report-to-follow",
+      "note": "Do not invent feedback or configure a redundant issue monitor."
+    },
+    {
+      "step": "v0.1.0 release",
+      "status": "criteria-unmet",
+      "note": "Requires the original first confirmed-case criterion; no release created."
+    }
   ],
-  "scope_guard": "Keep the existing allowed project; do not recreate fourth-tier or canceled projects."
+  "scope_guard": "Keep the existing allowed project; do not recreate fourth-tier or canceled projects.",
+  "bounded_free_screen": {
+    "status": "complete-with-no-functional-signal",
+    "candidate_count": 3,
+    "candidate_ids": [
+      "FS01",
+      "FS02",
+      "FS03"
+    ],
+    "distinct_cases": 18,
+    "fresh_fixture_batches": 2,
+    "passed_case_executions": 36,
+    "failed_case_executions": 0,
+    "production_bug_confirmed": false,
+    "report": "docs/free-candidate-screen.md",
+    "new_independent_production_case_review": "not-triggered-no-signal",
+    "current_remote_head_observed": "2bfb629dfaff0c8318047a4beb93cf1dc5b58b18",
+    "tested_native_engine": "2.1.288",
+    "latest_observed_changelog": "2.1.289",
+    "latest_native_engine_tested": false
+  },
+  "has_concrete_executable_free_steps": true,
+  "next_bounded_cycle_options": [
+    {
+      "id": "N1",
+      "status": "unexecuted",
+      "task": "Non-default instruction option contracts in private overlays; no user settings edits"
+    },
+    {
+      "id": "N2",
+      "status": "unexecuted",
+      "task": "Same 18 registered cases on an independently pinned official 2.1.289 native engine; no login/model calls; do not silently replace current version provenance"
+    },
+    {
+      "id": "N3",
+      "status": "unexecuted",
+      "task": "Actual HEAD/ref movement oracle for source refresh probes; no claimed live diff UI validation"
+    }
+  ]
 }

@@ -97,6 +97,13 @@ old API probe before model invocation.
 
 ## What this enables next
 
+The subsequent [bounded three-candidate screen](free-candidate-screen.md) ran
+18 distinct authored cases against two fresh actual file/Git fixture batches:
+36/36 passing executions. Merge/rebase recovery, supported filename parsing
+and default nested instruction delivery had no functional signal. This is a
+captured-response component comparison, not production transport verification.
+The 2.1.289 changelog was observed but the native engine tested was 2.1.288.
+
 Further free experiments can test nested instruction attachment, option selection,
 Git state transitions, diff parsing/rendering, hook order and recovery against
 real component contracts. A real filesystem/Git fixture should validate any

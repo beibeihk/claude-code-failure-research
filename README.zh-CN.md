@@ -14,6 +14,11 @@ Claude Code 2.1.288 提供 `claude plugin test`，已用真实客户端测试引
 完成 **210/210 通过**。这支持测试派发与套件上下文敏感性诊断，不构成生产 bug
 或修复证明；旧失败与无效解析器批次均保留。
 
+新增的[三个候选筛查](docs/free-candidate-screen.md)使用两批全新真实文件/Git
+fixture，18 个自创用例共 **36/36 次执行通过**，无功能失败信号。采集结果送入
+组件测试，生产文件／进程传输仍未验证。官方已新增 2.1.289 变更记录；本轮实测
+引擎仍是 2.1.288，不宣称验证了最新引擎。
+
 当前可用交付物：
 
 - [实验方法](docs/methodology.md)、[分类路由](docs/issue-routing.md)、[技术报告](docs/technical-report.md)。
