@@ -76,7 +76,8 @@ python -m runners.run_study --repetitions 1
 它能检验客户端契约与公开源码函数，不能替代 Claude 模型的指令保留实验。
 长任务、compaction、subagents、MCP、IDE 和 Remote Control 尚未完成实测。
 F002 已达到受控重复实验的 E3 证据级别，并通过独立审查，现已正式报告。
-v0.1.0 的首个确认案例范围限定为官方测试 fixture；发布状态见待办记录。
+[v0.1.0](https://github.com/beibeihk/claude-code-failure-research/releases/tag/v0.1.0)
+已发布，首个确认案例范围限定为官方测试 fixture，发布目标的 Windows、Ubuntu CI 均通过。
 没有 Anthropic 回复或已验证修复，不能将本案例计为生产或模型 failure。
 当前剩余免费工作和原目标的条件门槛见 [待办记录](reports/remaining-work.json)。
 

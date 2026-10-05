@@ -1,5 +1,5 @@
 {
-  "validated_at": "2026-10-05T04:45:54.356766+00:00",
+  "validated_at": "2026-10-05T04:48:46.678177+00:00",
   "kind": "offline-harness-validation",
   "python_version": "3.11.5",
   "tests_passed": 64,
@@ -14,5 +14,16 @@
   },
   "runner_dry_run": "pass",
   "real_claude_model_calls": 0,
-  "notes": "64 offline tests passed in the latest local qualification validation. Schema, privacy, link and submitted gate checks re-run after adding F002 and official issue metadata; platform CI revalidates the publication target. These are harness checks, not Claude model trials."
+  "notes": "64 offline tests passed in the latest local qualification validation. Schema, privacy, link and submitted gate checks re-run after adding F002 and official issue metadata; platform CI revalidates the publication target. These are harness checks, not Claude model trials.",
+  "publication_target_ci": {
+    "run_id": 37264972303,
+    "url": "https://github.com/beibeihk/claude-code-failure-research/actions/runs/37264972303",
+    "head_sha": "f0e3a0c8064c542e22f3283b640857e8fe770c25",
+    "conclusion": "success",
+    "platforms": [
+      "windows-latest",
+      "ubuntu-latest"
+    ],
+    "checks": "64 offline tests, repository schema/privacy/links/reporting gate, dry model-study plan; no Claude inference"
+  }
 }

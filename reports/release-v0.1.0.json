@@ -1,0 +1,25 @@
+{
+  "version": "v0.1.0",
+  "status": "published",
+  "url": "https://github.com/beibeihk/claude-code-failure-research/releases/tag/v0.1.0",
+  "published_at": "2026-10-05T04:47:46Z",
+  "target_commit": "f0e3a0c8064c542e22f3283b640857e8fe770c25",
+  "first_confirmed_case": "F002 upstream test fixture",
+  "official_issue": "https://github.com/anthropics/claude-code/issues/99565",
+  "evidence_level": "E3",
+  "production_bug_confirmed": false,
+  "model_coding_trials": 0,
+  "verified_upstream_fix": false,
+  "notes": "reports/release-v0.1.0.md",
+  "target_ci": {
+    "run_id": 37264972303,
+    "url": "https://github.com/beibeihk/claude-code-failure-research/actions/runs/37264972303",
+    "head_sha": "f0e3a0c8064c542e22f3283b640857e8fe770c25",
+    "conclusion": "success",
+    "platforms": [
+      "windows-latest",
+      "ubuntu-latest"
+    ],
+    "checks": "64 offline tests, repository schema/privacy/links/reporting gate, dry model-study plan; no Claude inference"
+  }
+}

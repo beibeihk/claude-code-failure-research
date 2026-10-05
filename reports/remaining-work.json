@@ -23,7 +23,8 @@
     "Three-candidate real-fixture captured-response screen: 18 distinct authored cases in two fresh batches, 36/36 passing executions, no functional signal; production transport untested",
     "N1: three authored contracts in three non-default initial instruction modes, two fresh batches, 18/18 passes; N3: seven actual HEAD/ref state-pair source probes in two fresh batches, 14/14 passes; N2: same 18 previous cases on verified private official 2.1.289, 36/36 passes",
     "X2: ordinary and linked commit/checkout sequences through unchanged gitBackendOf, four passing scenario executions in two fresh batches, twenty state fetch/hunk checks; production transport remains untested",
-    "F002: official native Windows 2.1.289 original-file repeated failure, single-matcher control, path/no-marker diagnostic, serial-file control, minimum wrapper, duplicate audit and independent case review; official Anthropic #99565 submitted"
+    "F002: official native Windows 2.1.289 original-file repeated failure, single-matcher control, path/no-marker diagnostic, serial-file control, minimum wrapper, duplicate audit and independent case review; official Anthropic #99565 submitted",
+    "Published v0.1.0 scoped research release after Windows/Ubuntu offline CI passed for its exact target commit"
   ],
   "free_remaining_work": [
     {
@@ -67,8 +68,10 @@
     },
     {
       "step": "v0.1.0 release",
-      "status": "prepared-awaiting-exact-target-CI",
-      "note": "Validated harness, taxonomy, methodology and first confirmed upstream test-fixture case are included. Scope is explicit; no production/model result or verified fix claimed."
+      "status": "published",
+      "note": "First confirmed case is an upstream test-fixture defect, with explicit scope and independent case review. Windows/Ubuntu offline CI passed for the exact release target; no model or production failure claimed.",
+      "url": "https://github.com/beibeihk/claude-code-failure-research/releases/tag/v0.1.0",
+      "target_commit": "f0e3a0c8064c542e22f3283b640857e8fe770c25"
     }
   ],
   "scope_guard": "Keep the existing allowed project; do not recreate fourth-tier or canceled projects.",
@@ -189,10 +192,27 @@
   },
   "release": {
     "version": "v0.1.0",
-    "status": "prepared-awaiting-exact-target-CI",
+    "status": "published",
+    "url": "https://github.com/beibeihk/claude-code-failure-research/releases/tag/v0.1.0",
+    "published_at": "2026-10-05T04:47:46Z",
+    "target_commit": "f0e3a0c8064c542e22f3283b640857e8fe770c25",
     "first_confirmed_case": "F002 upstream test fixture",
+    "official_issue": "https://github.com/anthropics/claude-code/issues/99565",
+    "evidence_level": "E3",
     "production_bug_confirmed": false,
     "model_coding_trials": 0,
-    "notes": "reports/release-v0.1.0.md"
+    "verified_upstream_fix": false,
+    "notes": "reports/release-v0.1.0.md",
+    "target_ci": {
+      "run_id": 37264972303,
+      "url": "https://github.com/beibeihk/claude-code-failure-research/actions/runs/37264972303",
+      "head_sha": "f0e3a0c8064c542e22f3283b640857e8fe770c25",
+      "conclusion": "success",
+      "platforms": [
+        "windows-latest",
+        "ubuntu-latest"
+      ],
+      "checks": "64 offline tests, repository schema/privacy/links/reporting gate, dry model-study plan; no Claude inference"
+    }
   }
 }

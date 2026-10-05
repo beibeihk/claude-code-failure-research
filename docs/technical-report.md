@@ -67,7 +67,7 @@ prepared model study; no production or model failure is confirmed.
 | Confirmed upstream test-fixture defects | 1: F002; original register file 37/3 in each of three invocations; single-matcher control 40/40 in each of three |
 | Behavioral reproduction rate | N/A |
 | New Anthropic issues / comments | 1 / 0; official #99565, test-fixture scope |
-| Release | v0.1.0 prepared around the validated harness and first fixture case; publication state in remaining-work.json |
+| Release | [v0.1.0 published](https://github.com/beibeihk/claude-code-failure-research/releases/tag/v0.1.0), validated harness and first fixture case; Windows/Ubuntu CI passed for the exact release target |
 
 The researcher subsequently declined accounts, login and spending. The active
 path now uses the official `claude plugin test` engine and published module

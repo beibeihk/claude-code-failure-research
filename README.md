@@ -166,7 +166,8 @@ Security boundary violations go privately to the channel in the current
 [Anthropic security policy](https://github.com/anthropics/claude-code/blob/main/SECURITY.md).
 The harness has no issue-submission code. See [privacy](docs/privacy.md).
 
-`v0.1.0` packages the validated harness and the first confirmed **upstream
+[Released v0.1.0](https://github.com/beibeihk/claude-code-failure-research/releases/tag/v0.1.0)
+packages the validated harness and the first confirmed **upstream
 test-fixture** case. It contains no Claude model coding results or verified
 production failure. Release status is recorded in [remaining work](reports/remaining-work.json).
 
