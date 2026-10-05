@@ -28,7 +28,8 @@ native diagnostic receives **`C:\work\.git`**, an engine-normalized path for
 that same fictional directory. Thus the literal fixture supplies an empty
 listing, the initial pane shows an ordinary diff, and the assertion expecting
 an unavailable merge state fails. Normalizing only this fixture comparison
-delivers its marker and makes all 40 original assertions pass. Hooks remain
+delivers its marker and makes all 40 original test cases pass, retaining every
+assertion. Hooks remain
 byte-identical; the marker and diff replies are scripted test-world responses.
 
 This is a fixture matching error in the public official test file. Production
