@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "registered_date": "2026-10-05",
+  "item": "X2",
+  "source_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "remote_head_observed": "2bfb629dfaff0c8318047a4beb93cf1dc5b58b18",
+  "native_engine": "private checksum-pinned official win32-x64 2.1.289",
+  "constraints": "No account, login, inference, billed model cost, authentication or global CLI/settings changes",
+  "design": "Two scenarios (ordinary repository and linked worktree), five successive states per scenario, two fresh fixture batches; one unchanged source gitBackendOf instance per scenario",
+  "states": [
+    "Two tracked one-line replacements before commit: 2 files, 2 insertions, 2 deletions",
+    "Commit those replacements: zero files and empty hunks",
+    "Replace one line after commit: 1 file, 1 insertion, 1 deletion, removal bytes from the new commit",
+    "Commit then checkout the original checkpoint branch: changed HEAD identity, zero files and empty hunks",
+    "Replace a non-ASCII file after checkout: 1 file, 1 insertion, 1 deletion, removal bytes from the checkpoint"
+  ],
+  "oracle": "Capture actual Git discovery, status, exact pinned shortstat/numstat/ls-files/raw-patch commands and own git-directory entries at each real state. Compare git show HEAD:path bytes with actual working-file bytes; require the registered paths and one-line replacements before test execution. Assert complete file rows, counts, mode/base, no stale paths and exact hunk marker strings/line starts. A non-final tracked file has the documented closing blank context row.",
+  "capture_vs_transport": "Python executes real local Git with additional fixture-only identity, no signing/hooks/global config and LF guards. Source BackendHost callbacks replay those captured replies, requiring exact source argv and source init (pinned cwd, C locale and 5000 ms timeout). This does not test production process/filesystem bridges or native timeout enforcement.",
+  "sampling_unit": "Two sequential scenario tests per batch, four case executions in total, twenty state fetch/hunk checks; stages and assertions are not independent trials",
+  "registration": "Source mod, hooks, authored test and executed private overlay hashes recorded before native invocation. Protocol and private captures preserved; no retries or assertion weakening after failures.",
+  "failure_rule": "Unexpected argv/file access or inconsistent oracle invalidates the harness and stays private. A complete differing functional assertion is a source component signal, not automatically a production E3/E4 defect. Preserve raw attempts, investigate only a signal; no issue without current-production reproduction, duplicate check and independent review.",
+  "limitations": "Stable snapshots between fetchDiff and fetchHunks; no HEAD race, UI polling, production invalidation, model retention, compaction or randomized version comparison",
+  "publication": "Only inspected static labels, counts, relations and hashes; no raw output, absolute fixture paths or copied upstream implementation"
+}
