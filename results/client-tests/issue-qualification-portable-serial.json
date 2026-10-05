@@ -1,0 +1,3051 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "891c755d-a416-40fd-b88f-9c56f07a88bd",
+  "date": "2026-10-05T12:22:45.479365+08:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "portable-serial",
+  "version": "2.1.289 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "c7efdb0b71937f04a25a37e3602d1bc18d01cd049ace07b07c8277128fc3f1ed",
+  "hooks_implementation_unchanged": true,
+  "original_register_test_sha256": "087f7c30d22913215118ab8e02d9c51db44ce5dd3411cf475b8b5247ef8c82f8",
+  "executed_register_test_sha256": "844f52a51e68be1a5437e22fa745498ef83dff16d422457ee1f9fb6ba727e726",
+  "protocol_sha256": "2c55cedef6dc9b21a9dc9eff44088e327b6b79b577a5313409cdb84687e64351",
+  "executable_sha256": "bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b",
+  "per_test_timeout_ms": 5000,
+  "instrumented": false,
+  "dispatch": "sequential-test-files",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "scope": "Official native test runner and original upstream test fixture; no production merge defect inferred",
+  "repetitions": [
+    {
+      "passed": 210,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 210,
+      "files_run": 30,
+      "test_cases": [
+        {
+          "name": "fitted-ask-text-of > an ask that fits rides whole",
+          "status": "pass",
+          "elapsed_ms": 2.74,
+          "error_kind": null
+        },
+        {
+          "name": "fitted-ask-text-of > an ask past the room keeps its first lines and the cut note",
+          "status": "pass",
+          "elapsed_ms": 0.52,
+          "error_kind": null
+        },
+        {
+          "name": "fitted-ask-text-of > an ask whose first hunk line does not fit is not attached",
+          "status": "pass",
+          "elapsed_ms": 0.25,
+          "error_kind": null
+        },
+        {
+          "name": "backend-of > as published: no probes, so git or nothing",
+          "status": "pass",
+          "elapsed_ms": 4.49,
+          "error_kind": null
+        },
+        {
+          "name": "backend-of > a declining probe leaves a git working tree to git",
+          "status": "pass",
+          "elapsed_ms": 1.39,
+          "error_kind": null
+        },
+        {
+          "name": "backend-of > a probe that answers pins before git is asked",
+          "status": "pass",
+          "elapsed_ms": 0.92,
+          "error_kind": null
+        },
+        {
+          "name": "backend-of > the probes are asked in order and the first answer pins",
+          "status": "pass",
+          "elapsed_ms": 0.77,
+          "error_kind": null
+        },
+        {
+          "name": "is-noise-file > tests, fixtures and snapshots are noise",
+          "status": "pass",
+          "elapsed_ms": 3.1,
+          "error_kind": null
+        },
+        {
+          "name": "is-noise-file > lockfiles, builds, minified and generated files are noise",
+          "status": "pass",
+          "elapsed_ms": 1.52,
+          "error_kind": null
+        },
+        {
+          "name": "is-noise-file > source is not, even with test inside a longer word",
+          "status": "pass",
+          "elapsed_ms": 0.86,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > session mode: rows tagged by mtime, untracked merged",
+          "status": "pass",
+          "elapsed_ms": 5.75,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > every diff spawn carries the pinned leading argv",
+          "status": "pass",
+          "elapsed_ms": 1.24,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > uncommitted mode drops pre-session untracked files",
+          "status": "pass",
+          "elapsed_ms": 0.47,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > past 500 files: totals only, no numstat, no untracked",
+          "status": "pass",
+          "elapsed_ms": 0.55,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a transient state file: unavailable, and no diff runs",
+          "status": "pass",
+          "elapsed_ms": 0.41,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > unborn HEAD: staged rows with unstaged edits folded in",
+          "status": "pass",
+          "elapsed_ms": 1.26,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > unborn HEAD: a staged or unstaged listing git withheld",
+          "status": "pass",
+          "elapsed_ms": 0.57,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a withheld untracked listing: tracked rows, flagged",
+          "status": "pass",
+          "elapsed_ms": 1.86,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a failed vs-HEAD diff with commits present: unavailable",
+          "status": "pass",
+          "elapsed_ms": 0.38,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a tracked or untracked symlink is never dated: no stat",
+          "status": "pass",
+          "elapsed_ms": 0.68,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > an unlistable directory dates nothing and stats nothing",
+          "status": "pass",
+          "elapsed_ms": 0.48,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a MERGE_HEAD that is a symbolic link is no merge",
+          "status": "pass",
+          "elapsed_ms": 0.51,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a rebase stopped on a conflict: unavailable",
+          "status": "pass",
+          "elapsed_ms": 0.3,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a rebase applying patches, stopped: unavailable",
+          "status": "pass",
+          "elapsed_ms": 0.33,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a REBASE_HEAD a finished rebase left is no rebase",
+          "status": "pass",
+          "elapsed_ms": 0.34,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > git am beside a REBASE_HEAD left behind is no rebase",
+          "status": "pass",
+          "elapsed_ms": 0.35,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a rebase folder that is a symbolic link is no rebase",
+          "status": "pass",
+          "elapsed_ms": 0.38,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > git am stopped on a conflict reads as it did",
+          "status": "pass",
+          "elapsed_ms": 0.32,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a rebase waiting at a break reads as it did",
+          "status": "pass",
+          "elapsed_ms": 0.28,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a path under a symlinked directory: unlisted, undated",
+          "status": "pass",
+          "elapsed_ms": 0.59,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a listing the host cut short is never parsed",
+          "status": "pass",
+          "elapsed_ms": 52.55,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > an untracked directory git prints with a slash is dated",
+          "status": "pass",
+          "elapsed_ms": 0.81,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a hundred directories deep and wide still date",
+          "status": "pass",
+          "elapsed_ms": 10.94,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-diff > a rename is one row under its new name and reads no body",
+          "status": "pass",
+          "elapsed_ms": 1.16,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > fifty files are read by one child",
+          "status": "pass",
+          "elapsed_ms": 5.37,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > the child keeps every pin of the read of one file",
+          "status": "pass",
+          "elapsed_ms": 0.68,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > on an unborn HEAD the child reads what is staged",
+          "status": "pass",
+          "elapsed_ms": 0.73,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > rows with no body are never named to git",
+          "status": "pass",
+          "elapsed_ms": 0.56,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > rows with no body alone start no child",
+          "status": "pass",
+          "elapsed_ms": 0.3,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > every file but the last gains the closing line",
+          "status": "pass",
+          "elapsed_ms": 0.5,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > paths past the budget are asked of a second child",
+          "status": "pass",
+          "elapsed_ms": 0.79,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > one path past the budget is still asked, alone",
+          "status": "pass",
+          "elapsed_ms": 0.53,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > past the output cap the rest is asked again",
+          "status": "pass",
+          "elapsed_ms": 5.23,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > a child that fails leaves every file unread",
+          "status": "pass",
+          "elapsed_ms": 1.06,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > a second child that fails keeps what the first read",
+          "status": "pass",
+          "elapsed_ms": 0.79,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > a second child is paired by its own list",
+          "status": "pass",
+          "elapsed_ms": 0.85,
+          "error_kind": null
+        },
+        {
+          "name": "fetch-hunks > an answer whose names and patches disagree ends the read",
+          "status": "pass",
+          "elapsed_ms": 0.5,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diff > hunk starts and marked lines; header and notes skipped",
+          "status": "pass",
+          "elapsed_ms": 3.01,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diff > a removed line that starts with dashes is body, not a header",
+          "status": "pass",
+          "elapsed_ms": 0.39,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diff > the body is cut at the line cap and marked truncated",
+          "status": "pass",
+          "elapsed_ms": 0.6,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diff > a diff past the byte cap is large and has no hunks",
+          "status": "pass",
+          "elapsed_ms": 0.5,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > an empty answer: every file asked reads no hunks",
+          "status": "pass",
+          "elapsed_ms": 2.99,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > each unusual name holds its own patch",
+          "status": "pass",
+          "elapsed_ms": 1.18,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > the order asked in does not move a patch",
+          "status": "pass",
+          "elapsed_ms": 0.41,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > content that looks like an opening line stays content",
+          "status": "pass",
+          "elapsed_ms": 0.4,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > a file turned link: its two patches are one file",
+          "status": "pass",
+          "elapsed_ms": 0.54,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > a conflicted file read against HEAD is one more file",
+          "status": "pass",
+          "elapsed_ms": 0.56,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > an unmerged path has no patch and reads no hunks",
+          "status": "pass",
+          "elapsed_ms": 0.47,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > a file git no longer lists reads no hunks",
+          "status": "pass",
+          "elapsed_ms": 0.31,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > a listed file nobody asked for is left out",
+          "status": "pass",
+          "elapsed_ms": 0.34,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > with no empty field before the patches it reads the same",
+          "status": "pass",
+          "elapsed_ms": 0.25,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > fewer patches than names settle nothing",
+          "status": "pass",
+          "elapsed_ms": 0.29,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > a patch opened under another name settles nothing",
+          "status": "pass",
+          "elapsed_ms": 0.24,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > patches git coloured: no hunks, as one file read alone",
+          "status": "pass",
+          "elapsed_ms": 0.25,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > the line cap and the size cap hold file by file",
+          "status": "pass",
+          "elapsed_ms": 2.32,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > a file at the size cap to the character is not large",
+          "status": "pass",
+          "elapsed_ms": 3.38,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > cut by the host: whole files settle, the rest wait",
+          "status": "pass",
+          "elapsed_ms": 5.69,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > cut by the host inside a small file: that file waits",
+          "status": "pass",
+          "elapsed_ms": 5.22,
+          "error_kind": null
+        },
+        {
+          "name": "parse-file-diffs > cut by the host: a file git did not list reads no hunks",
+          "status": "pass",
+          "elapsed_ms": 4.63,
+          "error_kind": null
+        },
+        {
+          "name": "parse-numstat > NUL records: totals, binaries at 0/0, tabs in a path kept",
+          "status": "pass",
+          "elapsed_ms": 3.38,
+          "error_kind": null
+        },
+        {
+          "name": "parse-numstat > the cap keeps the first rows but counts every row",
+          "status": "pass",
+          "elapsed_ms": 0.58,
+          "error_kind": null
+        },
+        {
+          "name": "parse-numstat > a line with fewer than three fields is no row",
+          "status": "pass",
+          "elapsed_ms": 0.41,
+          "error_kind": null
+        },
+        {
+          "name": "parse-numstat > a non-ASCII path arrives as its own characters",
+          "status": "pass",
+          "elapsed_ms": 0.29,
+          "error_kind": null
+        },
+        {
+          "name": "parse-numstat > a rename record keeps the new path and remembers the old",
+          "status": "pass",
+          "elapsed_ms": 0.42,
+          "error_kind": null
+        },
+        {
+          "name": "parse-shortstat > files, insertions and deletions; either tail optional",
+          "status": "pass",
+          "elapsed_ms": 3.88,
+          "error_kind": null
+        },
+        {
+          "name": "parse-shortstat > an empty diff prints nothing and parses to null",
+          "status": "pass",
+          "elapsed_ms": 0.55,
+          "error_kind": null
+        },
+        {
+          "name": "branch-base-of > origin's merge-base wins unless the local descends",
+          "status": "pass",
+          "elapsed_ms": 3.86,
+          "error_kind": null
+        },
+        {
+          "name": "branch-base-of > the default branch, or HEAD at the base: head-is-base",
+          "status": "pass",
+          "elapsed_ms": 0.93,
+          "error_kind": null
+        },
+        {
+          "name": "branch-base-of > a detached HEAD, or no common ancestor, has no base",
+          "status": "pass",
+          "elapsed_ms": 0.46,
+          "error_kind": null
+        },
+        {
+          "name": "branch-base-of > a failed merge-base while the ref exists: error",
+          "status": "pass",
+          "elapsed_ms": 0.53,
+          "error_kind": null
+        },
+        {
+          "name": "branch-base-of > no default ref anywhere: none",
+          "status": "pass",
+          "elapsed_ms": 0.32,
+          "error_kind": null
+        },
+        {
+          "name": "datings-of > a spent budget answers unlisted, and stats nothing there",
+          "status": "pass",
+          "elapsed_ms": 4.01,
+          "error_kind": null
+        },
+        {
+          "name": "datings-of > an unlisted tracked row stays session work",
+          "status": "pass",
+          "elapsed_ms": 0.81,
+          "error_kind": null
+        },
+        {
+          "name": "datings-of > an unlisted untracked file reads as pre-session",
+          "status": "pass",
+          "elapsed_ms": 0.94,
+          "error_kind": null
+        },
+        {
+          "name": "head-key-of > a plain checkout reads HEAD, its ref file, packed-refs",
+          "status": "pass",
+          "elapsed_ms": 5.82,
+          "error_kind": null
+        },
+        {
+          "name": "head-key-of > a climbing ref: is never stat-ed; git answers instead",
+          "status": "pass",
+          "elapsed_ms": 0.96,
+          "error_kind": null
+        },
+        {
+          "name": "head-key-of > a branch named with a # starts no git while idle",
+          "status": "pass",
+          "elapsed_ms": 1.01,
+          "error_kind": null
+        },
+        {
+          "name": "head-key-of > a branch named outside ASCII starts no git while idle",
+          "status": "pass",
+          "elapsed_ms": 0.57,
+          "error_kind": null
+        },
+        {
+          "name": "head-key-of > on such a branch a moved HEAD is seen at the next look",
+          "status": "pass",
+          "elapsed_ms": 0.75,
+          "error_kind": null
+        },
+        {
+          "name": "head-key-of > with no log of HEAD such a branch is read through git",
+          "status": "pass",
+          "elapsed_ms": 0.63,
+          "error_kind": null
+        },
+        {
+          "name": "head-key-of > a HEAD that is a symbolic link is never read or stat-ed",
+          "status": "pass",
+          "elapsed_ms": 0.67,
+          "error_kind": null
+        },
+        {
+          "name": "head-key-of > a symlinked refs directory hides the ref file",
+          "status": "pass",
+          "elapsed_ms": 0.51,
+          "error_kind": null
+        },
+        {
+          "name": "is-safe-ref-name > branch refs under refs/ pass",
+          "status": "pass",
+          "elapsed_ms": 2.88,
+          "error_kind": null
+        },
+        {
+          "name": "is-safe-ref-name > climbing, absolute, backslashed, control or lock names fail",
+          "status": "pass",
+          "elapsed_ms": 1.13,
+          "error_kind": null
+        },
+        {
+          "name": "kind-walk-of > a fifty-thousand-deep path reads over-budget in budget",
+          "status": "pass",
+          "elapsed_ms": 3.62,
+          "error_kind": null
+        },
+        {
+          "name": "kind-walk-of > a path within the budget reads its kind from its parent",
+          "status": "pass",
+          "elapsed_ms": 0.97,
+          "error_kind": null
+        },
+        {
+          "name": "repository-of > three absolute lines are the repository",
+          "status": "pass",
+          "elapsed_ms": 3.21,
+          "error_kind": null
+        },
+        {
+          "name": "repository-of > a git that echoes the flag, or a relative path: nothing",
+          "status": "pass",
+          "elapsed_ms": 0.69,
+          "error_kind": null
+        },
+        {
+          "name": "git > each git child names the pin, in the C locale",
+          "status": "pass",
+          "elapsed_ms": 1436.49,
+          "error_kind": null
+        },
+        {
+          "name": "git > the working tree is walked once, by the first fetch",
+          "status": "pass",
+          "elapsed_ms": 1365.86,
+          "error_kind": null
+        },
+        {
+          "name": "git > fifty drawn files: one hunks child a read",
+          "status": "pass",
+          "elapsed_ms": 1437.48,
+          "error_kind": null
+        },
+        {
+          "name": "git > a file moved in since the start is session work",
+          "status": "pass",
+          "elapsed_ms": 1305.31,
+          "error_kind": null
+        },
+        {
+          "name": "git > the session began when the engine says",
+          "status": "pass",
+          "elapsed_ms": 1414.28,
+          "error_kind": null
+        },
+        {
+          "name": "empty-state-of > the built-in's headlines, keyed on the fetched mode",
+          "status": "pass",
+          "elapsed_ms": 2.69,
+          "error_kind": null
+        },
+        {
+          "name": "empty-state-of > with files to count there is no empty state",
+          "status": "pass",
+          "elapsed_ms": 0.23,
+          "error_kind": null
+        },
+        {
+          "name": "empty-state-of > no tracked rows, untracked withheld: claims no more",
+          "status": "pass",
+          "elapsed_ms": 0.25,
+          "error_kind": null
+        },
+        {
+          "name": "header-totals-of > pre-session rows leave the header; the rest is not shown",
+          "status": "pass",
+          "elapsed_ms": 3.09,
+          "error_kind": null
+        },
+        {
+          "name": "header-totals-of > every stored row pre-session: files past the cap still count",
+          "status": "pass",
+          "elapsed_ms": 0.46,
+          "error_kind": null
+        },
+        {
+          "name": "header-totals-of > tests count as noise and leave the shown rows",
+          "status": "pass",
+          "elapsed_ms": 0.42,
+          "error_kind": null
+        },
+        {
+          "name": "mode-label-of > each settled mode is named as the built-in names it",
+          "status": "pass",
+          "elapsed_ms": 2.53,
+          "error_kind": null
+        },
+        {
+          "name": "mode-label-of > settled branch mode names its base, or what stands in",
+          "status": "pass",
+          "elapsed_ms": 0.4,
+          "error_kind": null
+        },
+        {
+          "name": "mode-label-of > a working tree that names its own base shows that name",
+          "status": "pass",
+          "elapsed_ms": 0.2,
+          "error_kind": null
+        },
+        {
+          "name": "mode-label-of > the requested mode pends with an ellipsis until its data lands",
+          "status": "pass",
+          "elapsed_ms": 0.33,
+          "error_kind": null
+        },
+        {
+          "name": "mode-label-of > an unborn HEAD with rows says what the rows are",
+          "status": "pass",
+          "elapsed_ms": 0.42,
+          "error_kind": null
+        },
+        {
+          "name": "pane-toggle-of > an open pane closes, however narrow",
+          "status": "pass",
+          "elapsed_ms": 2.56,
+          "error_kind": null
+        },
+        {
+          "name": "pane-toggle-of > below the panel width it is too narrow, from it it opens",
+          "status": "pass",
+          "elapsed_ms": 0.72,
+          "error_kind": null
+        },
+        {
+          "name": "record > a read marks how its hunks went, by the same names",
+          "status": "pass",
+          "elapsed_ms": 1431.75,
+          "error_kind": null
+        },
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 993.25,
+          "error_kind": null
+        },
+        {
+          "name": "register > git runs at the built-in's moments and no others",
+          "status": "pass",
+          "elapsed_ms": 1029.14,
+          "error_kind": null
+        },
+        {
+          "name": "register > a shell command held read-only fetches nothing",
+          "status": "pass",
+          "elapsed_ms": 928.88,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff whose probe never answers probes once more",
+          "status": "pass",
+          "elapsed_ms": 886.28,
+          "error_kind": null
+        },
+        {
+          "name": "register > two /diff typed together probe the repository once",
+          "status": "pass",
+          "elapsed_ms": 849.96,
+          "error_kind": null
+        },
+        {
+          "name": "register > outside a repository /diff says so, opens nothing",
+          "status": "pass",
+          "elapsed_ms": 908.41,
+          "error_kind": null
+        },
+        {
+          "name": "register > a git that never answers is not \"no repository\"",
+          "status": "pass",
+          "elapsed_ms": 853.29,
+          "error_kind": null
+        },
+        {
+          "name": "register > when the built-in holds /diff, the mod stands down",
+          "status": "pass",
+          "elapsed_ms": 923.58,
+          "error_kind": null
+        },
+        {
+          "name": "register > a refusal the built-in did not cause is said aloud",
+          "status": "pass",
+          "elapsed_ms": 1042.28,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff opens the pane, unfocused, and says so",
+          "status": "pass",
+          "elapsed_ms": 870.19,
+          "error_kind": null
+        },
+        {
+          "name": "register > off fullscreen, /diff opens the dialog, focused",
+          "status": "pass",
+          "elapsed_ms": 892.93,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff again closes the pane and says so",
+          "status": "pass",
+          "elapsed_ms": 1016.51,
+          "error_kind": null
+        },
+        {
+          "name": "register > a wide terminal opens the pane at the first edit",
+          "status": "pass",
+          "elapsed_ms": 944.4,
+          "error_kind": null
+        },
+        {
+          "name": "register > on the main screen only /diff opens, as a dialog",
+          "status": "pass",
+          "elapsed_ms": 852.18,
+          "error_kind": null
+        },
+        {
+          "name": "register > a surface silent on docking opens nothing by itself",
+          "status": "pass",
+          "elapsed_ms": 879.95,
+          "error_kind": null
+        },
+        {
+          "name": "register > an edit that failed or was refused opens nothing",
+          "status": "pass",
+          "elapsed_ms": 853.5,
+          "error_kind": null
+        },
+        {
+          "name": "register > only the main loop's edit opens the pane",
+          "status": "pass",
+          "elapsed_ms": 889.48,
+          "error_kind": null
+        },
+        {
+          "name": "register > checkpointing off in settings: edits open nothing",
+          "status": "pass",
+          "elapsed_ms": 840.71,
+          "error_kind": null
+        },
+        {
+          "name": "register > checkpointing off by variable: edits open nothing",
+          "status": "pass",
+          "elapsed_ms": 857.85,
+          "error_kind": null
+        },
+        {
+          "name": "register > an open left waiting is withdrawn; /diff opens it",
+          "status": "pass",
+          "elapsed_ms": 925.74,
+          "error_kind": null
+        },
+        {
+          "name": "register > an unplaced open is tried again at the next edit",
+          "status": "pass",
+          "elapsed_ms": 839.24,
+          "error_kind": null
+        },
+        {
+          "name": "register > a docked pane opens once its first fetch settled",
+          "status": "pass",
+          "elapsed_ms": 918.99,
+          "error_kind": null
+        },
+        {
+          "name": "register > /clear leaves an open pane up and reads afresh",
+          "status": "pass",
+          "elapsed_ms": 857.19,
+          "error_kind": null
+        },
+        {
+          "name": "register > /clear under an open pane counts it shown again",
+          "status": "pass",
+          "elapsed_ms": 903.21,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 3 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 929.28,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 1.2 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 928.96,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 0.3 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 843.64,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session that edited opens before an edit",
+          "status": "pass",
+          "elapsed_ms": 856.11,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session opens only where an edit would",
+          "status": "pass",
+          "elapsed_ms": 993.38,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session kept open opens at the low floor",
+          "status": "pass",
+          "elapsed_ms": 1092.66,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session with no edits opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1006.75,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session the person closed opens nothing",
+          "status": "pass",
+          "elapsed_ms": 906.57,
+          "error_kind": null
+        },
+        {
+          "name": "register > /resume closes the pane, reopens it for its turns",
+          "status": "pass",
+          "elapsed_ms": 1009.46,
+          "error_kind": null
+        },
+        {
+          "name": "register > ask attaches the hunks on screen and calls no tool",
+          "status": "pass",
+          "elapsed_ms": 893.47,
+          "error_kind": null
+        },
+        {
+          "name": "register > an ask with no room in the context is dropped",
+          "status": "pass",
+          "elapsed_ms": 1006.83,
+          "error_kind": null
+        },
+        {
+          "name": "register > a worktree opens on the base it kept",
+          "status": "pass",
+          "elapsed_ms": 891.08,
+          "error_kind": null
+        },
+        {
+          "name": "register > no repository is an answer kept until /clear",
+          "status": "pass",
+          "elapsed_ms": 939.64,
+          "error_kind": null
+        },
+        {
+          "name": "register > a repository that appears later opens on first edit",
+          "status": "pass",
+          "elapsed_ms": 961.72,
+          "error_kind": null
+        },
+        {
+          "name": "register > a git that cannot start is an answer, not a timeout",
+          "status": "pass",
+          "elapsed_ms": 937.17,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff on a narrow terminal: the resize line",
+          "status": "pass",
+          "elapsed_ms": 940.72,
+          "error_kind": null
+        },
+        {
+          "name": "todo-progress-of > the latest TodoWrite decides: completed over total",
+          "status": "pass",
+          "elapsed_ms": 2.78,
+          "error_kind": null
+        },
+        {
+          "name": "todo-progress-of > no TodoWrite yet reads as an empty list",
+          "status": "pass",
+          "elapsed_ms": 0.36,
+          "error_kind": null
+        },
+        {
+          "name": "turn-diffs-of > turns with edits, newest first, numbered by prompt",
+          "status": "pass",
+          "elapsed_ms": 3.86,
+          "error_kind": null
+        },
+        {
+          "name": "turn-diffs-of > a file edited twice in a turn: both hunks, summed",
+          "status": "pass",
+          "elapsed_ms": 0.66,
+          "error_kind": null
+        },
+        {
+          "name": "turn-diffs-of > results that are not file edits are ignored",
+          "status": "pass",
+          "elapsed_ms": 0.32,
+          "error_kind": null
+        },
+        {
+          "name": "turn-diffs-of > a big created file is cut at the line cap and says so",
+          "status": "pass",
+          "elapsed_ms": 0.84,
+          "error_kind": null
+        },
+        {
+          "name": "code-blocks-of > each hunk is a source of its own, nothing between them",
+          "status": "pass",
+          "elapsed_ms": 5.46,
+          "error_kind": null
+        },
+        {
+          "name": "code-blocks-of > an oversize hunk stacks as sub-hunks that add up",
+          "status": "pass",
+          "elapsed_ms": 7.58,
+          "error_kind": null
+        },
+        {
+          "name": "code-blocks-of > letters beyond the BMP are capped in UTF-16 units",
+          "status": "pass",
+          "elapsed_ms": 3.0,
+          "error_kind": null
+        },
+        {
+          "name": "code-blocks-of > a line longer than any source holds is cut, reported",
+          "status": "pass",
+          "elapsed_ms": 0.72,
+          "error_kind": null
+        },
+        {
+          "name": "code-blocks-of > the room runs down by what is drawn, and out at the budget",
+          "status": "pass",
+          "elapsed_ms": 1.08,
+          "error_kind": null
+        },
+        {
+          "name": "code-blocks-of > a line's controls and format characters go, tabs stay",
+          "status": "pass",
+          "elapsed_ms": 0.3,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > each hunk draws as a diff Code named by the path",
+          "status": "pass",
+          "elapsed_ms": 934.13,
+          "error_kind": null
+        },
+        {
+          "name": "detail-view > the name sits over the built-in's dim rule",
+          "status": "pass",
+          "elapsed_ms": 1021.95,
+          "error_kind": null
+        },
+        {
+          "name": "truncate-start > a path padded with combining marks is cut to the room",
+          "status": "pass",
+          "elapsed_ms": 3.96,
+          "error_kind": null
+        },
+        {
+          "name": "truncate-start > a path that fits is whole; one that does not keeps its tail",
+          "status": "pass",
+          "elapsed_ms": 0.39,
+          "error_kind": null
+        },
+        {
+          "name": "wrapped-lines > each line cut as Ink cuts it for the built-in",
+          "status": "pass",
+          "elapsed_ms": 5.42,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > docked: header, rows, every body, the earlier line",
+          "status": "pass",
+          "elapsed_ms": 983.36,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > untracked withheld: the rows stay, the pane says so",
+          "status": "pass",
+          "elapsed_ms": 850.0,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > a file at the line cap draws under the tree caps",
+          "status": "pass",
+          "elapsed_ms": 1065.01,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > placeholders in the built-in's words",
+          "status": "pass",
+          "elapsed_ms": 989.96,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > a picked turn draws its files under the turn line",
+          "status": "pass",
+          "elapsed_ms": 1060.63,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > a long body splits into leaves under their cap",
+          "status": "pass",
+          "elapsed_ms": 864.42,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > the window draws what is in view, a scroll the rest",
+          "status": "pass",
+          "elapsed_ms": 1014.2,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > no newline or escape in a name reaches the tree",
+          "status": "pass",
+          "elapsed_ms": 979.08,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > a path past the string cap is cut in the header",
+          "status": "pass",
+          "elapsed_ms": 1217.42,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > a base branch name loses its format characters",
+          "status": "pass",
+          "elapsed_ms": 972.49,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > only a plainly safe name gets a git add to paste",
+          "status": "pass",
+          "elapsed_ms": 963.28,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > docked: the built-in's blank top row, last column",
+          "status": "pass",
+          "elapsed_ms": 919.09,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > docked rows follow the built-in's, its hunks after",
+          "status": "pass",
+          "elapsed_ms": 1002.1,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > an empty state on the built-in's row, foot below",
+          "status": "pass",
+          "elapsed_ms": 836.08,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > shown files or too few rows stack the empty state",
+          "status": "pass",
+          "elapsed_ms": 887.84,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > shown pre-session rows land on the built-in's rows",
+          "status": "pass",
+          "elapsed_ms": 889.51,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > inline: title, rows round the pick, then one body",
+          "status": "pass",
+          "elapsed_ms": 828.6,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > inline, too narrow: the wider-terminal line alone",
+          "status": "pass",
+          "elapsed_ms": 817.49,
+          "error_kind": null
+        },
+        {
+          "name": "pane-view > the header row carries its controls in every state",
+          "status": "pass",
+          "elapsed_ms": 864.1,
+          "error_kind": null
+        },
+        {
+          "name": "views > docked, every file has its hunks under the list",
+          "status": "pass",
+          "elapsed_ms": 942.81,
+          "error_kind": null
+        },
+        {
+          "name": "views > a failed hunks read blanks every body, not the list",
+          "status": "pass",
+          "elapsed_ms": 866.69,
+          "error_kind": null
+        },
+        {
+          "name": "views > the read after a failed one draws the hunks again",
+          "status": "pass",
+          "elapsed_ms": 923.69,
+          "error_kind": null
+        },
+        {
+          "name": "views > inline, a row opens that file alone",
+          "status": "pass",
+          "elapsed_ms": 937.47,
+          "error_kind": null
+        },
+        {
+          "name": "views > inline, a file edited before the session opens too",
+          "status": "pass",
+          "elapsed_ms": 956.89,
+          "error_kind": null
+        },
+        {
+          "name": "views > inline, a file the docked pane hides opens too",
+          "status": "pass",
+          "elapsed_ms": 1066.97,
+          "error_kind": null
+        },
+        {
+          "name": "views > inline, a window that moves reads only its new rows",
+          "status": "pass",
+          "elapsed_ms": 958.9,
+          "error_kind": null
+        },
+        {
+          "name": "views > docked, a wheel tick moves the body, not the list",
+          "status": "pass",
+          "elapsed_ms": 942.38,
+          "error_kind": null
+        },
+        {
+          "name": "views > docked, the wheel over a long list moves the list",
+          "status": "pass",
+          "elapsed_ms": 907.94,
+          "error_kind": null
+        },
+        {
+          "name": "views > past eight files the docked list scrolls by key",
+          "status": "pass",
+          "elapsed_ms": 869.35,
+          "error_kind": null
+        },
+        {
+          "name": "views > a rename lists as git prints it, and reads no body",
+          "status": "pass",
+          "elapsed_ms": 830.09,
+          "error_kind": null
+        },
+        {
+          "name": "views > inline, the dialog lists every file and its keys",
+          "status": "pass",
+          "elapsed_ms": 808.31,
+          "error_kind": null
+        },
+        {
+          "name": "views > narrow under the fullscreen layout, the resize line",
+          "status": "pass",
+          "elapsed_ms": 823.12,
+          "error_kind": null
+        },
+        {
+          "name": "views > off fullscreen, the window follows the walk",
+          "status": "pass",
+          "elapsed_ms": 785.97,
+          "error_kind": null
+        },
+        {
+          "name": "views > the walk follows under the name a build registers",
+          "status": "pass",
+          "elapsed_ms": 975.18,
+          "error_kind": null
+        },
+        {
+          "name": "views > off fullscreen, the walk stops at the last file",
+          "status": "pass",
+          "elapsed_ms": 929.71,
+          "error_kind": null
+        },
+        {
+          "name": "views > off fullscreen, the dialog draws at any width",
+          "status": "pass",
+          "elapsed_ms": 1036.25,
+          "error_kind": null
+        }
+      ],
+      "observations": [],
+      "complete": true,
+      "file_runs": [
+        {
+          "passed": 3,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 3,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "fitted-ask-text-of > an ask that fits rides whole",
+              "status": "pass",
+              "elapsed_ms": 2.74,
+              "error_kind": null
+            },
+            {
+              "name": "fitted-ask-text-of > an ask past the room keeps its first lines and the cut note",
+              "status": "pass",
+              "elapsed_ms": 0.52,
+              "error_kind": null
+            },
+            {
+              "name": "fitted-ask-text-of > an ask whose first hunk line does not fit is not attached",
+              "status": "pass",
+              "elapsed_ms": 0.25,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/ask/fitted-ask-text-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.58,
+          "log_sha256": "52f29ea09f8121572c0316f98c72269975247b4ae9f626b3c9b9f72a6dafb448"
+        },
+        {
+          "passed": 4,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 4,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "backend-of > as published: no probes, so git or nothing",
+              "status": "pass",
+              "elapsed_ms": 4.49,
+              "error_kind": null
+            },
+            {
+              "name": "backend-of > a declining probe leaves a git working tree to git",
+              "status": "pass",
+              "elapsed_ms": 1.39,
+              "error_kind": null
+            },
+            {
+              "name": "backend-of > a probe that answers pins before git is asked",
+              "status": "pass",
+              "elapsed_ms": 0.92,
+              "error_kind": null
+            },
+            {
+              "name": "backend-of > the probes are asked in order and the first answer pins",
+              "status": "pass",
+              "elapsed_ms": 0.77,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/backend/backend-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.23,
+          "log_sha256": "61ad8923b5fc04588531d833897cf868160b32064893e6cee0d1aa6dcaad0fec"
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 3,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "is-noise-file > tests, fixtures and snapshots are noise",
+              "status": "pass",
+              "elapsed_ms": 3.1,
+              "error_kind": null
+            },
+            {
+              "name": "is-noise-file > lockfiles, builds, minified and generated files are noise",
+              "status": "pass",
+              "elapsed_ms": 1.52,
+              "error_kind": null
+            },
+            {
+              "name": "is-noise-file > source is not, even with test inside a longer word",
+              "status": "pass",
+              "elapsed_ms": 0.86,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/classify/is-noise-file.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 0.69,
+          "log_sha256": "238574c5e731f84407b8a964e8e1357f307a1acb23e38c7afa6e5aefe67f804b"
+        },
+        {
+          "passed": 24,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 24,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "fetch-diff > session mode: rows tagged by mtime, untracked merged",
+              "status": "pass",
+              "elapsed_ms": 5.75,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > every diff spawn carries the pinned leading argv",
+              "status": "pass",
+              "elapsed_ms": 1.24,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > uncommitted mode drops pre-session untracked files",
+              "status": "pass",
+              "elapsed_ms": 0.47,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > past 500 files: totals only, no numstat, no untracked",
+              "status": "pass",
+              "elapsed_ms": 0.55,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a transient state file: unavailable, and no diff runs",
+              "status": "pass",
+              "elapsed_ms": 0.41,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > unborn HEAD: staged rows with unstaged edits folded in",
+              "status": "pass",
+              "elapsed_ms": 1.26,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > unborn HEAD: a staged or unstaged listing git withheld",
+              "status": "pass",
+              "elapsed_ms": 0.57,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a withheld untracked listing: tracked rows, flagged",
+              "status": "pass",
+              "elapsed_ms": 1.86,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a failed vs-HEAD diff with commits present: unavailable",
+              "status": "pass",
+              "elapsed_ms": 0.38,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a tracked or untracked symlink is never dated: no stat",
+              "status": "pass",
+              "elapsed_ms": 0.68,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > an unlistable directory dates nothing and stats nothing",
+              "status": "pass",
+              "elapsed_ms": 0.48,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a MERGE_HEAD that is a symbolic link is no merge",
+              "status": "pass",
+              "elapsed_ms": 0.51,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a rebase stopped on a conflict: unavailable",
+              "status": "pass",
+              "elapsed_ms": 0.3,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a rebase applying patches, stopped: unavailable",
+              "status": "pass",
+              "elapsed_ms": 0.33,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a REBASE_HEAD a finished rebase left is no rebase",
+              "status": "pass",
+              "elapsed_ms": 0.34,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > git am beside a REBASE_HEAD left behind is no rebase",
+              "status": "pass",
+              "elapsed_ms": 0.35,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a rebase folder that is a symbolic link is no rebase",
+              "status": "pass",
+              "elapsed_ms": 0.38,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > git am stopped on a conflict reads as it did",
+              "status": "pass",
+              "elapsed_ms": 0.32,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a rebase waiting at a break reads as it did",
+              "status": "pass",
+              "elapsed_ms": 0.28,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a path under a symlinked directory: unlisted, undated",
+              "status": "pass",
+              "elapsed_ms": 0.59,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a listing the host cut short is never parsed",
+              "status": "pass",
+              "elapsed_ms": 52.55,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > an untracked directory git prints with a slash is dated",
+              "status": "pass",
+              "elapsed_ms": 0.81,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a hundred directories deep and wide still date",
+              "status": "pass",
+              "elapsed_ms": 10.94,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-diff > a rename is one row under its new name and reads no body",
+              "status": "pass",
+              "elapsed_ms": 1.16,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/fetch-diff.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.39,
+          "log_sha256": "6f54c1f2ba8f7ffd7c4c95f85045196276563bc36777fb62240029d054219d94"
+        },
+        {
+          "passed": 13,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 13,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "fetch-hunks > fifty files are read by one child",
+              "status": "pass",
+              "elapsed_ms": 5.37,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > the child keeps every pin of the read of one file",
+              "status": "pass",
+              "elapsed_ms": 0.68,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > on an unborn HEAD the child reads what is staged",
+              "status": "pass",
+              "elapsed_ms": 0.73,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > rows with no body are never named to git",
+              "status": "pass",
+              "elapsed_ms": 0.56,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > rows with no body alone start no child",
+              "status": "pass",
+              "elapsed_ms": 0.3,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > every file but the last gains the closing line",
+              "status": "pass",
+              "elapsed_ms": 0.5,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > paths past the budget are asked of a second child",
+              "status": "pass",
+              "elapsed_ms": 0.79,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > one path past the budget is still asked, alone",
+              "status": "pass",
+              "elapsed_ms": 0.53,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > past the output cap the rest is asked again",
+              "status": "pass",
+              "elapsed_ms": 5.23,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > a child that fails leaves every file unread",
+              "status": "pass",
+              "elapsed_ms": 1.06,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > a second child that fails keeps what the first read",
+              "status": "pass",
+              "elapsed_ms": 0.79,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > a second child is paired by its own list",
+              "status": "pass",
+              "elapsed_ms": 0.85,
+              "error_kind": null
+            },
+            {
+              "name": "fetch-hunks > an answer whose names and patches disagree ends the read",
+              "status": "pass",
+              "elapsed_ms": 0.5,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/fetch-hunks.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.41,
+          "log_sha256": "829b80faa6b89e9f8ba9cbe2c3e28e593426659dec2f74fde58d854678883f6c"
+        },
+        {
+          "passed": 4,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 4,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "parse-file-diff > hunk starts and marked lines; header and notes skipped",
+              "status": "pass",
+              "elapsed_ms": 3.01,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diff > a removed line that starts with dashes is body, not a header",
+              "status": "pass",
+              "elapsed_ms": 0.39,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diff > the body is cut at the line cap and marked truncated",
+              "status": "pass",
+              "elapsed_ms": 0.6,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diff > a diff past the byte cap is large and has no hunks",
+              "status": "pass",
+              "elapsed_ms": 0.5,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/parse/parse-file-diff.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.34,
+          "log_sha256": "8909e3ff1abe0dd63147aefdabc5473eda8d36ccd624b5d7a1a217d469ba4610"
+        },
+        {
+          "passed": 18,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 18,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "parse-file-diffs > an empty answer: every file asked reads no hunks",
+              "status": "pass",
+              "elapsed_ms": 2.99,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > each unusual name holds its own patch",
+              "status": "pass",
+              "elapsed_ms": 1.18,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > the order asked in does not move a patch",
+              "status": "pass",
+              "elapsed_ms": 0.41,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > content that looks like an opening line stays content",
+              "status": "pass",
+              "elapsed_ms": 0.4,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > a file turned link: its two patches are one file",
+              "status": "pass",
+              "elapsed_ms": 0.54,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > a conflicted file read against HEAD is one more file",
+              "status": "pass",
+              "elapsed_ms": 0.56,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > an unmerged path has no patch and reads no hunks",
+              "status": "pass",
+              "elapsed_ms": 0.47,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > a file git no longer lists reads no hunks",
+              "status": "pass",
+              "elapsed_ms": 0.31,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > a listed file nobody asked for is left out",
+              "status": "pass",
+              "elapsed_ms": 0.34,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > with no empty field before the patches it reads the same",
+              "status": "pass",
+              "elapsed_ms": 0.25,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > fewer patches than names settle nothing",
+              "status": "pass",
+              "elapsed_ms": 0.29,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > a patch opened under another name settles nothing",
+              "status": "pass",
+              "elapsed_ms": 0.24,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > patches git coloured: no hunks, as one file read alone",
+              "status": "pass",
+              "elapsed_ms": 0.25,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > the line cap and the size cap hold file by file",
+              "status": "pass",
+              "elapsed_ms": 2.32,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > a file at the size cap to the character is not large",
+              "status": "pass",
+              "elapsed_ms": 3.38,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > cut by the host: whole files settle, the rest wait",
+              "status": "pass",
+              "elapsed_ms": 5.69,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > cut by the host inside a small file: that file waits",
+              "status": "pass",
+              "elapsed_ms": 5.22,
+              "error_kind": null
+            },
+            {
+              "name": "parse-file-diffs > cut by the host: a file git did not list reads no hunks",
+              "status": "pass",
+              "elapsed_ms": 4.63,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/parse/parse-file-diffs.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.34,
+          "log_sha256": "220e4713be30d818daf0d4a51fcddcab4b5ce07fb7e21295487e79dfbcb29a48"
+        },
+        {
+          "passed": 5,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 5,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "parse-numstat > NUL records: totals, binaries at 0/0, tabs in a path kept",
+              "status": "pass",
+              "elapsed_ms": 3.38,
+              "error_kind": null
+            },
+            {
+              "name": "parse-numstat > the cap keeps the first rows but counts every row",
+              "status": "pass",
+              "elapsed_ms": 0.58,
+              "error_kind": null
+            },
+            {
+              "name": "parse-numstat > a line with fewer than three fields is no row",
+              "status": "pass",
+              "elapsed_ms": 0.41,
+              "error_kind": null
+            },
+            {
+              "name": "parse-numstat > a non-ASCII path arrives as its own characters",
+              "status": "pass",
+              "elapsed_ms": 0.29,
+              "error_kind": null
+            },
+            {
+              "name": "parse-numstat > a rename record keeps the new path and remembers the old",
+              "status": "pass",
+              "elapsed_ms": 0.42,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/parse/parse-numstat.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 0.62,
+          "log_sha256": "68687838cea71b077243ad2e449a36aed4a181ff3c5059ba94469aa5307705a5"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 2,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "parse-shortstat > files, insertions and deletions; either tail optional",
+              "status": "pass",
+              "elapsed_ms": 3.88,
+              "error_kind": null
+            },
+            {
+              "name": "parse-shortstat > an empty diff prints nothing and parses to null",
+              "status": "pass",
+              "elapsed_ms": 0.55,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/parse/parse-shortstat.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 0.7,
+          "log_sha256": "7199d30b3cf11ab1668396346d9bf36127de0cafac45be5079fedb5792d7798e"
+        },
+        {
+          "passed": 5,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 5,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "branch-base-of > origin's merge-base wins unless the local descends",
+              "status": "pass",
+              "elapsed_ms": 3.86,
+              "error_kind": null
+            },
+            {
+              "name": "branch-base-of > the default branch, or HEAD at the base: head-is-base",
+              "status": "pass",
+              "elapsed_ms": 0.93,
+              "error_kind": null
+            },
+            {
+              "name": "branch-base-of > a detached HEAD, or no common ancestor, has no base",
+              "status": "pass",
+              "elapsed_ms": 0.46,
+              "error_kind": null
+            },
+            {
+              "name": "branch-base-of > a failed merge-base while the ref exists: error",
+              "status": "pass",
+              "elapsed_ms": 0.53,
+              "error_kind": null
+            },
+            {
+              "name": "branch-base-of > no default ref anywhere: none",
+              "status": "pass",
+              "elapsed_ms": 0.32,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/probes/branch-base-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.19,
+          "log_sha256": "fb93d7dceabb57a1cd9a60985c056e8112fc4e4aa8b7b39415b211346d6d0b4e"
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 3,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "datings-of > a spent budget answers unlisted, and stats nothing there",
+              "status": "pass",
+              "elapsed_ms": 4.01,
+              "error_kind": null
+            },
+            {
+              "name": "datings-of > an unlisted tracked row stays session work",
+              "status": "pass",
+              "elapsed_ms": 0.81,
+              "error_kind": null
+            },
+            {
+              "name": "datings-of > an unlisted untracked file reads as pre-session",
+              "status": "pass",
+              "elapsed_ms": 0.94,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/probes/datings-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.72,
+          "log_sha256": "2dd4f70832e72fcd0b8c47862a0986dc13ef46a8cf5c150d0d9d98bdb3e598d9"
+        },
+        {
+          "passed": 8,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 8,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "head-key-of > a plain checkout reads HEAD, its ref file, packed-refs",
+              "status": "pass",
+              "elapsed_ms": 5.82,
+              "error_kind": null
+            },
+            {
+              "name": "head-key-of > a climbing ref: is never stat-ed; git answers instead",
+              "status": "pass",
+              "elapsed_ms": 0.96,
+              "error_kind": null
+            },
+            {
+              "name": "head-key-of > a branch named with a # starts no git while idle",
+              "status": "pass",
+              "elapsed_ms": 1.01,
+              "error_kind": null
+            },
+            {
+              "name": "head-key-of > a branch named outside ASCII starts no git while idle",
+              "status": "pass",
+              "elapsed_ms": 0.57,
+              "error_kind": null
+            },
+            {
+              "name": "head-key-of > on such a branch a moved HEAD is seen at the next look",
+              "status": "pass",
+              "elapsed_ms": 0.75,
+              "error_kind": null
+            },
+            {
+              "name": "head-key-of > with no log of HEAD such a branch is read through git",
+              "status": "pass",
+              "elapsed_ms": 0.63,
+              "error_kind": null
+            },
+            {
+              "name": "head-key-of > a HEAD that is a symbolic link is never read or stat-ed",
+              "status": "pass",
+              "elapsed_ms": 0.67,
+              "error_kind": null
+            },
+            {
+              "name": "head-key-of > a symlinked refs directory hides the ref file",
+              "status": "pass",
+              "elapsed_ms": 0.51,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/probes/head-key-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.59,
+          "log_sha256": "573785d9deecc2a339244f89d9965d16db08def2772392b8ed16b0bb577a6fa0"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 2,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "is-safe-ref-name > branch refs under refs/ pass",
+              "status": "pass",
+              "elapsed_ms": 2.88,
+              "error_kind": null
+            },
+            {
+              "name": "is-safe-ref-name > climbing, absolute, backslashed, control or lock names fail",
+              "status": "pass",
+              "elapsed_ms": 1.13,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/probes/is-safe-ref-name.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 1.16,
+          "log_sha256": "a57d00ed9d3b04ae6a90063763a4ca50549c352fcf0509730b24aba25eafb4ba"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 2,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "kind-walk-of > a fifty-thousand-deep path reads over-budget in budget",
+              "status": "pass",
+              "elapsed_ms": 3.62,
+              "error_kind": null
+            },
+            {
+              "name": "kind-walk-of > a path within the budget reads its kind from its parent",
+              "status": "pass",
+              "elapsed_ms": 0.97,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/probes/kind-walk-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.34,
+          "log_sha256": "10e07a49a7bd8d96f4428466b4f9cd1f2c67ddc1d709e2e0d7a4217cb6b84f72"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 2,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "repository-of > three absolute lines are the repository",
+              "status": "pass",
+              "elapsed_ms": 3.21,
+              "error_kind": null
+            },
+            {
+              "name": "repository-of > a git that echoes the flag, or a relative path: nothing",
+              "status": "pass",
+              "elapsed_ms": 0.69,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git/probes/repository-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.06,
+          "log_sha256": "b729ded71773fa1203280a2d6850dd060c50018be812279249b2f57cc27ff2a5"
+        },
+        {
+          "passed": 5,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 5,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "git > each git child names the pin, in the C locale",
+              "status": "pass",
+              "elapsed_ms": 1436.49,
+              "error_kind": null
+            },
+            {
+              "name": "git > the working tree is walked once, by the first fetch",
+              "status": "pass",
+              "elapsed_ms": 1365.86,
+              "error_kind": null
+            },
+            {
+              "name": "git > fifty drawn files: one hunks child a read",
+              "status": "pass",
+              "elapsed_ms": 1437.48,
+              "error_kind": null
+            },
+            {
+              "name": "git > a file moved in since the start is session work",
+              "status": "pass",
+              "elapsed_ms": 1305.31,
+              "error_kind": null
+            },
+            {
+              "name": "git > the session began when the engine says",
+              "status": "pass",
+              "elapsed_ms": 1414.28,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/git.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 8.95,
+          "log_sha256": "2d900e1342426efbb867be2baa9bfe82c483b77857ac51b2e0aff2de76f16521"
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 3,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "empty-state-of > the built-in's headlines, keyed on the fetched mode",
+              "status": "pass",
+              "elapsed_ms": 2.69,
+              "error_kind": null
+            },
+            {
+              "name": "empty-state-of > with files to count there is no empty state",
+              "status": "pass",
+              "elapsed_ms": 0.23,
+              "error_kind": null
+            },
+            {
+              "name": "empty-state-of > no tracked rows, untracked withheld: claims no more",
+              "status": "pass",
+              "elapsed_ms": 0.25,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/pane-state/empty-state-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.05,
+          "log_sha256": "1656a069a5a5401686a9301178a3c60e743fb410617195a9c7285b03e534f0b5"
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 3,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "header-totals-of > pre-session rows leave the header; the rest is not shown",
+              "status": "pass",
+              "elapsed_ms": 3.09,
+              "error_kind": null
+            },
+            {
+              "name": "header-totals-of > every stored row pre-session: files past the cap still count",
+              "status": "pass",
+              "elapsed_ms": 0.46,
+              "error_kind": null
+            },
+            {
+              "name": "header-totals-of > tests count as noise and leave the shown rows",
+              "status": "pass",
+              "elapsed_ms": 0.42,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/pane-state/header-totals-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 1.86,
+          "log_sha256": "1a939810588065369197121d6a83a5961dedaad3d8145b38a074422306babdb4"
+        },
+        {
+          "passed": 5,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 5,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "mode-label-of > each settled mode is named as the built-in names it",
+              "status": "pass",
+              "elapsed_ms": 2.53,
+              "error_kind": null
+            },
+            {
+              "name": "mode-label-of > settled branch mode names its base, or what stands in",
+              "status": "pass",
+              "elapsed_ms": 0.4,
+              "error_kind": null
+            },
+            {
+              "name": "mode-label-of > a working tree that names its own base shows that name",
+              "status": "pass",
+              "elapsed_ms": 0.2,
+              "error_kind": null
+            },
+            {
+              "name": "mode-label-of > the requested mode pends with an ellipsis until its data lands",
+              "status": "pass",
+              "elapsed_ms": 0.33,
+              "error_kind": null
+            },
+            {
+              "name": "mode-label-of > an unborn HEAD with rows says what the rows are",
+              "status": "pass",
+              "elapsed_ms": 0.42,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/pane-state/mode-label-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.19,
+          "log_sha256": "ce21abe968ead8cd23ac630d14d2ddbe2ed06fbdf6e5827dbd029dbc0b880a10"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 2,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "pane-toggle-of > an open pane closes, however narrow",
+              "status": "pass",
+              "elapsed_ms": 2.56,
+              "error_kind": null
+            },
+            {
+              "name": "pane-toggle-of > below the panel width it is too narrow, from it it opens",
+              "status": "pass",
+              "elapsed_ms": 0.72,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/pane-toggle/pane-toggle-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 0.59,
+          "log_sha256": "6cf120f31db98fc352956f062222bb5ac7508f97ae59e6430874567fd5ee9798"
+        },
+        {
+          "passed": 1,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 1,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "record > a read marks how its hunks went, by the same names",
+              "status": "pass",
+              "elapsed_ms": 1431.75,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/record.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 3.25,
+          "log_sha256": "b7aeeb3faedc01d9eda93f64d202f3aa0c7e39a50c8674f8b9b301c638cb1cda"
+        },
+        {
+          "passed": 40,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 40,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "register > the start asks nothing of git and registers /diff",
+              "status": "pass",
+              "elapsed_ms": 993.25,
+              "error_kind": null
+            },
+            {
+              "name": "register > git runs at the built-in's moments and no others",
+              "status": "pass",
+              "elapsed_ms": 1029.14,
+              "error_kind": null
+            },
+            {
+              "name": "register > a shell command held read-only fetches nothing",
+              "status": "pass",
+              "elapsed_ms": 928.88,
+              "error_kind": null
+            },
+            {
+              "name": "register > /diff whose probe never answers probes once more",
+              "status": "pass",
+              "elapsed_ms": 886.28,
+              "error_kind": null
+            },
+            {
+              "name": "register > two /diff typed together probe the repository once",
+              "status": "pass",
+              "elapsed_ms": 849.96,
+              "error_kind": null
+            },
+            {
+              "name": "register > outside a repository /diff says so, opens nothing",
+              "status": "pass",
+              "elapsed_ms": 908.41,
+              "error_kind": null
+            },
+            {
+              "name": "register > a git that never answers is not \"no repository\"",
+              "status": "pass",
+              "elapsed_ms": 853.29,
+              "error_kind": null
+            },
+            {
+              "name": "register > when the built-in holds /diff, the mod stands down",
+              "status": "pass",
+              "elapsed_ms": 923.58,
+              "error_kind": null
+            },
+            {
+              "name": "register > a refusal the built-in did not cause is said aloud",
+              "status": "pass",
+              "elapsed_ms": 1042.28,
+              "error_kind": null
+            },
+            {
+              "name": "register > /diff opens the pane, unfocused, and says so",
+              "status": "pass",
+              "elapsed_ms": 870.19,
+              "error_kind": null
+            },
+            {
+              "name": "register > off fullscreen, /diff opens the dialog, focused",
+              "status": "pass",
+              "elapsed_ms": 892.93,
+              "error_kind": null
+            },
+            {
+              "name": "register > /diff again closes the pane and says so",
+              "status": "pass",
+              "elapsed_ms": 1016.51,
+              "error_kind": null
+            },
+            {
+              "name": "register > a wide terminal opens the pane at the first edit",
+              "status": "pass",
+              "elapsed_ms": 944.4,
+              "error_kind": null
+            },
+            {
+              "name": "register > on the main screen only /diff opens, as a dialog",
+              "status": "pass",
+              "elapsed_ms": 852.18,
+              "error_kind": null
+            },
+            {
+              "name": "register > a surface silent on docking opens nothing by itself",
+              "status": "pass",
+              "elapsed_ms": 879.95,
+              "error_kind": null
+            },
+            {
+              "name": "register > an edit that failed or was refused opens nothing",
+              "status": "pass",
+              "elapsed_ms": 853.5,
+              "error_kind": null
+            },
+            {
+              "name": "register > only the main loop's edit opens the pane",
+              "status": "pass",
+              "elapsed_ms": 889.48,
+              "error_kind": null
+            },
+            {
+              "name": "register > checkpointing off in settings: edits open nothing",
+              "status": "pass",
+              "elapsed_ms": 840.71,
+              "error_kind": null
+            },
+            {
+              "name": "register > checkpointing off by variable: edits open nothing",
+              "status": "pass",
+              "elapsed_ms": 857.85,
+              "error_kind": null
+            },
+            {
+              "name": "register > an open left waiting is withdrawn; /diff opens it",
+              "status": "pass",
+              "elapsed_ms": 925.74,
+              "error_kind": null
+            },
+            {
+              "name": "register > an unplaced open is tried again at the next edit",
+              "status": "pass",
+              "elapsed_ms": 839.24,
+              "error_kind": null
+            },
+            {
+              "name": "register > a docked pane opens once its first fetch settled",
+              "status": "pass",
+              "elapsed_ms": 918.99,
+              "error_kind": null
+            },
+            {
+              "name": "register > /clear leaves an open pane up and reads afresh",
+              "status": "pass",
+              "elapsed_ms": 857.19,
+              "error_kind": null
+            },
+            {
+              "name": "register > /clear under an open pane counts it shown again",
+              "status": "pass",
+              "elapsed_ms": 903.21,
+              "error_kind": null
+            },
+            {
+              "name": "register > a merge finished 3 s after the open is noticed",
+              "status": "pass",
+              "elapsed_ms": 929.28,
+              "error_kind": null
+            },
+            {
+              "name": "register > a merge finished 1.2 s after the open is noticed",
+              "status": "pass",
+              "elapsed_ms": 928.96,
+              "error_kind": null
+            },
+            {
+              "name": "register > a merge finished 0.3 s after the open is noticed",
+              "status": "pass",
+              "elapsed_ms": 843.64,
+              "error_kind": null
+            },
+            {
+              "name": "register > a resumed session that edited opens before an edit",
+              "status": "pass",
+              "elapsed_ms": 856.11,
+              "error_kind": null
+            },
+            {
+              "name": "register > a resumed session opens only where an edit would",
+              "status": "pass",
+              "elapsed_ms": 993.38,
+              "error_kind": null
+            },
+            {
+              "name": "register > a resumed session kept open opens at the low floor",
+              "status": "pass",
+              "elapsed_ms": 1092.66,
+              "error_kind": null
+            },
+            {
+              "name": "register > a resumed session with no edits opens nothing",
+              "status": "pass",
+              "elapsed_ms": 1006.75,
+              "error_kind": null
+            },
+            {
+              "name": "register > a resumed session the person closed opens nothing",
+              "status": "pass",
+              "elapsed_ms": 906.57,
+              "error_kind": null
+            },
+            {
+              "name": "register > /resume closes the pane, reopens it for its turns",
+              "status": "pass",
+              "elapsed_ms": 1009.46,
+              "error_kind": null
+            },
+            {
+              "name": "register > ask attaches the hunks on screen and calls no tool",
+              "status": "pass",
+              "elapsed_ms": 893.47,
+              "error_kind": null
+            },
+            {
+              "name": "register > an ask with no room in the context is dropped",
+              "status": "pass",
+              "elapsed_ms": 1006.83,
+              "error_kind": null
+            },
+            {
+              "name": "register > a worktree opens on the base it kept",
+              "status": "pass",
+              "elapsed_ms": 891.08,
+              "error_kind": null
+            },
+            {
+              "name": "register > no repository is an answer kept until /clear",
+              "status": "pass",
+              "elapsed_ms": 939.64,
+              "error_kind": null
+            },
+            {
+              "name": "register > a repository that appears later opens on first edit",
+              "status": "pass",
+              "elapsed_ms": 961.72,
+              "error_kind": null
+            },
+            {
+              "name": "register > a git that cannot start is an answer, not a timeout",
+              "status": "pass",
+              "elapsed_ms": 937.17,
+              "error_kind": null
+            },
+            {
+              "name": "register > /diff on a narrow terminal: the resize line",
+              "status": "pass",
+              "elapsed_ms": 940.72,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/register.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 39.01,
+          "log_sha256": "901cb85fdfb598bc8448a54de04398bd3ab45ec63d5f3b34a60212b37ce3597b"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 2,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "todo-progress-of > the latest TodoWrite decides: completed over total",
+              "status": "pass",
+              "elapsed_ms": 2.78,
+              "error_kind": null
+            },
+            {
+              "name": "todo-progress-of > no TodoWrite yet reads as an empty list",
+              "status": "pass",
+              "elapsed_ms": 0.36,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/todos/todo-progress-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 1.91,
+          "log_sha256": "3e8fddebd6a01f9b65721417558de388f0d6bb11ccdae01ae84179103247532a"
+        },
+        {
+          "passed": 4,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 4,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "turn-diffs-of > turns with edits, newest first, numbered by prompt",
+              "status": "pass",
+              "elapsed_ms": 3.86,
+              "error_kind": null
+            },
+            {
+              "name": "turn-diffs-of > a file edited twice in a turn: both hunks, summed",
+              "status": "pass",
+              "elapsed_ms": 0.66,
+              "error_kind": null
+            },
+            {
+              "name": "turn-diffs-of > results that are not file edits are ignored",
+              "status": "pass",
+              "elapsed_ms": 0.32,
+              "error_kind": null
+            },
+            {
+              "name": "turn-diffs-of > a big created file is cut at the line cap and says so",
+              "status": "pass",
+              "elapsed_ms": 0.84,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/turns/turn-diffs-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 2.25,
+          "log_sha256": "c1b25b79fe06a6b98c166407ea4c84b7bb2ee7cc0ab8b2cf3be14655e857894e"
+        },
+        {
+          "passed": 6,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 6,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "code-blocks-of > each hunk is a source of its own, nothing between them",
+              "status": "pass",
+              "elapsed_ms": 5.46,
+              "error_kind": null
+            },
+            {
+              "name": "code-blocks-of > an oversize hunk stacks as sub-hunks that add up",
+              "status": "pass",
+              "elapsed_ms": 7.58,
+              "error_kind": null
+            },
+            {
+              "name": "code-blocks-of > letters beyond the BMP are capped in UTF-16 units",
+              "status": "pass",
+              "elapsed_ms": 3.0,
+              "error_kind": null
+            },
+            {
+              "name": "code-blocks-of > a line longer than any source holds is cut, reported",
+              "status": "pass",
+              "elapsed_ms": 0.72,
+              "error_kind": null
+            },
+            {
+              "name": "code-blocks-of > the room runs down by what is drawn, and out at the budget",
+              "status": "pass",
+              "elapsed_ms": 1.08,
+              "error_kind": null
+            },
+            {
+              "name": "code-blocks-of > a line's controls and format characters go, tabs stay",
+              "status": "pass",
+              "elapsed_ms": 0.3,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/views/detail/code-blocks-of.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 1.52,
+          "log_sha256": "c3cfb7d242422cc8374636ef9a566a110413f52914256ace5e1707b0c9b8ac46"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 2,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "detail-view > each hunk draws as a diff Code named by the path",
+              "status": "pass",
+              "elapsed_ms": 934.13,
+              "error_kind": null
+            },
+            {
+              "name": "detail-view > the name sits over the built-in's dim rule",
+              "status": "pass",
+              "elapsed_ms": 1021.95,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/views/detail/detail-view.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 3.56,
+          "log_sha256": "77b47c3f051fcbbb6fff9d723cbe972bca2a2e657afccfe30789560b1c598fe7"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 2,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "truncate-start > a path padded with combining marks is cut to the room",
+              "status": "pass",
+              "elapsed_ms": 3.96,
+              "error_kind": null
+            },
+            {
+              "name": "truncate-start > a path that fits is whole; one that does not keeps its tail",
+              "status": "pass",
+              "elapsed_ms": 0.39,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/views/layout/truncate-start.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 1.67,
+          "log_sha256": "4118f5fb3ffc13ab8c645d1b3a7e7f5b86f4cc140c6461bbf907dbaebbad952d"
+        },
+        {
+          "passed": 1,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 1,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "wrapped-lines > each line cut as Ink cuts it for the built-in",
+              "status": "pass",
+              "elapsed_ms": 5.42,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/views/layout/wrapped-lines.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 1.58,
+          "log_sha256": "347016a87ea104b422038e7fd7f369b92b251603e6baa61622565c694a9ab1ec"
+        },
+        {
+          "passed": 19,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 19,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "pane-view > docked: header, rows, every body, the earlier line",
+              "status": "pass",
+              "elapsed_ms": 983.36,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > untracked withheld: the rows stay, the pane says so",
+              "status": "pass",
+              "elapsed_ms": 850.0,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > a file at the line cap draws under the tree caps",
+              "status": "pass",
+              "elapsed_ms": 1065.01,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > placeholders in the built-in's words",
+              "status": "pass",
+              "elapsed_ms": 989.96,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > a picked turn draws its files under the turn line",
+              "status": "pass",
+              "elapsed_ms": 1060.63,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > a long body splits into leaves under their cap",
+              "status": "pass",
+              "elapsed_ms": 864.42,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > the window draws what is in view, a scroll the rest",
+              "status": "pass",
+              "elapsed_ms": 1014.2,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > no newline or escape in a name reaches the tree",
+              "status": "pass",
+              "elapsed_ms": 979.08,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > a path past the string cap is cut in the header",
+              "status": "pass",
+              "elapsed_ms": 1217.42,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > a base branch name loses its format characters",
+              "status": "pass",
+              "elapsed_ms": 972.49,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > only a plainly safe name gets a git add to paste",
+              "status": "pass",
+              "elapsed_ms": 963.28,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > docked: the built-in's blank top row, last column",
+              "status": "pass",
+              "elapsed_ms": 919.09,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > docked rows follow the built-in's, its hunks after",
+              "status": "pass",
+              "elapsed_ms": 1002.1,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > an empty state on the built-in's row, foot below",
+              "status": "pass",
+              "elapsed_ms": 836.08,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > shown files or too few rows stack the empty state",
+              "status": "pass",
+              "elapsed_ms": 887.84,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > shown pre-session rows land on the built-in's rows",
+              "status": "pass",
+              "elapsed_ms": 889.51,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > inline: title, rows round the pick, then one body",
+              "status": "pass",
+              "elapsed_ms": 828.6,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > inline, too narrow: the wider-terminal line alone",
+              "status": "pass",
+              "elapsed_ms": 817.49,
+              "error_kind": null
+            },
+            {
+              "name": "pane-view > the header row carries its controls in every state",
+              "status": "pass",
+              "elapsed_ms": 864.1,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/views/pane-view.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 19.3,
+          "log_sha256": "70441e7cdee6bfd6429e55473ba0b3367d54f88b45c56e57360d989ad45b79df"
+        },
+        {
+          "passed": 17,
+          "failed": 0,
+          "failed_tests": [],
+          "tests_run": 17,
+          "files_run": 1,
+          "observations": [],
+          "test_cases": [
+            {
+              "name": "views > docked, every file has its hunks under the list",
+              "status": "pass",
+              "elapsed_ms": 942.81,
+              "error_kind": null
+            },
+            {
+              "name": "views > a failed hunks read blanks every body, not the list",
+              "status": "pass",
+              "elapsed_ms": 866.69,
+              "error_kind": null
+            },
+            {
+              "name": "views > the read after a failed one draws the hunks again",
+              "status": "pass",
+              "elapsed_ms": 923.69,
+              "error_kind": null
+            },
+            {
+              "name": "views > inline, a row opens that file alone",
+              "status": "pass",
+              "elapsed_ms": 937.47,
+              "error_kind": null
+            },
+            {
+              "name": "views > inline, a file edited before the session opens too",
+              "status": "pass",
+              "elapsed_ms": 956.89,
+              "error_kind": null
+            },
+            {
+              "name": "views > inline, a file the docked pane hides opens too",
+              "status": "pass",
+              "elapsed_ms": 1066.97,
+              "error_kind": null
+            },
+            {
+              "name": "views > inline, a window that moves reads only its new rows",
+              "status": "pass",
+              "elapsed_ms": 958.9,
+              "error_kind": null
+            },
+            {
+              "name": "views > docked, a wheel tick moves the body, not the list",
+              "status": "pass",
+              "elapsed_ms": 942.38,
+              "error_kind": null
+            },
+            {
+              "name": "views > docked, the wheel over a long list moves the list",
+              "status": "pass",
+              "elapsed_ms": 907.94,
+              "error_kind": null
+            },
+            {
+              "name": "views > past eight files the docked list scrolls by key",
+              "status": "pass",
+              "elapsed_ms": 869.35,
+              "error_kind": null
+            },
+            {
+              "name": "views > a rename lists as git prints it, and reads no body",
+              "status": "pass",
+              "elapsed_ms": 830.09,
+              "error_kind": null
+            },
+            {
+              "name": "views > inline, the dialog lists every file and its keys",
+              "status": "pass",
+              "elapsed_ms": 808.31,
+              "error_kind": null
+            },
+            {
+              "name": "views > narrow under the fullscreen layout, the resize line",
+              "status": "pass",
+              "elapsed_ms": 823.12,
+              "error_kind": null
+            },
+            {
+              "name": "views > off fullscreen, the window follows the walk",
+              "status": "pass",
+              "elapsed_ms": 785.97,
+              "error_kind": null
+            },
+            {
+              "name": "views > the walk follows under the name a build registers",
+              "status": "pass",
+              "elapsed_ms": 975.18,
+              "error_kind": null
+            },
+            {
+              "name": "views > off fullscreen, the walk stops at the last file",
+              "status": "pass",
+              "elapsed_ms": 929.71,
+              "error_kind": null
+            },
+            {
+              "name": "views > off fullscreen, the dialog draws at any width",
+              "status": "pass",
+              "elapsed_ms": 1036.25,
+              "error_kind": null
+            }
+          ],
+          "complete": true,
+          "file": "tests/views.test.ts",
+          "process_exit_code": 0,
+          "timed_out": false,
+          "elapsed_seconds": 17.0,
+          "log_sha256": "a59b57c951f1ed96ce3b4b3c710f1470b1ec1150d159f81f771b7500be8fdf94"
+        }
+      ],
+      "overlay_restored": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 136.74,
+      "log_sha256": "0bb0001208fdfdaa0640c225c170e62a060f92991946f6f4b743ad5a0342dfc2"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false
+  }
+}

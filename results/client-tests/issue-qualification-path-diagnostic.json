@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "03641f53-5311-47f5-9580-5800b68bb81b",
+  "date": "2026-10-05T12:25:34.065402+08:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "path-diagnostic",
+  "version": "2.1.289 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "67c2bdb1837c2903b815e674f92c3d73f30b7696aa93e0f4f443577d90d173aa",
+  "hooks_implementation_unchanged": true,
+  "original_register_test_sha256": "087f7c30d22913215118ab8e02d9c51db44ce5dd3411cf475b8b5247ef8c82f8",
+  "executed_register_test_sha256": null,
+  "protocol_sha256": "26049c74256cff42fb8ebb4e8d8c84a5cb2d3ea8eaf08dbc2c69c9824626fc10",
+  "executable_sha256": "bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b",
+  "per_test_timeout_ms": 5000,
+  "instrumented": false,
+  "dispatch": "engine-default",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "scope": "Official native test runner and original upstream test fixture; no production merge defect inferred",
+  "repetitions": [
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [
+        {
+          "portable_stub": false,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": false,
+          "after_changed": true
+        },
+        {
+          "portable_stub": true,
+          "paths": [
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work\\.git",
+            "C:\\work"
+          ],
+          "before_unavailable": true,
+          "after_changed": true
+        }
+      ],
+      "test_cases": [
+        {
+          "name": "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=false",
+          "status": "pass",
+          "elapsed_ms": 1302.53,
+          "error_kind": null
+        },
+        {
+          "name": "research-merge-fixture-diagnostic > virtual POSIX merge listing, portableStub=true",
+          "status": "pass",
+          "elapsed_ms": 1830.5,
+          "error_kind": null
+        },
+        {
+          "name": "research-merge-fixture-diagnostic > without merge markers the pane shows the ordinary diff",
+          "status": "pass",
+          "elapsed_ms": 2103.32,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 7.19,
+      "log_sha256": "592af3864500467fb601bac6ac34411faf36d6889de13d3dad4e7facc7c7f02b"
+    }
+  ],
+  "authored_test_sha256": "2051db2efe6a486605cc45a28f99f679a566d9f93c4bc93622988877fabf10eb",
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false
+  }
+}

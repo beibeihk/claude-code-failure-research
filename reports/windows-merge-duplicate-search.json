@@ -1,0 +1,23 @@
+{
+  "checked_date": "2026-10-05",
+  "repository": "anthropics/claude-code",
+  "selected_component": "mods/diff/tests/register.test.ts synthetic merge-state fixture on native Windows",
+  "current_head_checked_via_api": "2bfb629dfaff0c8318047a4beb93cf1dc5b58b18",
+  "queries": [
+    {"query": "repo:anthropics/claude-code isGitDir", "total_count": 0},
+    {"query": "repo:anthropics/claude-code register.test.ts Windows", "total_count": 1, "reviewed_relevant_match": "https://github.com/anthropics/claude-code/pull/94847"},
+    {"query": "repo:anthropics/claude-code merge finished Windows", "total_count": 10, "exact_fixture_report_identified": false},
+    {"query": "repo:anthropics/claude-code claude plugin test timed out", "total_count": 4, "exact_fixture_report_identified": false},
+    {"query": "repo:anthropics/claude-code claude plugin test jobs", "total_count": 4, "exact_fixture_report_identified": false},
+    {"query": "repo:anthropics/claude-code /work/.git", "total_count": 1280, "usefulness": "Punctuation/term indexing is too broad; not treated as an exhaustive novelty check"}
+  ],
+  "related_sources_reviewed": [
+    {"url": "https://github.com/anthropics/claude-code/pull/98357", "finding": "Merged PR introduced the merge-completion tests. Its production behavior topic differs from the Windows test-fixture mismatch."},
+    {"url": "https://github.com/anthropics/claude-code/pull/94847", "finding": "Open first-edit behavior PR touches register.test.ts; its fetched patch does not modify isGitDir, so it does not supply the selected correction."},
+    {"url": "https://github.com/anthropics/claude-code/issues/91870", "comments_at_review": 242, "finding": "Fetched all comment pages and inspected plugin-test/timeout-related matches; no literal matcher or merge-state fixture duplicate identified. Other mods limitations remain unrelated."},
+    {"url": "https://github.com/anthropics/claude-code/issues/94313", "finding": "Windows diff highlighting, different symptom."},
+    {"url": "https://github.com/anthropics/claude-code/issues/93710", "finding": "Extra added line in turn-view stats, different symptom."}
+  ],
+  "limits": "Search and related-source review identify no exact duplicate, but do not prove novelty or absence of an unindexed report. Redirect evidence if maintainers identify a duplicate.",
+  "routing": "Official bug_report template, accurately scoped to public test fixture. No security bypass or production merge failure asserted."
+}

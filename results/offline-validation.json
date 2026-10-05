@@ -1,18 +1,18 @@
 {
-  "validated_at": "2026-10-05T03:54:24.0935957Z",
+  "validated_at": "2026-10-05T04:40:56.696309+00:00",
   "kind": "offline-harness-validation",
   "python_version": "3.11.5",
   "tests_passed": 64,
   "tests_failed": 0,
-  "duration_seconds": 16.0,
+  "duration_seconds": 17.648,
   "repository_checks": {
-    "schema_documents_validated": 24,
+    "schema_documents_validated": 29,
     "candidates_screened": 28,
     "privacy_metadata_checks": "pass",
     "local_links": "pass",
-    "reporting_decision": "do-not-submit"
+    "reporting_decision": "submit"
   },
   "runner_dry_run": "pass",
   "real_claude_model_calls": 0,
-  "notes": "Includes mocked CLI integration, actual fixture oracle tests and X2 raw-patch byte oracle; not agent performance evidence"
+  "notes": "Latest 64 offline tests passed after the issue qualification runner and wrapper work; repository schema/link/privacy/gate checks re-run before publication. Includes mocked CLI integration and real fixture oracles; not Claude model or production performance evidence."
 }

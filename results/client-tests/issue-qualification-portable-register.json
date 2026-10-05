@@ -1,0 +1,800 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "76bad1e5-9ffb-4d61-bd0f-f16f41a65f6f",
+  "date": "2026-10-05T12:19:45.059294+08:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "portable-register",
+  "version": "2.1.289 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "executed_tree_sha256": "9ac694bf79e82c48d1170619b1237a1c6e27d327192715dddd41b04f07f2b9e6",
+  "hooks_implementation_unchanged": true,
+  "original_register_test_sha256": "087f7c30d22913215118ab8e02d9c51db44ce5dd3411cf475b8b5247ef8c82f8",
+  "executed_register_test_sha256": "844f52a51e68be1a5437e22fa745498ef83dff16d422457ee1f9fb6ba727e726",
+  "protocol_sha256": "2c55cedef6dc9b21a9dc9eff44088e327b6b79b577a5313409cdb84687e64351",
+  "executable_sha256": "bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b",
+  "per_test_timeout_ms": 5000,
+  "instrumented": false,
+  "dispatch": "engine-default",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "scope": "Official native test runner and original upstream test fixture; no production merge defect inferred",
+  "repetitions": [
+    {
+      "passed": 40,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 40,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1449.67,
+          "error_kind": null
+        },
+        {
+          "name": "register > git runs at the built-in's moments and no others",
+          "status": "pass",
+          "elapsed_ms": 1433.09,
+          "error_kind": null
+        },
+        {
+          "name": "register > a shell command held read-only fetches nothing",
+          "status": "pass",
+          "elapsed_ms": 1889.92,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff whose probe never answers probes once more",
+          "status": "pass",
+          "elapsed_ms": 1426.15,
+          "error_kind": null
+        },
+        {
+          "name": "register > two /diff typed together probe the repository once",
+          "status": "pass",
+          "elapsed_ms": 1252.08,
+          "error_kind": null
+        },
+        {
+          "name": "register > outside a repository /diff says so, opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1381.23,
+          "error_kind": null
+        },
+        {
+          "name": "register > a git that never answers is not \"no repository\"",
+          "status": "pass",
+          "elapsed_ms": 1786.05,
+          "error_kind": null
+        },
+        {
+          "name": "register > when the built-in holds /diff, the mod stands down",
+          "status": "pass",
+          "elapsed_ms": 1289.51,
+          "error_kind": null
+        },
+        {
+          "name": "register > a refusal the built-in did not cause is said aloud",
+          "status": "pass",
+          "elapsed_ms": 1263.76,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff opens the pane, unfocused, and says so",
+          "status": "pass",
+          "elapsed_ms": 1622.49,
+          "error_kind": null
+        },
+        {
+          "name": "register > off fullscreen, /diff opens the dialog, focused",
+          "status": "pass",
+          "elapsed_ms": 1687.46,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff again closes the pane and says so",
+          "status": "pass",
+          "elapsed_ms": 2408.91,
+          "error_kind": null
+        },
+        {
+          "name": "register > a wide terminal opens the pane at the first edit",
+          "status": "pass",
+          "elapsed_ms": 2105.47,
+          "error_kind": null
+        },
+        {
+          "name": "register > on the main screen only /diff opens, as a dialog",
+          "status": "pass",
+          "elapsed_ms": 1900.05,
+          "error_kind": null
+        },
+        {
+          "name": "register > a surface silent on docking opens nothing by itself",
+          "status": "pass",
+          "elapsed_ms": 2179.18,
+          "error_kind": null
+        },
+        {
+          "name": "register > an edit that failed or was refused opens nothing",
+          "status": "pass",
+          "elapsed_ms": 2468.6,
+          "error_kind": null
+        },
+        {
+          "name": "register > only the main loop's edit opens the pane",
+          "status": "pass",
+          "elapsed_ms": 2413.44,
+          "error_kind": null
+        },
+        {
+          "name": "register > checkpointing off in settings: edits open nothing",
+          "status": "pass",
+          "elapsed_ms": 2340.83,
+          "error_kind": null
+        },
+        {
+          "name": "register > checkpointing off by variable: edits open nothing",
+          "status": "pass",
+          "elapsed_ms": 2153.09,
+          "error_kind": null
+        },
+        {
+          "name": "register > an open left waiting is withdrawn; /diff opens it",
+          "status": "pass",
+          "elapsed_ms": 1718.57,
+          "error_kind": null
+        },
+        {
+          "name": "register > an unplaced open is tried again at the next edit",
+          "status": "pass",
+          "elapsed_ms": 1696.39,
+          "error_kind": null
+        },
+        {
+          "name": "register > a docked pane opens once its first fetch settled",
+          "status": "pass",
+          "elapsed_ms": 1758.62,
+          "error_kind": null
+        },
+        {
+          "name": "register > /clear leaves an open pane up and reads afresh",
+          "status": "pass",
+          "elapsed_ms": 1880.31,
+          "error_kind": null
+        },
+        {
+          "name": "register > /clear under an open pane counts it shown again",
+          "status": "pass",
+          "elapsed_ms": 1804.35,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 3 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1884.8,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 1.2 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1795.08,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 0.3 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1714.33,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session that edited opens before an edit",
+          "status": "pass",
+          "elapsed_ms": 1585.87,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session opens only where an edit would",
+          "status": "pass",
+          "elapsed_ms": 1474.92,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session kept open opens at the low floor",
+          "status": "pass",
+          "elapsed_ms": 1525.78,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session with no edits opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1503.75,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session the person closed opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1532.1,
+          "error_kind": null
+        },
+        {
+          "name": "register > /resume closes the pane, reopens it for its turns",
+          "status": "pass",
+          "elapsed_ms": 1334.69,
+          "error_kind": null
+        },
+        {
+          "name": "register > ask attaches the hunks on screen and calls no tool",
+          "status": "pass",
+          "elapsed_ms": 1420.99,
+          "error_kind": null
+        },
+        {
+          "name": "register > an ask with no room in the context is dropped",
+          "status": "pass",
+          "elapsed_ms": 1334.81,
+          "error_kind": null
+        },
+        {
+          "name": "register > a worktree opens on the base it kept",
+          "status": "pass",
+          "elapsed_ms": 1160.16,
+          "error_kind": null
+        },
+        {
+          "name": "register > no repository is an answer kept until /clear",
+          "status": "pass",
+          "elapsed_ms": 1037.41,
+          "error_kind": null
+        },
+        {
+          "name": "register > a repository that appears later opens on first edit",
+          "status": "pass",
+          "elapsed_ms": 939.99,
+          "error_kind": null
+        },
+        {
+          "name": "register > a git that cannot start is an answer, not a timeout",
+          "status": "pass",
+          "elapsed_ms": 1053.48,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff on a narrow terminal: the resize line",
+          "status": "pass",
+          "elapsed_ms": 1225.22,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 68.62,
+      "log_sha256": "712a29dc002efe61de1cb06df0a447469e21fae1a08fb5e796f4fbc0a2a09034"
+    },
+    {
+      "passed": 40,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 40,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1241.73,
+          "error_kind": null
+        },
+        {
+          "name": "register > git runs at the built-in's moments and no others",
+          "status": "pass",
+          "elapsed_ms": 1028.45,
+          "error_kind": null
+        },
+        {
+          "name": "register > a shell command held read-only fetches nothing",
+          "status": "pass",
+          "elapsed_ms": 929.24,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff whose probe never answers probes once more",
+          "status": "pass",
+          "elapsed_ms": 1070.26,
+          "error_kind": null
+        },
+        {
+          "name": "register > two /diff typed together probe the repository once",
+          "status": "pass",
+          "elapsed_ms": 1072.2,
+          "error_kind": null
+        },
+        {
+          "name": "register > outside a repository /diff says so, opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1120.24,
+          "error_kind": null
+        },
+        {
+          "name": "register > a git that never answers is not \"no repository\"",
+          "status": "pass",
+          "elapsed_ms": 1153.15,
+          "error_kind": null
+        },
+        {
+          "name": "register > when the built-in holds /diff, the mod stands down",
+          "status": "pass",
+          "elapsed_ms": 1223.02,
+          "error_kind": null
+        },
+        {
+          "name": "register > a refusal the built-in did not cause is said aloud",
+          "status": "pass",
+          "elapsed_ms": 1202.77,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff opens the pane, unfocused, and says so",
+          "status": "pass",
+          "elapsed_ms": 1286.75,
+          "error_kind": null
+        },
+        {
+          "name": "register > off fullscreen, /diff opens the dialog, focused",
+          "status": "pass",
+          "elapsed_ms": 1378.24,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff again closes the pane and says so",
+          "status": "pass",
+          "elapsed_ms": 1149.76,
+          "error_kind": null
+        },
+        {
+          "name": "register > a wide terminal opens the pane at the first edit",
+          "status": "pass",
+          "elapsed_ms": 1158.06,
+          "error_kind": null
+        },
+        {
+          "name": "register > on the main screen only /diff opens, as a dialog",
+          "status": "pass",
+          "elapsed_ms": 1126.92,
+          "error_kind": null
+        },
+        {
+          "name": "register > a surface silent on docking opens nothing by itself",
+          "status": "pass",
+          "elapsed_ms": 1323.1,
+          "error_kind": null
+        },
+        {
+          "name": "register > an edit that failed or was refused opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1155.59,
+          "error_kind": null
+        },
+        {
+          "name": "register > only the main loop's edit opens the pane",
+          "status": "pass",
+          "elapsed_ms": 1233.29,
+          "error_kind": null
+        },
+        {
+          "name": "register > checkpointing off in settings: edits open nothing",
+          "status": "pass",
+          "elapsed_ms": 1381.07,
+          "error_kind": null
+        },
+        {
+          "name": "register > checkpointing off by variable: edits open nothing",
+          "status": "pass",
+          "elapsed_ms": 1133.6,
+          "error_kind": null
+        },
+        {
+          "name": "register > an open left waiting is withdrawn; /diff opens it",
+          "status": "pass",
+          "elapsed_ms": 1143.49,
+          "error_kind": null
+        },
+        {
+          "name": "register > an unplaced open is tried again at the next edit",
+          "status": "pass",
+          "elapsed_ms": 1315.21,
+          "error_kind": null
+        },
+        {
+          "name": "register > a docked pane opens once its first fetch settled",
+          "status": "pass",
+          "elapsed_ms": 1247.51,
+          "error_kind": null
+        },
+        {
+          "name": "register > /clear leaves an open pane up and reads afresh",
+          "status": "pass",
+          "elapsed_ms": 1182.77,
+          "error_kind": null
+        },
+        {
+          "name": "register > /clear under an open pane counts it shown again",
+          "status": "pass",
+          "elapsed_ms": 1333.5,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 3 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1194.06,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 1.2 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1452.41,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 0.3 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1440.09,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session that edited opens before an edit",
+          "status": "pass",
+          "elapsed_ms": 1285.9,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session opens only where an edit would",
+          "status": "pass",
+          "elapsed_ms": 1337.25,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session kept open opens at the low floor",
+          "status": "pass",
+          "elapsed_ms": 1507.36,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session with no edits opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1709.33,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session the person closed opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1429.94,
+          "error_kind": null
+        },
+        {
+          "name": "register > /resume closes the pane, reopens it for its turns",
+          "status": "pass",
+          "elapsed_ms": 1329.56,
+          "error_kind": null
+        },
+        {
+          "name": "register > ask attaches the hunks on screen and calls no tool",
+          "status": "pass",
+          "elapsed_ms": 1493.4,
+          "error_kind": null
+        },
+        {
+          "name": "register > an ask with no room in the context is dropped",
+          "status": "pass",
+          "elapsed_ms": 1337.01,
+          "error_kind": null
+        },
+        {
+          "name": "register > a worktree opens on the base it kept",
+          "status": "pass",
+          "elapsed_ms": 1421.68,
+          "error_kind": null
+        },
+        {
+          "name": "register > no repository is an answer kept until /clear",
+          "status": "pass",
+          "elapsed_ms": 1551.11,
+          "error_kind": null
+        },
+        {
+          "name": "register > a repository that appears later opens on first edit",
+          "status": "pass",
+          "elapsed_ms": 1847.83,
+          "error_kind": null
+        },
+        {
+          "name": "register > a git that cannot start is an answer, not a timeout",
+          "status": "pass",
+          "elapsed_ms": 1498.62,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff on a narrow terminal: the resize line",
+          "status": "pass",
+          "elapsed_ms": 1187.13,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 53.45,
+      "log_sha256": "9815fee8e5cabc27884bdaf2b80fd7c7249fdf7b37ed4f750012fad47e885125"
+    },
+    {
+      "passed": 40,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 40,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "register > the start asks nothing of git and registers /diff",
+          "status": "pass",
+          "elapsed_ms": 1428.22,
+          "error_kind": null
+        },
+        {
+          "name": "register > git runs at the built-in's moments and no others",
+          "status": "pass",
+          "elapsed_ms": 1477.06,
+          "error_kind": null
+        },
+        {
+          "name": "register > a shell command held read-only fetches nothing",
+          "status": "pass",
+          "elapsed_ms": 1561.91,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff whose probe never answers probes once more",
+          "status": "pass",
+          "elapsed_ms": 1312.89,
+          "error_kind": null
+        },
+        {
+          "name": "register > two /diff typed together probe the repository once",
+          "status": "pass",
+          "elapsed_ms": 1338.61,
+          "error_kind": null
+        },
+        {
+          "name": "register > outside a repository /diff says so, opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1405.06,
+          "error_kind": null
+        },
+        {
+          "name": "register > a git that never answers is not \"no repository\"",
+          "status": "pass",
+          "elapsed_ms": 1549.3,
+          "error_kind": null
+        },
+        {
+          "name": "register > when the built-in holds /diff, the mod stands down",
+          "status": "pass",
+          "elapsed_ms": 1386.87,
+          "error_kind": null
+        },
+        {
+          "name": "register > a refusal the built-in did not cause is said aloud",
+          "status": "pass",
+          "elapsed_ms": 1073.08,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff opens the pane, unfocused, and says so",
+          "status": "pass",
+          "elapsed_ms": 1159.95,
+          "error_kind": null
+        },
+        {
+          "name": "register > off fullscreen, /diff opens the dialog, focused",
+          "status": "pass",
+          "elapsed_ms": 948.94,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff again closes the pane and says so",
+          "status": "pass",
+          "elapsed_ms": 937.78,
+          "error_kind": null
+        },
+        {
+          "name": "register > a wide terminal opens the pane at the first edit",
+          "status": "pass",
+          "elapsed_ms": 1055.1,
+          "error_kind": null
+        },
+        {
+          "name": "register > on the main screen only /diff opens, as a dialog",
+          "status": "pass",
+          "elapsed_ms": 1085.97,
+          "error_kind": null
+        },
+        {
+          "name": "register > a surface silent on docking opens nothing by itself",
+          "status": "pass",
+          "elapsed_ms": 1132.54,
+          "error_kind": null
+        },
+        {
+          "name": "register > an edit that failed or was refused opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1059.6,
+          "error_kind": null
+        },
+        {
+          "name": "register > only the main loop's edit opens the pane",
+          "status": "pass",
+          "elapsed_ms": 1215.59,
+          "error_kind": null
+        },
+        {
+          "name": "register > checkpointing off in settings: edits open nothing",
+          "status": "pass",
+          "elapsed_ms": 1313.81,
+          "error_kind": null
+        },
+        {
+          "name": "register > checkpointing off by variable: edits open nothing",
+          "status": "pass",
+          "elapsed_ms": 1075.8,
+          "error_kind": null
+        },
+        {
+          "name": "register > an open left waiting is withdrawn; /diff opens it",
+          "status": "pass",
+          "elapsed_ms": 1100.83,
+          "error_kind": null
+        },
+        {
+          "name": "register > an unplaced open is tried again at the next edit",
+          "status": "pass",
+          "elapsed_ms": 1141.65,
+          "error_kind": null
+        },
+        {
+          "name": "register > a docked pane opens once its first fetch settled",
+          "status": "pass",
+          "elapsed_ms": 1160.47,
+          "error_kind": null
+        },
+        {
+          "name": "register > /clear leaves an open pane up and reads afresh",
+          "status": "pass",
+          "elapsed_ms": 996.0,
+          "error_kind": null
+        },
+        {
+          "name": "register > /clear under an open pane counts it shown again",
+          "status": "pass",
+          "elapsed_ms": 1294.46,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 3 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1405.08,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 1.2 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1274.47,
+          "error_kind": null
+        },
+        {
+          "name": "register > a merge finished 0.3 s after the open is noticed",
+          "status": "pass",
+          "elapsed_ms": 1630.39,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session that edited opens before an edit",
+          "status": "pass",
+          "elapsed_ms": 1280.64,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session opens only where an edit would",
+          "status": "pass",
+          "elapsed_ms": 1272.55,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session kept open opens at the low floor",
+          "status": "pass",
+          "elapsed_ms": 1203.76,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session with no edits opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1324.24,
+          "error_kind": null
+        },
+        {
+          "name": "register > a resumed session the person closed opens nothing",
+          "status": "pass",
+          "elapsed_ms": 1339.34,
+          "error_kind": null
+        },
+        {
+          "name": "register > /resume closes the pane, reopens it for its turns",
+          "status": "pass",
+          "elapsed_ms": 1565.41,
+          "error_kind": null
+        },
+        {
+          "name": "register > ask attaches the hunks on screen and calls no tool",
+          "status": "pass",
+          "elapsed_ms": 1220.89,
+          "error_kind": null
+        },
+        {
+          "name": "register > an ask with no room in the context is dropped",
+          "status": "pass",
+          "elapsed_ms": 1204.65,
+          "error_kind": null
+        },
+        {
+          "name": "register > a worktree opens on the base it kept",
+          "status": "pass",
+          "elapsed_ms": 1053.36,
+          "error_kind": null
+        },
+        {
+          "name": "register > no repository is an answer kept until /clear",
+          "status": "pass",
+          "elapsed_ms": 993.6,
+          "error_kind": null
+        },
+        {
+          "name": "register > a repository that appears later opens on first edit",
+          "status": "pass",
+          "elapsed_ms": 1177.02,
+          "error_kind": null
+        },
+        {
+          "name": "register > a git that cannot start is an answer, not a timeout",
+          "status": "pass",
+          "elapsed_ms": 1010.46,
+          "error_kind": null
+        },
+        {
+          "name": "register > /diff on a narrow terminal: the resize line",
+          "status": "pass",
+          "elapsed_ms": 929.28,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 3,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 51.5,
+      "log_sha256": "14fe2d199df67a202e40bd231e693f63aeadc58cb1d8c935539d65b400572b85"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false
+  }
+}

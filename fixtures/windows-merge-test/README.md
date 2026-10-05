@@ -1,8 +1,8 @@
 # Native Windows upstream merge-test reproduction
 
 This original MIT wrapper isolates the **entire unchanged upstream
-`mods/diff/tests/register.test.ts`** in a private mod copy. Its 40 assertions
-remain intact. The portable arm changes only the existing synthetic
+`mods/diff/tests/register.test.ts`** in a private mod copy. It retains all 40
+test cases, with all original assertions intact. The portable arm changes only the existing synthetic
 `/work/.git` path comparison, using the normalization already documented in
 the research runner. Production hooks are byte-identical in both arms.
 
