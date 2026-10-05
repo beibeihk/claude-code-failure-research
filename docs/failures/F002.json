@@ -1,0 +1,30 @@
+{
+  "id": "F002",
+  "title": "Native Windows merge-state test fixture misses normalized Git directory",
+  "classification": "software",
+  "component": "official upstream mods/diff test fixture",
+  "status": "reported",
+  "evidence_level": "E3",
+  "issue_url": "https://github.com/anthropics/claude-code/issues/99565",
+  "tested_engine": "2.1.289",
+  "platform": "native Windows x64",
+  "source_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "original_file_invocations": 3,
+  "cases_per_invocation": 40,
+  "original_each": {
+    "passed": 37,
+    "failed": 3,
+    "complete": true
+  },
+  "portable_file_invocations": 3,
+  "portable_each": {
+    "passed": 40,
+    "failed": 0,
+    "complete": true
+  },
+  "production_bug_confirmed": false,
+  "valid_coding_trials": 0,
+  "independent_review": "reports/windows-merge-independent-review.md",
+  "report": "docs/windows-merge-test-fixture.md",
+  "verified_upstream_fix": false
+}

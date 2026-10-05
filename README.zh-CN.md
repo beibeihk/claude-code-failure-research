@@ -5,7 +5,8 @@
 **截至 2026-10-05：正在开展无需账号、无需付费模型的客户端研究。** 官方
 Claude Code 2.1.288 提供 `claude plugin test`，已用真实客户端测试引擎执行
 指令加载契约和 Git pane 的受控诊断。28 个已有报告完成筛查；真实 Claude
-模型 coding trial 为 0，确认生产 failure 为 0，Anthropic issue 为 0。
+模型 coding trial 为 0，确认生产 failure 为 0；已提交 **1 个官方测试 fixture
+缺陷报告：[Anthropic #99565](https://github.com/anthropics/claude-code/issues/99565)**。
 实测数量与证据边界见 [免费研究记录](docs/no-cost-research.md)。
 
 两项超时的[专项调查](docs/timeout-investigation.md)已完成：隔离原用例后，
@@ -28,6 +29,12 @@ fixture，18 个自创用例共 **36/36 次执行通过**，无功能失败信�
 通过 **4/4 次序列用例执行**，包含 20 次状态统计／hunk 检查。实际 commit、
 checkout 的采集结果送入同一个未修改的源码后端，计数与 hunk 内容均正确更新；
 生产传输、界面刷新与 Claude 模型行为仍未实测。
+
+本次[Windows merge-state 测试 fixture 复现](docs/windows-merge-test-fixture.md)
+使用官方 2.1.289：原始 40 个用例三次均为 37 通过、3 失败；只修改合成路径
+比较后三次均 40/40 通过。公开最小 wrapper、对照、去重记录及独立案例审查
+均已完成。报告范围是上游测试 fixture，不是生产 merge 或模型故障。
+已安排每天检查官方反馈，无实质变化时不通知；尚无维护者反馈或验证过的上游修复。
 
 当前可用交付物：
 
@@ -68,10 +75,12 @@ python -m runners.run_study --repetitions 1
 官方 mod 测试在真实引擎中运行，但下层文件、Git、时钟等交互由脚本应答。
 它能检验客户端契约与公开源码函数，不能替代 Claude 模型的指令保留实验。
 长任务、compaction、subagents、MCP、IDE 和 Remote Control 尚未完成实测。
-当前没有可报告 case，故没有 issue、Anthropic 回复或 v0.1.0 release。
-将来达到 E3/E4、排除重复且独立审查通过后，才进入正式报告。
+F002 已达到受控重复实验的 E3 证据级别，并通过独立审查，现已正式报告。
+v0.1.0 的首个确认案例范围限定为官方测试 fixture；发布状态见待办记录。
+没有 Anthropic 回复或已验证修复，不能将本案例计为生产或模型 failure。
 当前剩余免费工作和原目标的条件门槛见 [待办记录](reports/remaining-work.json)。
 
 求职材料目前可写：搭建受控可靠性研究框架，并用官方客户端测试引擎开展免费
-组件实验、程序化 verifier 和可复现 fixture，识别并控制 Windows 测试路径混杂。
-不能写“发现并报告了 Claude bug”或“Anthropic 已修复”。
+组件实验、程序化 verifier 和可复现 fixture，并向 Anthropic 报告经过受控重复
+验证的官方 Windows 测试 fixture 缺陷。不能泛称已发现生产或模型故障，
+也不能写“Anthropic 已修复”。

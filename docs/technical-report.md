@@ -43,7 +43,10 @@ been measured in Claude.
 
 ## 5. Selected case and actual observations
 
-**Selected failure: none.** V01 is a prepared study, not a confirmed case.
+**Selected case: F002, an official upstream Windows test-fixture defect.**
+[Reported as #99565](https://github.com/anthropics/claude-code/issues/99565)
+after current-version controls and independent case review. V01 remains a
+prepared model study; no production or model failure is confirmed.
 
 | Observation | Actual status |
 |---|---|
@@ -60,10 +63,11 @@ been measured in Claude.
 | N1 option contracts | 3 tests × 3 non-default modes × 2 batches: 18/18 pass; initial private-manifest selection only |
 | N3 HEAD/ref probe | 7 actual Git state-pair cases × 2 batches: 14/14 pass; captured source-helper replies, no production polling |
 | N2 native engine comparison | The same 18 authored screen cases × 2 fresh batches on private 2.1.289: 36/36 pass; no rescue effect since historical 2.1.288 also passes |
-| Confirmed failures | 0 |
+| Confirmed production / model failures | 0 / 0 |
+| Confirmed upstream test-fixture defects | 1: F002; original register file 37/3 in each of three invocations; single-matcher control 40/40 in each of three |
 | Behavioral reproduction rate | N/A |
-| New Anthropic issues / comments | 0 / 0 |
-| Release | None; v0.1.0 criteria unmet |
+| New Anthropic issues / comments | 1 / 0; official #99565, test-fixture scope |
+| Release | v0.1.0 prepared around the validated harness and first fixture case; publication state in remaining-work.json |
 
 The researcher subsequently declined accounts, login and spending. The active
 path now uses the official `claude plugin test` engine and published module
@@ -80,6 +84,14 @@ live refresh and model adherence remain unvalidated. The subsequent
 [free follow-up](free-followup.md) tests initial non-default mode selection,
 actual HEAD/ref source probes and the same contracts on a private official
 2.1.289 engine. Option reload and proprietary production transport remain untested.
+
+The [F002 report](windows-merge-test-fixture.md) preserves incomplete full-suite
+attempts separately. Its three original repetitions and three matcher controls
+are complete; the no-marker diagnostic and shorter-path wrapper validate the
+fixture mechanism. The 210/210 serial-file control is not a default parallel
+full-suite success. [Independent case review](../reports/windows-merge-independent-review.md)
+approved the narrow test-fixture report. An active daily heartbeat checks official
+feedback and notifies only on a meaningful change; no response is yet recorded.
 
 ## 6. Controls
 
@@ -136,5 +148,7 @@ the current runner targets Claude only. An honest blocked study is preferable to
 inventing a reportable finding. The current scientific path is further no-cost
 client contracts, deterministic controls and fixture/environment diagnosis.
 The preserved model protocol remains disabled by the researcher's execution policy.
-No issue will be submitted until the [reporting gate](../reports/reporting-gate.json)
-is met. Official feedback monitoring begins only after a real report exists.
+The [reporting gate](../reports/reporting-gate.json) passed for F002; one official
+issue has been submitted. Production and model reporting gates remain closed.
+Official feedback monitoring is active; a fixture correction is not counted as
+a verified Anthropic fix until an upstream change is tested on the original case.

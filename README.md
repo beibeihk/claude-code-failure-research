@@ -12,7 +12,9 @@ assume that a reported symptom is a Claude Code defect.
 Claude Code 2.1.288's official `plugin test` engine runs locally without login.
 We have executed instruction-loading contracts and controlled Git-pane fixture
 diagnostics. **Zero valid Claude model coding trials, zero confirmed production
-failures, zero submitted Anthropic issues.** 28 existing reports were screened.
+failures, one reported upstream test-fixture defect.** The official report is
+[anthropics/claude-code #99565](https://github.com/anthropics/claude-code/issues/99565).
+28 existing reports were screened.
 See the [no-cost study](docs/no-cost-research.md) for actual counts and scope.
 No model failure rate or long-horizon performance estimate is claimed.
 The [two-timeout investigation](docs/timeout-investigation.md) now distinguishes
@@ -36,6 +38,14 @@ scenario executions across two fresh batches (20 state fetch/hunk checks).
 Actual commit/checkout captures fed one unchanged source backend per sequence;
 counts and hunk strings updated correctly. Production transport/UI and Claude
 model behavior remain untested.
+
+The [current Windows merge-fixture case](docs/windows-merge-test-fixture.md)
+reproduced the same three failures in three original 40-case file invocations
+on official 2.1.289. Correcting only the synthetic path matcher yielded 40/40
+in each of three controls. The isolated wrapper, diagnostics, duplicate search
+and independent case review are public. The issue is open; no maintainer response
+or verified upstream fix has been observed. Daily follow-up is active and stays
+quiet when nothing actionable changes.
 
 ## What is implemented
 
@@ -143,7 +153,8 @@ No export command pushes to GitHub or files an issue.
 | [V01 scenario](scenarios/verification-retention.json) | Preserved model protocol; execution disabled by no-spend policy |
 | [Long-horizon protocol](scenarios/long-horizon-plan.json) | Design only; no step-length or compaction result |
 | [Failure card](docs/failures/F001.md) | Reserved study candidate, blocked/not run |
-| [Reporting gate](reports/reporting-gate.json) | No reportable case; submission forbidden at current evidence level |
+| [F002 reported fixture case](docs/failures/F002.md) | Controlled native Windows test-fixture reproduction; no production/model claim |
+| [Reporting gate](reports/reporting-gate.json) | Passed for the fixture case; one official issue submitted |
 | [Study guide](CLAUDE_CODE_FAILURE_RESEARCH_STUDY_GUIDE.md) | Current concepts, classification and 30 interview answers |
 
 ## Reporting policy
@@ -155,8 +166,9 @@ Security boundary violations go privately to the channel in the current
 [Anthropic security policy](https://github.com/anthropics/claude-code/blob/main/SECURITY.md).
 The harness has no issue-submission code. See [privacy](docs/privacy.md).
 
-`v0.1.0` is reserved for a validated harness **and a first confirmed case**.
-There is no release yet. Package version 0.0.1 denotes infrastructure only.
+`v0.1.0` packages the validated harness and the first confirmed **upstream
+test-fixture** case. It contains no Claude model coding results or verified
+production failure. Release status is recorded in [remaining work](reports/remaining-work.json).
 
 MIT license covers authored fixtures and code. Anthropic documents are linked,
 not redistributed; their source snapshots remain local.

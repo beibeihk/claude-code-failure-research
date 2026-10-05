@@ -1,10 +1,10 @@
 {
   "review_date": "2026-10-05",
   "decision": "submit",
-  "status": "ready-after-independent-review",
+  "status": "submitted",
   "reason": "Current official 2.1.289 reproduces the same three assertion failures in the original 40-case register file in 3/3 invocations. A single synthetic path-matcher correction passes 40/40 in 3/3; path/no-marker diagnostics, serial control and the separate wrapper validation support the fixture mechanism. Recorded duplicate searches found no exact report; independent case review approved this narrow upstream test-fixture submission. No production/client-core or model failure is claimed.",
   "max_new_issues_this_cycle": 1,
-  "new_issues_submitted": 0,
+  "new_issues_submitted": 1,
   "independent_infrastructure_review": "passed after prospective design amendment; separate from current case review",
   "independent_case_review_record": "reports/windows-merge-independent-review.md",
   "case_report": "docs/windows-merge-test-fixture.md",
@@ -27,5 +27,7 @@
     "independent_case_review": true,
     "privacy_safe_observed_evidence": true
   },
-  "check_scope": "Checks refer only to the selected official upstream test-fixture case. Three merge delays, file isolation and no-marker controls are completed diagnostic contrasts. Nonduplicate means no exact report found in the recorded search, not a novelty proof. The production failure gate remains closed."
+  "check_scope": "Checks refer only to the selected official upstream test-fixture case. Three merge delays, file isolation and no-marker controls are completed diagnostic contrasts. Nonduplicate means no exact report found in the recorded search, not a novelty proof. The production failure gate remains closed.",
+  "issue_url": "https://github.com/anthropics/claude-code/issues/99565",
+  "case_id": "F002"
 }

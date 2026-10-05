@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-10-05T04:45:54.356766+00:00",
+  "repository": "anthropics/claude-code",
+  "number": 99565,
+  "url": "https://github.com/anthropics/claude-code/issues/99565",
+  "title": "[BUG] Native Windows: mods/diff merge-state fixture misses the normalized Git directory",
+  "state": "OPEN",
+  "created_at": "2026-10-05T04:41:24Z",
+  "last_observed_updated_at": "2026-10-05T04:41:24Z",
+  "author": "beibeihk",
+  "classification": "software: upstream test-fixture portability",
+  "case_id": "F002",
+  "evidence_level": "E3",
+  "body_matches_reviewed_file": true,
+  "body_file": "reports/drafts/windows-merge-fixture-issue.md",
+  "body_sha256_utf8_lf": "a4184e274a12e4ab229af45de081a563cf38a9479aa3ac3f2392727aac49cd7f",
+  "comments_observed": 0,
+  "maintainer_response_observed": false,
+  "upstream_fix_verified": false,
+  "production_bug_confirmed": false,
+  "real_claude_model_calls": 0,
+  "billed_claude_model_cost_usd": 0,
+  "feedback_followup": {
+    "status": "active",
+    "kind": "thread-heartbeat",
+    "schedule": "daily at 10:00 local time",
+    "notification": "meaningful changes or required action only; quiet on unchanged state"
+  }
+}

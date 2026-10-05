@@ -2,8 +2,8 @@
 
 规则核查日：2026-10-03；研究更新日：2026-10-05；实测引擎：2.1.288、隔离的 2.1.289。本项目是社区研究。
 **目前包含框架、28 个已有报告筛查、离线验证与无需账号的真实客户端契约
-实验；没有 Claude 模型 coding trials、确认生产 failure、Anthropic issue 或
-修复。** 面试时首先说清楚这个证据边界。
+实验，以及 **1 个已报告的官方测试 fixture 缺陷**；没有 Claude 模型 coding
+trials、确认生产 failure 或已验证修复。** 面试时首先说清楚这个证据边界。
 
 免费研究使用官方 `claude plugin test` 和公开内置 mod 源码。真实引擎负责
 hooks/UI 分发，测试脚本应答下层世界；部分测试直接调用公开源码函数。
@@ -23,6 +23,11 @@ CLI 子进程并发峰值 27。逐文件派发在默认 5 秒时限下 210/210 �
 2026-10-05 的[后续结果](docs/free-followup.md)补充了非默认选项 18/18、
 HEAD/ref 探针 14/14，以及隔离 2.1.289 引擎上的既有用例 36/36 次通过。
 两版本均通过同一源码契约，不构成修复效应；仍未验证生产 transport 或模型行为。
+
+同日完成的 [F002 案例](docs/failures/F002.md)在官方 2.1.289 上三次复现相同
+的三个原始断言失败；只修正虚拟路径 matcher 后，三次各 40/40 通过。
+独立案例审查批准后已提交 [官方 #99565](https://github.com/anthropics/claude-code/issues/99565)。
+这是测试 fixture 的 Windows 兼容性缺陷，不代表生产 merge 或模型可靠性失败。
 
 ## 从一次 coding run 读懂系统
 
@@ -173,6 +178,7 @@ Action/@claude/PR 故障。模板核查与归因细节见 [issue routing](docs/i
 > isolated a Windows virtual-fixture path mismatch through controlled comparisons,
 > with explicit separation from unexecuted Claude model coding trials.
 
-只有实际完成报告后，才能写 reported a reproducible failure。只有官方修复并在
+现在可明确写 reported a reproducible upstream Windows test-fixture defect
+with controlled comparisons，引用 #99565。只有官方修复并在
 原 fixture 上验证，才能写 independently verified an Anthropic fix。
 本项目所有状态均以 [技术报告](docs/technical-report.md) 与 run 数据为准。

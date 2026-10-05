@@ -3,7 +3,7 @@
   "project": "Claude Code Core Failure Research",
   "execution_policy": "No Claude account, no login, no paid model calls; no authentication changes",
   "overall_goal_complete": false,
-  "current_cycle": "X2-complete-with-no-functional-signal",
+  "current_cycle": "current-version-test-fixture-reproduced-reviewed-and-reported",
   "timeout_followup": {
     "status": "investigated-with-scoped-harness-workaround",
     "finding": "Full default dispatch reproduces test timeouts; two original focused cases pass at default deadline; process-tree sampler observes peak 27 concurrent descendants; serial-file control passes 210/210 at unchanged 5000 ms deadline.",
@@ -22,7 +22,8 @@
     "Versioned protocols, invalid-batch preservation, reviewed metadata and no raw transcript/source export",
     "Three-candidate real-fixture captured-response screen: 18 distinct authored cases in two fresh batches, 36/36 passing executions, no functional signal; production transport untested",
     "N1: three authored contracts in three non-default initial instruction modes, two fresh batches, 18/18 passes; N3: seven actual HEAD/ref state-pair source probes in two fresh batches, 14/14 passes; N2: same 18 previous cases on verified private official 2.1.289, 36/36 passes",
-    "X2: ordinary and linked commit/checkout sequences through unchanged gitBackendOf, four passing scenario executions in two fresh batches, twenty state fetch/hunk checks; production transport remains untested"
+    "X2: ordinary and linked commit/checkout sequences through unchanged gitBackendOf, four passing scenario executions in two fresh batches, twenty state fetch/hunk checks; production transport remains untested",
+    "F002: official native Windows 2.1.289 original-file repeated failure, single-matcher control, path/no-marker diagnostic, serial-file control, minimum wrapper, duplicate audit and independent case review; official Anthropic #99565 submitted"
   ],
   "free_remaining_work": [
     {
@@ -42,9 +43,9 @@
     {
       "id": "C3",
       "priority": 3,
-      "status": "evidence-gate-closed-no-production-candidate",
+      "status": "production-gate-closed; one permitted issue used by independently-reviewed-test-fixture-case",
       "task": "For a novel reproducible production client candidate, retest current supported version, search duplicates, run relevant ablations and obtain independent case review.",
-      "completion_condition": "E3/E4 production evidence and complete reporting gate; at most one official issue, no threshold reduction."
+      "completion_condition": "Any additional production conclusion needs its own E3/E4 evidence. This cycle has already submitted its maximum one official issue; add evidence to an existing report only when genuinely incremental."
     }
   ],
   "original_goal_conditional_steps": [
@@ -55,18 +56,19 @@
     },
     {
       "step": "High-quality official issue",
-      "status": "evidence-gate-closed",
-      "issue_count": 0
+      "status": "reported-upstream-test-fixture; no production-or-model-case",
+      "issue_count": 1,
+      "issue_url": "https://github.com/anthropics/claude-code/issues/99565"
     },
     {
       "step": "Anthropic feedback and verified fix",
-      "status": "no-report-to-follow",
-      "note": "Do not invent feedback or configure a redundant issue monitor."
+      "status": "awaiting-feedback; daily-followup-active",
+      "note": "No maintainer response or verified fix observed. Quiet on unchanged state; retest any upstream fix on the original case."
     },
     {
       "step": "v0.1.0 release",
-      "status": "criteria-unmet",
-      "note": "Requires the original first confirmed-case criterion; no release created."
+      "status": "prepared-awaiting-exact-target-CI",
+      "note": "Validated harness, taxonomy, methodology and first confirmed upstream test-fixture case are included. Scope is explicit; no production/model result or verified fix claimed."
     }
   ],
   "scope_guard": "Keep the existing allowed project; do not recreate fourth-tier or canceled projects.",
@@ -156,9 +158,9 @@
       "condition": "Cannot count current component executions as this evidence."
     },
     {
-      "step": "One high-quality official issue, follow-up, verified fix and v0.1.0",
-      "status": "no-current-executable-report-case",
-      "condition": "A novel current-version production E3/E4 case, minimum fixture, duplicate check and independent review are still required. No threshold reduction."
+      "step": "Production/model failure evidence, Anthropic feedback and verified upstream fix",
+      "status": "production/model evidence not validated; fixture issue reported; feedback pending",
+      "condition": "Current test-fixture issue is complete as a scoped contribution. No model study can be counted without actual model trials; a production case needs separate source/live evidence. Upstream fix requires original-case revalidation."
     }
   ],
   "backend_refresh": {
@@ -173,5 +175,24 @@
     "model_calls": 0,
     "production_bug_confirmed": false,
     "independent_production_case_review": "not-triggered-no-signal"
+  },
+  "test_fixture_report": {
+    "status": "reported",
+    "case_id": "F002",
+    "issue_url": "https://github.com/anthropics/claude-code/issues/99565",
+    "evidence_level": "E3",
+    "production_bug_confirmed": false,
+    "model_calls": 0,
+    "report": "docs/windows-merge-test-fixture.md",
+    "feedback_followup": "active daily heartbeat; notify on meaningful changes only",
+    "upstream_fix_verified": false
+  },
+  "release": {
+    "version": "v0.1.0",
+    "status": "prepared-awaiting-exact-target-CI",
+    "first_confirmed_case": "F002 upstream test fixture",
+    "production_bug_confirmed": false,
+    "model_coding_trials": 0,
+    "notes": "reports/release-v0.1.0.md"
   }
 }

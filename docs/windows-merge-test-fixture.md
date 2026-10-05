@@ -89,5 +89,9 @@ identified no exact existing report within its recorded scope; this is not a
 proof of novelty. [Independent case review](../reports/windows-merge-independent-review.md)
 approved submission as a test-fixture defect, with no blocking modification.
 Two non-blocking wording clarifications were applied. No new issue is counted
-until GitHub confirms creation; current status is recorded in
-`reports/reporting-gate.json`.
+until GitHub confirms creation. GitHub confirmed the creation of
+[official issue #99565](https://github.com/anthropics/claude-code/issues/99565)
+on 2026-10-05. The posted body matches the reviewed file. It is open, with no
+comments at the recorded check. Daily feedback follow-up is active and stays
+quiet on unchanged state. See [submission record](../reports/official-issue.json)
+and `reports/reporting-gate.json`.
