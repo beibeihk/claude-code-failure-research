@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "e19000d4-1473-482a-86de-ab557c428695",
+  "date": "2026-10-05T02:40:16.199235+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "agents-md",
+  "selection": "N1",
+  "version": "2.1.288 (Claude Code)",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "1f8c01db63ada1791ca1894a7ca3a07b1c7a6bb17e0bc7740f07c3ccfa8122e9",
+  "hooks_source_sha256": "f3040178c6cddd9ddc19932291ff28ea9e65af02298266f19b73bf0def86fa6d",
+  "authored_test_sha256": "552c4dfc11b8b43643ca0a58c0ece845a80e5805926f1efd5208d3807ddca4b0",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "per_test_timeout_ms": 5000,
+  "scope": "Native option hooks or unchanged source head-key helper with captured real fixture replies; no production transport/model trials",
+  "repetitions": [
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "N1-option-contract > initial context preserves the exact mode-specific instruction list",
+          "status": "pass",
+          "elapsed_ms": 114.0,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > nested delivery follows the option and preserves supplied tool context",
+          "status": "pass",
+          "elapsed_ms": 78.14,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > already imported AGENTS is not duplicated and filtering remains exact",
+          "status": "pass",
+          "elapsed_ms": 76.36,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "batch": 1,
+      "option_mode": "claude-md",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.67,
+      "log_sha256": "49de39615ad9eccba41a6a2c01fc2e48bd591d6b9bc20a4ec18c967b8c87cc38",
+      "executed_tree_sha256": "7f5302b4d861aff9e9bde3c4d31632561aa132103515b5e9d303e247b7d501b8",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "b1f9d773b6efcf659929511122e8d3d5777aa1039ce413810c7cca490f4e71de"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "N1-option-contract > initial context preserves the exact mode-specific instruction list",
+          "status": "pass",
+          "elapsed_ms": 106.64,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > nested delivery follows the option and preserves supplied tool context",
+          "status": "pass",
+          "elapsed_ms": 81.84,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > already imported AGENTS is not duplicated and filtering remains exact",
+          "status": "pass",
+          "elapsed_ms": 79.13,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "batch": 1,
+      "option_mode": "claude-md-and-agents-md",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.64,
+      "log_sha256": "753a159faa04b7a069da34fcc92b8e200acac6e466112b0c68817c514c467554",
+      "executed_tree_sha256": "292b688308f89da4d0170bbdf1b1cf9e50a62c313f254a5c174e451b29a423dd",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "b1f9d773b6efcf659929511122e8d3d5777aa1039ce413810c7cca490f4e71de"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "N1-option-contract > initial context preserves the exact mode-specific instruction list",
+          "status": "pass",
+          "elapsed_ms": 101.28,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > nested delivery follows the option and preserves supplied tool context",
+          "status": "pass",
+          "elapsed_ms": 77.64,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > already imported AGENTS is not duplicated and filtering remains exact",
+          "status": "pass",
+          "elapsed_ms": 76.39,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 3,
+      "batch": 1,
+      "option_mode": "managed-only",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.59,
+      "log_sha256": "05f62bde4ca4e611135536f63eb676454e40c008469bd2382fbc78badc954768",
+      "executed_tree_sha256": "903b3b06126c47217a44e4f90e0c507ec754bf0a754f09348db4b7a05ca76075",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "b1f9d773b6efcf659929511122e8d3d5777aa1039ce413810c7cca490f4e71de"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "N1-option-contract > initial context preserves the exact mode-specific instruction list",
+          "status": "pass",
+          "elapsed_ms": 103.26,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > nested delivery follows the option and preserves supplied tool context",
+          "status": "pass",
+          "elapsed_ms": 79.06,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > already imported AGENTS is not duplicated and filtering remains exact",
+          "status": "pass",
+          "elapsed_ms": 78.0,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 4,
+      "batch": 2,
+      "option_mode": "claude-md",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.61,
+      "log_sha256": "c33d8d66eb97672344a3e00020747af2c6cc12c553ebbbee09f95d00d14b0423",
+      "executed_tree_sha256": "7f966654f84a644b25aef0e54ced4d3664ce0e493830eec5428e6a2ead3d0a49",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "9bf7859bc08e31a6f723dbf203125f0ce7452662126788c08084cefd4f71902b"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "N1-option-contract > initial context preserves the exact mode-specific instruction list",
+          "status": "pass",
+          "elapsed_ms": 109.03,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > nested delivery follows the option and preserves supplied tool context",
+          "status": "pass",
+          "elapsed_ms": 77.11,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > already imported AGENTS is not duplicated and filtering remains exact",
+          "status": "pass",
+          "elapsed_ms": 78.58,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 5,
+      "batch": 2,
+      "option_mode": "claude-md-and-agents-md",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.62,
+      "log_sha256": "6f11635d2e67aae4f64acca9d703c319d5c0904d349f5166fbcace6e62ca7562",
+      "executed_tree_sha256": "964a8439e47ac3c87753a6a649a243d102eb836027219a95391231639f45278c",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "9bf7859bc08e31a6f723dbf203125f0ce7452662126788c08084cefd4f71902b"
+    },
+    {
+      "passed": 3,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 3,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "N1-option-contract > initial context preserves the exact mode-specific instruction list",
+          "status": "pass",
+          "elapsed_ms": 105.89,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > nested delivery follows the option and preserves supplied tool context",
+          "status": "pass",
+          "elapsed_ms": 76.36,
+          "error_kind": null
+        },
+        {
+          "name": "N1-option-contract > already imported AGENTS is not duplicated and filtering remains exact",
+          "status": "pass",
+          "elapsed_ms": 119.6,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 6,
+      "batch": 2,
+      "option_mode": "managed-only",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.66,
+      "log_sha256": "535f7382356a97f461e7fcd3ac394b5f829ee3476f01eab0e791c26c2e93939e",
+      "executed_tree_sha256": "47f488cfe327e772c9742d8da17527b1ce79ebf4431e4678444f6561a0db64bb",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "9bf7859bc08e31a6f723dbf203125f0ce7452662126788c08084cefd4f71902b"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false
+  },
+  "network_observation": "No model calls; provider env cleared, loopback provider guard and child-only update/nonessential-traffic disables. No packet capture claim."
+}

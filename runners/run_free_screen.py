@@ -23,6 +23,15 @@ DISCOVERY = ['--no-optional-locks', 'rev-parse', '--path-format=absolute',
              '--show-toplevel', '--git-dir', '--git-common-dir']
 STATUS = ['--no-optional-locks', 'status', '--porcelain', '-z',
           '--untracked-files=all', '--no-renames', '--ignore-submodules=dirty']
+ENGINE_289_SHA256 = 'bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b'
+
+
+def engine_289():
+    """An explicit private official binary, never a global install/update."""
+    path = ROOT/'.private/engines/2.1.289/claude.exe'
+    if hashlib.sha256(path.read_bytes()).hexdigest() != ENGINE_289_SHA256:
+        raise ValueError('Private 2.1.289 executable differs from the registered official checksum')
+    return str(path)
 
 
 def git(repo, *argv, expected=0):
@@ -177,12 +186,16 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--upstream', required=True, type=Path)
     parser.add_argument('--batches', type=int, choices=(1, 2), default=2)
+    parser.add_argument('--engine-289', action='store_true', help='N2 only: use the checksum-pinned private official executable')
     args = parser.parse_args()
     if os.name != 'nt': parser.error('Native-engine screen is registered for Windows only; fixture oracle checks are portable')
     sources = {suite: check_upstream(args.upstream.resolve(), suite) for suite in ('diff', 'agents-md')}
     env = client_test_env()
-    version = subprocess.check_output(['claude', '--version'], env=env, text=True).strip()
-    if version.split()[0] != CLI_VERSION: parser.error('CLI differs from registered version')
+    env['DISABLE_UPDATES'] = '1'
+    cli = engine_289() if args.engine_289 else 'claude'
+    expected_version = '2.1.289' if args.engine_289 else CLI_VERSION
+    version = subprocess.check_output([cli, '--version'], env=env, text=True).strip()
+    if version.split()[0] != expected_version: parser.error('CLI differs from registered version')
     run_id = str(uuid.uuid4())
     private = ROOT/'.private/free-screen'/run_id
     private.mkdir(parents=True)
@@ -192,6 +205,9 @@ def main():
         'kind': 'official-client-test-engine', 'suite': suite, 'selection': 'real-fixture-response-replay',
         'version': version, 'platform': os.sys.platform, 'upstream_commit': UPSTREAM_COMMIT,
         'upstream_mod_sha256': tree_hash(source), 'per_test_timeout_ms': 5000,
+        'hooks_source_sha256': tree_hash(source/'hooks'),
+        'authored_test_sha256': hashlib.sha256((ROOT/'research-tests/free-screen'/f'{suite}.test.ts').read_bytes()).hexdigest(),
+        'executable_sha256': ENGINE_289_SHA256 if args.engine_289 else None,
         'model_calls': 0, 'coding_trials': 0, 'billed_model_cost_usd': 0,
         'scope': 'Captured real filesystem/Git responses; component source and engine hooks; not production transport',
         'repetitions': []} for suite, source in sources.items()}
@@ -210,14 +226,15 @@ def main():
             if tree_hash(source/'hooks') != tree_hash(target/'hooks'):
                 raise ValueError('Functional hook implementation changed')
             start = time.monotonic()
-            out, err, code, timeout = invoke(['claude', 'plugin', 'test', str(target)], '', private, env, 120)
+            executed_hash = tree_hash(target)
+            out, err, code, timeout = invoke([cli, 'plugin', 'test', str(target)], '', private, env, 120)
             raw = out+'\n'+err
             (batch_dir/f'{suite}.log').write_text(raw, encoding='utf-8')
             count = parse_output(raw)
             count.update(trial=batch, process_exit_code=code, timed_out=timeout,
                          elapsed_seconds=round(time.monotonic()-start, 2),
                          log_sha256=hashlib.sha256(raw.encode()).hexdigest(),
-                         executed_tree_sha256=tree_hash(target), hooks_implementation_unchanged=True,
+                         executed_tree_sha256=executed_hash, hooks_implementation_unchanged=True,
                          fixture_proof=proof)
             records[suite]['repetitions'].append(count)
             (private/f'{suite}-summary.json').write_text(json.dumps(records[suite], indent=2)+'\n', encoding='utf-8')

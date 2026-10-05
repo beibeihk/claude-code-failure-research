@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-05",
+  "version": "2.1.289",
+  "platform": "win32-x64",
+  "origin": "https://downloads.claude.ai/claude-code-releases/2.1.289/win32-x64/claude.exe",
+  "manifest_url": "https://downloads.claude.ai/claude-code-releases/2.1.289/manifest.json",
+  "manifest_sha256": "0fac4e2ae412434d3443e603154198ff8705dfd64f65d949a3004d82759274ba",
+  "binary_sha256": "bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b",
+  "binary_size": 249522848,
+  "manifest_size_and_sha256_match": true,
+  "authenticode_status": "Valid",
+  "authenticode_signer": "Anthropic, PBC",
+  "manifest_gpg_status": "VALIDSIG; verified with project-private public keyring",
+  "manifest_gpg_fingerprint": "31DDDE24DDFAB679F42D7BD2BAA929FF1A7ECACE",
+  "global_cli_version_before": "2.1.288",
+  "global_cli_version_after": "2.1.288",
+  "global_cli_sha256_before": "84304f7d4b0cd0ebcbe8318695a260151b48991a6659c3366fdd5da290c0ab91",
+  "global_cli_sha256_after": "84304f7d4b0cd0ebcbe8318695a260151b48991a6659c3366fdd5da290c0ab91",
+  "installer_executed": false,
+  "global_settings_or_auth_changed": false,
+  "notes": "Direct official archive download, explicit private executable path. Initial GPG attempt rejected Windows path spelling; relative paths succeeded. Public-key import emitted gpg-agent startup diagnostic but detached verification exited 0 with documented fingerprint and VALIDSIG."
+}

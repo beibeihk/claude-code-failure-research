@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "registered_date": "2026-10-05",
+  "scope": "Exactly existing N1, N3, N2 work items; no old timeout or default screening reruns on the old engine",
+  "source_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "remote_head_observed": "2bfb629dfaff0c8318047a4beb93cf1dc5b58b18",
+  "primary_engine": "2.1.288",
+  "comparison_engine": "2.1.289; conditional on official download and manifest checksum verification",
+  "constraints": "No model calls/login/auth changes, no global CLI/settings changes, no canceled projects, no automatic issue/release",
+  "source_hash_registration": "The runner records source mod, unchanged functional hooks, authored test and executed overlay SHA256 before each native test invocation; data captures and raw logs remain private.",
+  "N1": {
+    "modes": ["claude-md", "claude-md-and-agents-md", "managed-only"],
+    "injection": "Change only userConfig.instructionFiles.default in a fresh private manifest; options list and hooks source unchanged. This tests initial option selection, not persisted settings or hot reload.",
+    "fixture": "Actual synthetic root/nested AGENTS and CLAUDE files plus managed/user/local/memory instruction entries handed explicitly through test hooks",
+    "cases_per_mode": 3,
+    "batches": 2,
+    "criteria": {
+      "claude-md": "Handed instruction list stays intact, nested AGENTS does not attach, no instruction walk is requested",
+      "claude-md-and-agents-md": "Root AGENTS is added beside handed CLAUDE, nested AGENTS also attaches where a nested CLAUDE exists, imported AGENTS path is not duplicated",
+      "managed-only": "Only managed and memory instruction kinds remain, no nested AGENTS attaches, already supplied tool context is preserved"
+    },
+    "unchanged_assertions": "All context/list/path/byte equality and walk assertions retained across repetitions; default 5000 ms test deadlines"
+  },
+  "N3": {
+    "fixture": "Fresh ordinary and linked repositories; actual entry kinds, HEAD/ref/log/packed-ref file text and unmodified filesystem timestamps",
+    "batches": 2,
+    "cases": [
+      "Two unchanged captures: same object ID and equal key",
+      "Commit on the same ordinary branch: changed object ID and changed key",
+      "Checkout a diverged branch: changed HEAD text/object ID and changed key",
+      "Detach HEAD at current commit: unchanged object ID, changed HEAD representation/key",
+      "Pack refs: unchanged object ID, changed ref/packed-refs representation/key",
+      "Commit in linked worktree: changed shared ref/object ID/key with unchanged own HEAD bytes",
+      "Commit on a non-ASCII branch: changed object ID and changed key via the documented timestamp/fallback route"
+    ],
+    "oracle": "git rev-parse --verify --quiet HEAD for identity; filesystem stat nanoseconds captured with millisecond values passed to unchanged headKeyOf. No os.utime, sleeps to force distinct stamps, synthetic timestamp injection or permission bypass.",
+    "scope": "Source refresh probe with captured filesystem/Git replies, not production polling, UI refresh or process/filesystem transport"
+  },
+  "N2": {
+    "acquisition": "Official downloads.claude.ai release archive, pinned win32-x64 2.1.289, size and SHA256 against manifest. Do not run installer or modify global launchers; use explicit executable path and child-only update/traffic guards.",
+    "comparison": "Run the existing 18 authored free-screen assertions unchanged against two fresh fixtures on 2.1.289. Historical 2.1.288 records remain separate controls; no rescue/fix effect if both versions pass.",
+    "unavailable": "Record HTTP/checksum/runtime error metadata if blocked; do not silently substitute another version; complete N1/N3 first"
+  },
+  "classification": "A differing functional assertion is a component signal, not automatically an E3/E4 production bug. Preserve invalid harness/configuration/timeout records and counterexamples; escalate only an actual signal. Gate remains closed without minimal current-production reproduction, duplicate check and independent review.",
+  "privacy": "No raw native log, source implementation, actual absolute path, user identity or complete capture exported. Publish inspected counts, closed mode choices, relations and hashes only."
+}

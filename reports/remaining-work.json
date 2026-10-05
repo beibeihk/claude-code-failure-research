@@ -1,9 +1,9 @@
 {
-  "updated_date": "2026-10-04",
+  "updated_date": "2026-10-05",
   "project": "Claude Code Core Failure Research",
   "execution_policy": "No Claude account, no login, no paid model calls; no authentication changes",
   "overall_goal_complete": false,
-  "current_cycle": "bounded-three-candidate-real-fixture-screen-complete",
+  "current_cycle": "N1-N3-N2-complete-with-no-functional-signal",
   "timeout_followup": {
     "status": "investigated-with-scoped-harness-workaround",
     "finding": "Full default dispatch reproduces test timeouts; two original focused cases pass at default deadline; process-tree sampler observes peak 27 concurrent descendants; serial-file control passes 210/210 at unchanged 5000 ms deadline.",
@@ -20,27 +20,28 @@
     "110 passing authored test-case executions, separate from model trials",
     "Original-case deadline controls, worker-count observation, phase timings and complete serial-file full-suite control",
     "Versioned protocols, invalid-batch preservation, reviewed metadata and no raw transcript/source export",
-    "Three-candidate real-fixture captured-response screen: 18 distinct authored cases in two fresh batches, 36/36 passing executions, no functional signal; production transport untested"
+    "Three-candidate real-fixture captured-response screen: 18 distinct authored cases in two fresh batches, 36/36 passing executions, no functional signal; production transport untested",
+    "N1: three authored contracts in three non-default initial instruction modes, two fresh batches, 18/18 passes; N3: seven actual HEAD/ref state-pair source probes in two fresh batches, 14/14 passes; N2: same 18 previous cases on verified private official 2.1.289, 36/36 passes"
   ],
   "free_remaining_work": [
     {
       "id": "C1",
       "priority": 1,
-      "status": "default-nested-delivery-screen-complete; non-default-options-unexecuted",
-      "task": "Default nested Read delivery, duplicate guards, failed/successful recovery, whole/partial instruction reads and context reset were screened with actual file bytes. Next contrast non-default option modes using isolated private manifest defaults; do not alter user settings.",
-      "completion_condition": "Register option-specific expected contexts and unchanged functional hooks, then record current engine/version and positive/negative controls; not model adherence."
+      "status": "default-nested-and-nondefault-initial-mode-contracts-complete; production-loader-and-reload-unvalidated",
+      "task": "Default nested delivery and three non-default initial mode contracts passed; no concrete functional signal. Persisted user settings precedence, real loader and live option reload remain outside this response-replay interface and are not claimed.",
+      "completion_condition": "Completed within registered component scope. Any loader/reload extension must identify an official no-model interface before execution; do not simulate it and call it production evidence."
     },
     {
       "id": "C2",
       "priority": 2,
-      "status": "real-oracle-response-replay-screen-complete; production-transport-unvalidated",
-      "task": "Actual merge/rebase conflicts and aborts, ordinary/linked Git directories, special filename status/numstat/patches and staged rename passed component replay. Next screen real HEAD/ref changes against source refresh probes, with command/entry/timestamp oracles.",
-      "completion_condition": "Predeclare refresh-probe criteria and fixed Git operations; capture real state changes with timestamps and source hashes; preserve source-helper versus production-transport distinction."
+      "status": "real-oracle-and-head-ref-source-probes-complete; production-transport-and-polling-unvalidated",
+      "task": "Actual file/Git captures and seven HEAD/ref pair probes passed; ordinary/linked, detached, packed-ref and non-ASCII branches covered. Full gitBackendOf fetch/refresh and live transport remain separate.",
+      "completion_condition": "Completed within registered source-probe scope. Optional backend fetch extension must preserve pinned argv and actual captured outputs and distinguish source behavior from production polling."
     },
     {
       "id": "C3",
       "priority": 3,
-      "status": "conditional-on-production-candidate",
+      "status": "evidence-gate-closed-no-production-candidate",
       "task": "For a novel reproducible production client candidate, retest current supported version, search duplicates, run relevant ablations and obtain independent case review.",
       "completion_condition": "E3/E4 production evidence and complete reporting gate; at most one official issue, no threshold reduction."
     }
@@ -92,18 +93,76 @@
   "next_bounded_cycle_options": [
     {
       "id": "N1",
-      "status": "unexecuted",
-      "task": "Non-default instruction option contracts in private overlays; no user settings edits"
+      "status": "completed-registered-scope-no-functional-signal",
+      "task": "Non-default instruction option contracts in private overlays; no user settings edits",
+      "case_executions_passed": 18,
+      "source_or_surface": "initial manifest option -> native hooks; no live reload",
+      "record": "results/client-tests/followup-N1.json"
     },
     {
       "id": "N2",
-      "status": "unexecuted",
-      "task": "Same 18 registered cases on an independently pinned official 2.1.289 native engine; no login/model calls; do not silently replace current version provenance"
+      "status": "completed-registered-scope-no-functional-signal",
+      "task": "Same 18 registered cases on an independently pinned official 2.1.289 native engine; no login/model calls; do not silently replace current version provenance",
+      "case_executions_passed": 36,
+      "source_or_surface": "private checksum/signed-manifest/Authenticode verified native 2.1.289; same source/test assertions",
+      "record": "docs/free-followup.md"
     },
     {
       "id": "N3",
-      "status": "unexecuted",
-      "task": "Actual HEAD/ref movement oracle for source refresh probes; no claimed live diff UI validation"
+      "status": "completed-registered-scope-no-functional-signal",
+      "task": "Actual HEAD/ref movement oracle for source refresh probes; no claimed live diff UI validation",
+      "case_executions_passed": 14,
+      "source_or_surface": "actual captures -> unchanged headKeyOf source helper",
+      "record": "results/client-tests/followup-N3.json"
+    }
+  ],
+  "free_followup": {
+    "status": "complete",
+    "report": "docs/free-followup.md",
+    "registered_items": [
+      "N1",
+      "N3",
+      "N2"
+    ],
+    "new_case_executions_passed": 68,
+    "new_case_executions_failed": 0,
+    "production_bug_confirmed": false,
+    "global_cli_version_before_and_after": "2.1.288",
+    "private_engine_tested": "2.1.289",
+    "global_cli_binary_hash_unchanged": true,
+    "independent_production_case_review": "not-triggered-no-signal"
+  },
+  "optional_free_extensions_not_executed": [
+    {
+      "id": "X1",
+      "task": "Run N1 and N3 unchanged on the already acquired private 2.1.289 engine; register this extra version-compatibility contrast before execution. The new entry point is prepared, not yet measured.",
+      "commands": [
+        "python -m runners.run_free_followup --upstream .private/upstream --item N1 --engine-289",
+        "python -m runners.run_free_followup --upstream .private/upstream --item N3 --engine-289"
+      ],
+      "status": "unexecuted; optional extra version coverage, not a production failure lead"
+    },
+    {
+      "id": "X2",
+      "task": "Prepare a fixed real-Git commit/checkout sequence for gitBackendOf.fetchDiff/fetchHunks: capture the exact pinned subprocess argv/results and assert updated file counts and hunk bytes before/after HEAD movement. Source backend only; no live transport claim.",
+      "status": "not-implemented; requires a new bounded protocol, no signal currently identified"
+    }
+  ],
+  "original_goal_remaining_at_current_constraints": [
+    {
+      "step": "Production loading/refresh/permission transport reproduction",
+      "status": "not-validated",
+      "condition": "Identify an official no-model live interface or a source-backed deterministic failure with realistic fixture; current test world replies are scripted/captured."
+    },
+    {
+      "step": "Real Claude coding, retention, long-horizon/compaction/subagent behavior and false-completion frequencies",
+      "status": "excluded-by-user-no-account-no-paid-policy; no login requested",
+      "condition": "Cannot count current component executions as this evidence."
+    },
+    {
+      "step": "One high-quality official issue, follow-up, verified fix and v0.1.0",
+      "status": "no-current-executable-report-case",
+      "condition": "A novel current-version production E3/E4 case, minimum fixture, duplicate check and independent review are still required. No threshold reduction."
     }
   ]
 }

@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "da3acf8d-7a36-4755-b1a3-9724c633b89d",
+  "date": "2026-10-05T02:40:57.229902+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "N3",
+  "version": "2.1.288 (Claude Code)",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "hooks_source_sha256": "49a49543222c6be8c4b904bb94e8eb8286ded35ebe5f90666669fcd405157ac1",
+  "authored_test_sha256": "5a9ce6ee0272856e53d3d13b36c255017e28f39f01b4133f85b2d0c61f01accb",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "per_test_timeout_ms": 5000,
+  "scope": "Native option hooks or unchanged source head-key helper with captured real fixture replies; no production transport/model trials",
+  "repetitions": [
+    {
+      "passed": 7,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 7,
+      "files_run": 1,
+      "observations": [
+        {
+          "before": "ordinary-initial",
+          "after": "ordinary-noop",
+          "oid_changed": false,
+          "key_changed": false,
+          "own_head_text_changed": false
+        },
+        {
+          "before": "ordinary-noop",
+          "after": "ordinary-committed",
+          "oid_changed": true,
+          "key_changed": true,
+          "own_head_text_changed": false
+        },
+        {
+          "before": "ordinary-committed",
+          "after": "ordinary-branch-switched",
+          "oid_changed": true,
+          "key_changed": true,
+          "own_head_text_changed": true
+        },
+        {
+          "before": "ordinary-branch-switched",
+          "after": "ordinary-detached",
+          "oid_changed": false,
+          "key_changed": true,
+          "own_head_text_changed": true
+        },
+        {
+          "before": "ordinary-detached",
+          "after": "ordinary-packed",
+          "oid_changed": false,
+          "key_changed": true,
+          "own_head_text_changed": false
+        },
+        {
+          "before": "linked-initial",
+          "after": "linked-committed",
+          "oid_changed": true,
+          "key_changed": true,
+          "own_head_text_changed": false
+        },
+        {
+          "before": "unicode-initial",
+          "after": "unicode-committed",
+          "oid_changed": true,
+          "key_changed": true,
+          "own_head_text_changed": false
+        }
+      ],
+      "test_cases": [
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-initial -> ordinary-noop",
+          "status": "pass",
+          "elapsed_ms": 3.22,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-noop -> ordinary-committed",
+          "status": "pass",
+          "elapsed_ms": 0.92,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-committed -> ordinary-branch-switched",
+          "status": "pass",
+          "elapsed_ms": 0.73,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-branch-switched -> ordinary-detached",
+          "status": "pass",
+          "elapsed_ms": 0.55,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-detached -> ordinary-packed",
+          "status": "pass",
+          "elapsed_ms": 0.46,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > linked-initial -> linked-committed",
+          "status": "pass",
+          "elapsed_ms": 0.94,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > unicode-initial -> unicode-committed",
+          "status": "pass",
+          "elapsed_ms": 0.78,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "batch": 1,
+      "option_mode": null,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.67,
+      "log_sha256": "92cad3d0fed7f140f7bb1f24aad14e854a199ce10b3f06ae8d06dbb4e2a475d5",
+      "executed_tree_sha256": "d66b204fc663b443b19f391f4784d4e15d05a8f15caef1566e8d87f4d98e384d",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "8a8bc415084d424e872d5ca1e0d833182c77a0ead54d8cd4b9a334a092aade0e"
+    },
+    {
+      "passed": 7,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 7,
+      "files_run": 1,
+      "observations": [
+        {
+          "before": "ordinary-initial",
+          "after": "ordinary-noop",
+          "oid_changed": false,
+          "key_changed": false,
+          "own_head_text_changed": false
+        },
+        {
+          "before": "ordinary-noop",
+          "after": "ordinary-committed",
+          "oid_changed": true,
+          "key_changed": true,
+          "own_head_text_changed": false
+        },
+        {
+          "before": "ordinary-committed",
+          "after": "ordinary-branch-switched",
+          "oid_changed": true,
+          "key_changed": true,
+          "own_head_text_changed": true
+        },
+        {
+          "before": "ordinary-branch-switched",
+          "after": "ordinary-detached",
+          "oid_changed": false,
+          "key_changed": true,
+          "own_head_text_changed": true
+        },
+        {
+          "before": "ordinary-detached",
+          "after": "ordinary-packed",
+          "oid_changed": false,
+          "key_changed": true,
+          "own_head_text_changed": false
+        },
+        {
+          "before": "linked-initial",
+          "after": "linked-committed",
+          "oid_changed": true,
+          "key_changed": true,
+          "own_head_text_changed": false
+        },
+        {
+          "before": "unicode-initial",
+          "after": "unicode-committed",
+          "oid_changed": true,
+          "key_changed": true,
+          "own_head_text_changed": false
+        }
+      ],
+      "test_cases": [
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-initial -> ordinary-noop",
+          "status": "pass",
+          "elapsed_ms": 3.94,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-noop -> ordinary-committed",
+          "status": "pass",
+          "elapsed_ms": 1.1,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-committed -> ordinary-branch-switched",
+          "status": "pass",
+          "elapsed_ms": 0.87,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-branch-switched -> ordinary-detached",
+          "status": "pass",
+          "elapsed_ms": 0.66,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > ordinary-detached -> ordinary-packed",
+          "status": "pass",
+          "elapsed_ms": 0.54,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > linked-initial -> linked-committed",
+          "status": "pass",
+          "elapsed_ms": 1.21,
+          "error_kind": null
+        },
+        {
+          "name": "N3-real-head-ref-oracle > unicode-initial -> unicode-committed",
+          "status": "pass",
+          "elapsed_ms": 0.99,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "batch": 2,
+      "option_mode": null,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.7,
+      "log_sha256": "807dd68e97fb630b4bec55517aef862af0eea0c56e9b6e836b83562a4c13ac0b",
+      "executed_tree_sha256": "53034e50c7a28bf98caff741f636687e18240a2dc85bc9e2bdda6d412581522c",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "b65cd79920be0fa5165e220690bb4bb0720cf5b89ad9da4258770504d57a40b4"
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false
+  },
+  "network_observation": "No model calls; provider env cleared, loopback provider guard and child-only update/nonessential-traffic disables. No packet capture claim."
+}

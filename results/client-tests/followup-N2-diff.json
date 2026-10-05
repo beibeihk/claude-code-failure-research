@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "6a6a2122-6cfb-4a75-ab61-99db347e677b",
+  "screen_batch_id": "577c280a-a990-4855-b918-fcf2936f43d7",
+  "date": "2026-10-05T02:41:46.805474+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "real-fixture-response-replay",
+  "version": "2.1.289 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "per_test_timeout_ms": 5000,
+  "hooks_source_sha256": "49a49543222c6be8c4b904bb94e8eb8286ded35ebe5f90666669fcd405157ac1",
+  "authored_test_sha256": "735fe58f03cfdb89c1ad310be1f526ff69aed0aa035d84f5d2382bfc4e211d5d",
+  "executable_sha256": "bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "scope": "Captured real filesystem/Git responses; component source and engine hooks; not production transport",
+  "repetitions": [
+    {
+      "passed": 12,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 12,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "FS01-real-state-replay > ordinary-clean",
+          "status": "pass",
+          "elapsed_ms": 2.64,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > ordinary-merge-conflict",
+          "status": "pass",
+          "elapsed_ms": 0.49,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > ordinary-merge-aborted",
+          "status": "pass",
+          "elapsed_ms": 0.37,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-clean",
+          "status": "pass",
+          "elapsed_ms": 0.28,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-merge-conflict",
+          "status": "pass",
+          "elapsed_ms": 0.28,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-merge-aborted",
+          "status": "pass",
+          "elapsed_ms": 0.28,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-rebase-conflict",
+          "status": "pass",
+          "elapsed_ms": 0.32,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-rebase-aborted",
+          "status": "pass",
+          "elapsed_ms": 0.31,
+          "error_kind": null
+        },
+        {
+          "name": "FS02-real-path-replay > clean and dirty status retain actual supported path spellings",
+          "status": "pass",
+          "elapsed_ms": 0.64,
+          "error_kind": null
+        },
+        {
+          "name": "FS02-real-path-replay > real text and binary numstat retain exact counts and identities",
+          "status": "pass",
+          "elapsed_ms": 0.69,
+          "error_kind": null
+        },
+        {
+          "name": "FS02-real-path-replay > real raw patch bodies pair to space and non-ASCII paths",
+          "status": "pass",
+          "elapsed_ms": 0.92,
+          "error_kind": null
+        },
+        {
+          "name": "FS02-real-path-replay > real staged rename retains both file identities without invented line edits",
+          "status": "pass",
+          "elapsed_ms": 0.25,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 1.91,
+      "log_sha256": "b0ea279b7fca7dd747de6b9bb6619b4482124e53835329da1af84e29adcfc150",
+      "executed_tree_sha256": "7c35008ee189ff9046d97e89cd16281f2921e24d6b36bb94de537660a480980f",
+      "hooks_implementation_unchanged": true,
+      "fixture_proof": {
+        "states": [
+          {
+            "label": "ordinary-clean",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "ordinary-merge-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "MERGE_HEAD"
+            ],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "ordinary-merge-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "linked-clean",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-merge-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "MERGE_HEAD"
+            ],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-merge-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-rebase-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "REBASE_HEAD",
+              "rebase-merge"
+            ],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-rebase-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          }
+        ],
+        "real_file_names": [
+          "plain.ts",
+          "with spaces.ts",
+          "你好.ts",
+          "binary.dat"
+        ],
+        "fixture_data_sha256": "fd4285e820ccfaf2b98d5a0a6dad1cecdc32c71d1654976689891f4e313978dd"
+      }
+    },
+    {
+      "passed": 12,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 12,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "FS01-real-state-replay > ordinary-clean",
+          "status": "pass",
+          "elapsed_ms": 2.64,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > ordinary-merge-conflict",
+          "status": "pass",
+          "elapsed_ms": 0.54,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > ordinary-merge-aborted",
+          "status": "pass",
+          "elapsed_ms": 0.39,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-clean",
+          "status": "pass",
+          "elapsed_ms": 0.3,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-merge-conflict",
+          "status": "pass",
+          "elapsed_ms": 0.32,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-merge-aborted",
+          "status": "pass",
+          "elapsed_ms": 0.33,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-rebase-conflict",
+          "status": "pass",
+          "elapsed_ms": 0.33,
+          "error_kind": null
+        },
+        {
+          "name": "FS01-real-state-replay > linked-rebase-aborted",
+          "status": "pass",
+          "elapsed_ms": 0.35,
+          "error_kind": null
+        },
+        {
+          "name": "FS02-real-path-replay > clean and dirty status retain actual supported path spellings",
+          "status": "pass",
+          "elapsed_ms": 0.62,
+          "error_kind": null
+        },
+        {
+          "name": "FS02-real-path-replay > real text and binary numstat retain exact counts and identities",
+          "status": "pass",
+          "elapsed_ms": 0.78,
+          "error_kind": null
+        },
+        {
+          "name": "FS02-real-path-replay > real raw patch bodies pair to space and non-ASCII paths",
+          "status": "pass",
+          "elapsed_ms": 0.95,
+          "error_kind": null
+        },
+        {
+          "name": "FS02-real-path-replay > real staged rename retains both file identities without invented line edits",
+          "status": "pass",
+          "elapsed_ms": 0.25,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 1.89,
+      "log_sha256": "0b1974f670d67bb103cff6e4423790a3582758437478b9da89aab051ed3dac51",
+      "executed_tree_sha256": "f6945f436cb84ac42b830528873374b293ad0c486163a6b70b8cef6dfe0e1ceb",
+      "hooks_implementation_unchanged": true,
+      "fixture_proof": {
+        "states": [
+          {
+            "label": "ordinary-clean",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "ordinary-merge-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "MERGE_HEAD"
+            ],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "ordinary-merge-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "linked-clean",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-merge-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "MERGE_HEAD"
+            ],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-merge-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-rebase-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "REBASE_HEAD",
+              "rebase-merge"
+            ],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-rebase-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          }
+        ],
+        "real_file_names": [
+          "plain.ts",
+          "with spaces.ts",
+          "你好.ts",
+          "binary.dat"
+        ],
+        "fixture_data_sha256": "823799369d22ecae25e865d5c890cd8e827a8e1d3587282ab4657b717e4e5934"
+      }
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false
+  },
+  "network_observation": "No model calls; provider env cleared, loopback provider guard and child-only update/nonessential-traffic disables. No packet capture claim."
+}

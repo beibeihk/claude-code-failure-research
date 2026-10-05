@@ -103,6 +103,11 @@ The subsequent [bounded three-candidate screen](free-candidate-screen.md) ran
 and default nested instruction delivery had no functional signal. This is a
 captured-response component comparison, not production transport verification.
 The 2.1.289 changelog was observed but the native engine tested was 2.1.288.
+The [2026-10-05 follow-up](free-followup.md) subsequently completed N1/N3/N2:
+18/18 initial non-default option executions, 14/14 actual HEAD/ref source-probe
+executions, and 36/36 unchanged screen cases on a verified private 2.1.289
+engine. All are scoped component contracts; production transport, live reload
+and model evidence remain unvalidated.
 
 Further free experiments can test nested instruction attachment, option selection,
 Git state transitions, diff parsing/rendering, hook order and recovery against

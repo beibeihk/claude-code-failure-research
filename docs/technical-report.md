@@ -1,6 +1,6 @@
 # Reproducible Failure Analysis for Claude Code
 
-Infrastructure and no-cost client-contract report, updated 2026-10-04.
+Infrastructure and no-cost client-contract report, updated 2026-10-05.
 **No empirical Claude model or production failure result is claimed.**
 
 ## 1. Motivation
@@ -49,7 +49,7 @@ been measured in Claude.
 |---|---|
 | Public reports screened | 28; all have known existing-report/duplicate risk |
 | Official docs reviewed | 20 pages plus nine pinned repository files |
-| CLI versions inspected | 2.1.169, then tested 2.1.288; 2.1.289 changelog observed, native engine not tested |
+| CLI versions inspected | 2.1.169; native component tests on 2.1.288 and isolated official 2.1.289; global CLI remains 2.1.288 |
 | Official access diagnostics | One isolated 2.1.288 probe; authentication required; no model use |
 | Valid Claude coding trials | 0 |
 | No-cost authored client test-case executions | 110 pass: 11 distinct cases repeated 10 times; separate from model trials |
@@ -57,6 +57,9 @@ been measured in Claude.
 | Timeout investigation, focused original cases | Default 5000 ms: 20/20; expanded 15000 ms: 20/20; no functional failures |
 | New full-suite execution controls | Default dispatch: 205/210; sampled dispatch: 206/210, peak 27 descendants; serial files: 210/210 at default 5000 ms |
 | Bounded real-fixture screen | 3 candidates, 18 distinct authored cases, 2 fresh batches: 36/36 passing component-case executions; no functional signal |
+| N1 option contracts | 3 tests × 3 non-default modes × 2 batches: 18/18 pass; initial private-manifest selection only |
+| N3 HEAD/ref probe | 7 actual Git state-pair cases × 2 batches: 14/14 pass; captured source-helper replies, no production polling |
+| N2 native engine comparison | The same 18 authored screen cases × 2 fresh batches on private 2.1.289: 36/36 pass; no rescue effect since historical 2.1.288 also passes |
 | Confirmed failures | 0 |
 | Behavioral reproduction rate | N/A |
 | New Anthropic issues / comments | 0 / 0 |
@@ -73,7 +76,10 @@ project's reproduced-failure count.
 The [real-fixture follow-up](free-candidate-screen.md) uses actual local Git
 operations and synthetic file bytes as captured-response oracles. Git helpers
 and native instruction events passed within that scope; production transport,
-live refresh, non-default option modes and model adherence remain unvalidated.
+live refresh and model adherence remain unvalidated. The subsequent
+[free follow-up](free-followup.md) tests initial non-default mode selection,
+actual HEAD/ref source probes and the same contracts on a private official
+2.1.289 engine. Option reload and proprietary production transport remain untested.
 
 ## 6. Controls
 

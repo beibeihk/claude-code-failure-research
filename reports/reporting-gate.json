@@ -1,7 +1,7 @@
 {
-  "review_date": "2026-10-04",
+  "review_date": "2026-10-05",
   "decision": "do-not-submit",
-  "reason": "No model coding trials or confirmed production client failure. Prior timeout controls support dispatch/full-suite context sensitivity, not an internal root cause. New bounded screen of three real-fixture captured-response candidates passed 36/36 component-case executions without functional signal; production transport and 2.1.289 native engine remain untested. No E3/E4 production case, independent production-case review, official issue or release justified.",
+  "reason": "No model coding trials or confirmed production client failure. Completed N1 initial non-default modes (18/18), N3 actual HEAD/ref source probes (14/14), and N2 identical prior contracts on private official 2.1.289 (36/36), all without functional signal. Both native versions pass the fixed source contracts; no rescue/fix effect established. Production transport, live reload and model behavior remain unvalidated; no E3/E4 production case, issue or release justified.",
   "max_new_issues_this_cycle": 1,
   "new_issues_submitted": 0,
   "independent_infrastructure_review": "passed after prospective design amendment; no observed case reviewed",

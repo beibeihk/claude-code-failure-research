@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "f8b276ec-9841-4dcc-b7db-4e733de5d163",
+  "screen_batch_id": "577c280a-a990-4855-b918-fcf2936f43d7",
+  "date": "2026-10-05T02:41:47.146971+00:00",
+  "kind": "official-client-test-engine",
+  "suite": "agents-md",
+  "selection": "real-fixture-response-replay",
+  "version": "2.1.289 (Claude Code)",
+  "platform": "win32",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "1f8c01db63ada1791ca1894a7ca3a07b1c7a6bb17e0bc7740f07c3ccfa8122e9",
+  "per_test_timeout_ms": 5000,
+  "hooks_source_sha256": "f3040178c6cddd9ddc19932291ff28ea9e65af02298266f19b73bf0def86fa6d",
+  "authored_test_sha256": "0d0288c6ab6a02c99676a75db3d9c110eaf3d1f0e2ee5c2fc85e0d80349a0ba5",
+  "executable_sha256": "bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "scope": "Captured real filesystem/Git responses; component source and engine hooks; not production transport",
+  "repetitions": [
+    {
+      "passed": 6,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 6,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "FS03-real-instruction-replay > first successful nested Read attaches exact bytes once; new context resets delivery",
+          "status": "pass",
+          "elapsed_ms": 111.98,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > failed Read consumes no delivery; subsequent successful Read attaches",
+          "status": "pass",
+          "elapsed_ms": 81.09,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > sibling root gets no nested attachment; inside-root positive control still attaches",
+          "status": "pass",
+          "elapsed_ms": 81.49,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > whole direct instruction Read marks that file delivered",
+          "status": "pass",
+          "elapsed_ms": 88.6,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > partial direct instruction Read does not suppress later full attachment",
+          "status": "pass",
+          "elapsed_ms": 82.05,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > nested CLAUDE claims its own directory while a deeper AGENTS still attaches",
+          "status": "pass",
+          "elapsed_ms": 79.0,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 1.08,
+      "log_sha256": "a6ccdbcd8c0664312e7ca72cdaa3093b17be7d7aea378e45f45659bd958159d4",
+      "executed_tree_sha256": "a514c0354d598b3dffb6117b373912ceeb1ded0e85bfcf06374f83975c5dca33",
+      "hooks_implementation_unchanged": true,
+      "fixture_proof": {
+        "states": [
+          {
+            "label": "ordinary-clean",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "ordinary-merge-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "MERGE_HEAD"
+            ],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "ordinary-merge-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "linked-clean",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-merge-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "MERGE_HEAD"
+            ],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-merge-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-rebase-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "REBASE_HEAD",
+              "rebase-merge"
+            ],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-rebase-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          }
+        ],
+        "real_file_names": [
+          "plain.ts",
+          "with spaces.ts",
+          "你好.ts",
+          "binary.dat"
+        ],
+        "fixture_data_sha256": "fd4285e820ccfaf2b98d5a0a6dad1cecdc32c71d1654976689891f4e313978dd"
+      }
+    },
+    {
+      "passed": 6,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 6,
+      "files_run": 1,
+      "observations": [],
+      "test_cases": [
+        {
+          "name": "FS03-real-instruction-replay > first successful nested Read attaches exact bytes once; new context resets delivery",
+          "status": "pass",
+          "elapsed_ms": 125.73,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > failed Read consumes no delivery; subsequent successful Read attaches",
+          "status": "pass",
+          "elapsed_ms": 82.1,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > sibling root gets no nested attachment; inside-root positive control still attaches",
+          "status": "pass",
+          "elapsed_ms": 85.78,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > whole direct instruction Read marks that file delivered",
+          "status": "pass",
+          "elapsed_ms": 87.76,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > partial direct instruction Read does not suppress later full attachment",
+          "status": "pass",
+          "elapsed_ms": 87.05,
+          "error_kind": null
+        },
+        {
+          "name": "FS03-real-instruction-replay > nested CLAUDE claims its own directory while a deeper AGENTS still attaches",
+          "status": "pass",
+          "elapsed_ms": 90.39,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 1.08,
+      "log_sha256": "e2c37b8705fc718574b35e2fbca4e73d1664528cc8399afb03a45bf9be43d783",
+      "executed_tree_sha256": "f25e2a567c95dfe8af1b79bcf9f742dd8baa6242f8f5a0aa22e069b27abf4cec",
+      "hooks_implementation_unchanged": true,
+      "fixture_proof": {
+        "states": [
+          {
+            "label": "ordinary-clean",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "ordinary-merge-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "MERGE_HEAD"
+            ],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "ordinary-merge-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": false
+          },
+          {
+            "label": "linked-clean",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-merge-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "MERGE_HEAD"
+            ],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-merge-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-rebase-conflict",
+            "expected_transient": true,
+            "marker_names": [
+              "REBASE_HEAD",
+              "rebase-merge"
+            ],
+            "own_git_dir_differs_from_common": true
+          },
+          {
+            "label": "linked-rebase-aborted",
+            "expected_transient": false,
+            "marker_names": [],
+            "own_git_dir_differs_from_common": true
+          }
+        ],
+        "real_file_names": [
+          "plain.ts",
+          "with spaces.ts",
+          "你好.ts",
+          "binary.dat"
+        ],
+        "fixture_data_sha256": "823799369d22ecae25e865d5c890cd8e827a8e1d3587282ab4657b717e4e5934"
+      }
+    }
+  ],
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false
+  },
+  "network_observation": "No model calls; provider env cleared, loopback provider guard and child-only update/nonessential-traffic disables. No packet capture claim."
+}

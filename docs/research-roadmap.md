@@ -13,6 +13,13 @@ reports supply candidates and duplicate checks, not our own reproduction evidenc
 Local scripted API transport and substitute-model backends are possible later
 client-only designs; neither has been implemented or executed here.
 
+As of 2026-10-05, the [three previously listed follow-ups](free-followup.md)
+are complete: initial non-default instruction modes, real HEAD/ref source probes
+and fixed-contract replay on an isolated official 2.1.289 engine all pass.
+These do not validate production transport, persisted-option reload or model
+adherence. The remaining-work file separates completed items from specific
+optional backend-refresh/version extensions and conditional reporting steps.
+
 As of 2026-10-04, the [two-timeout investigation](timeout-investigation.md) has
 executed isolated original-case controls, separate phase/worker observations and
 a full serial-file control. The latter passed 210/210 at the original 5000 ms
@@ -28,7 +35,7 @@ tasks explicitly excluded under the current policy rather than awaiting login.
 | P2 | Verification and false claims | Immutable invoice fixture and analyzer | Live traces, manual claim labels, repeated trials |
 | P3 | Hook reliability | Passive fixture, count/order diagnostics | Stream-correlated live delivery and controls |
 | P4 | Permissions/auto | Current precedence and classifier rules audit | Benign refusal tests and classifier availability control |
-| P5 | Instruction loading | Official engine and authored contracts executed | Nested Read contracts, supported option variations |
+| P5 | Instruction loading | Default nested Read and all three non-default initial option contracts executed | Live loader, persisted precedence and option reload |
 | P6 | Context/compaction | Matched-boundary protocol | Supported compact control and actual boundaries |
 | P7 | Subagents | Candidate screening and inheritance guide | Child traces, parent interpretation, conflict verifier |
 | P8 | Diff/Git | Official tests and Windows virtual-path controls executed | Actual filesystem/Git-backed client reproduction if a product candidate emerges |
@@ -42,7 +49,9 @@ V01 is the only automated model coding runner implemented and is policy-disabled
 The active client runners are `runners.run_client_tests` and the bounded
 `runners.run_free_screen`. The latter completed a three-candidate real-fixture
 response-replay screen with 36/36 passes and no functional signal; see
-[its scope and remaining transport limits](free-candidate-screen.md). H01 has a prepared
+[its scope and remaining transport limits](free-candidate-screen.md).
+[N1/N3](free-followup.md) uses `runners.run_free_followup`, with a private 2.1.289
+entry point added to the fixed free-screen runner. H01 has a prepared
 fixture and offline observer/analyzer tests. L01 is design-only. This explicit
 boundary prevents protocols or software unit tests from becoming claimed studies.
 

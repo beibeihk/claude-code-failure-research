@@ -8,7 +8,7 @@ Community research project, unaffiliated with Anthropic. This repository studies
 reproducible failure patterns, controls, and evaluation methods. It does not
 assume that a reported symptom is a Claude Code defect.
 
-**Status — 2026-10-04:** active **no-account, no-paid-model** client research.
+**Status — 2026-10-05:** active **no-account, no-paid-model** client research.
 Claude Code 2.1.288's official `plugin test` engine runs locally without login.
 We have executed instruction-loading contracts and controlled Git-pane fixture
 diagnostics. **Zero valid Claude model coding trials, zero confirmed production
@@ -22,8 +22,14 @@ Original failing runs remain public; no production bug or fix is confirmed.
 The subsequent [three-candidate real-fixture screen](docs/free-candidate-screen.md)
 passed 36/36 case executions across two fresh fixture batches. Real filesystem
 and Git captures feed component contracts; production transport remains untested.
-No candidate produced a functional signal. The tested engine is 2.1.288; the
-newly observed 2.1.289 changelog is not a claim of latest-engine validation.
+No candidate produced a functional signal. That 2026-10-04 screen used 2.1.288
+and left the then-observed 2.1.289 engine untested.
+That historical screen is followed by the completed
+[N1/N3/N2 work items](docs/free-followup.md): 18/18 option-contract executions,
+14/14 real HEAD/ref probe executions, and 36/36 unchanged prior cases on a
+checksum-pinned private 2.1.289 engine. The global CLI stays 2.1.288. Both engine
+versions pass the fixed-source contracts; no production fix or model evidence
+is inferred.
 
 ## What is implemented
 
@@ -78,6 +84,8 @@ python -m runners.run_client_tests --upstream .private/upstream --suite diff --s
 python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream-portable-control
 python -m runners.run_client_tests --upstream .private/upstream --suite diff --selection upstream-serial-files
 python -m runners.run_free_screen --upstream .private/upstream --batches 2
+python -m runners.run_free_followup --upstream .private/upstream --item N1
+python -m runners.run_free_followup --upstream .private/upstream --item N3
 ```
 
 Run the commands sequentially. The engine can still dispatch child test files
@@ -90,6 +98,8 @@ credentials/overrides in child memory, points accidental provider requests to a
 closed loopback endpoint, and disables nonessential traffic. It never alters the
 user's credentials or settings. Private source overlays preserve the upstream
 license; the authored tests remain MIT. Raw output stays under `.private/`.
+The version-comparison command and official private-binary provenance are in
+[the follow-up report](docs/free-followup.md#n2-isolated-official-engine).
 
 `plugin test` exercises real client hooks/UI and public helper functions against
 scripted world interactions. It does not sample a Claude model or measure coding
