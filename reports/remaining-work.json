@@ -3,7 +3,7 @@
   "project": "Claude Code Core Failure Research",
   "execution_policy": "No Claude account, no login, no paid model calls; no authentication changes",
   "overall_goal_complete": false,
-  "current_cycle": "N1-N3-N2-complete-with-no-functional-signal",
+  "current_cycle": "X2-complete-with-no-functional-signal",
   "timeout_followup": {
     "status": "investigated-with-scoped-harness-workaround",
     "finding": "Full default dispatch reproduces test timeouts; two original focused cases pass at default deadline; process-tree sampler observes peak 27 concurrent descendants; serial-file control passes 210/210 at unchanged 5000 ms deadline.",
@@ -21,7 +21,8 @@
     "Original-case deadline controls, worker-count observation, phase timings and complete serial-file full-suite control",
     "Versioned protocols, invalid-batch preservation, reviewed metadata and no raw transcript/source export",
     "Three-candidate real-fixture captured-response screen: 18 distinct authored cases in two fresh batches, 36/36 passing executions, no functional signal; production transport untested",
-    "N1: three authored contracts in three non-default initial instruction modes, two fresh batches, 18/18 passes; N3: seven actual HEAD/ref state-pair source probes in two fresh batches, 14/14 passes; N2: same 18 previous cases on verified private official 2.1.289, 36/36 passes"
+    "N1: three authored contracts in three non-default initial instruction modes, two fresh batches, 18/18 passes; N3: seven actual HEAD/ref state-pair source probes in two fresh batches, 14/14 passes; N2: same 18 previous cases on verified private official 2.1.289, 36/36 passes",
+    "X2: ordinary and linked commit/checkout sequences through unchanged gitBackendOf, four passing scenario executions in two fresh batches, twenty state fetch/hunk checks; production transport remains untested"
   ],
   "free_remaining_work": [
     {
@@ -34,9 +35,9 @@
     {
       "id": "C2",
       "priority": 2,
-      "status": "real-oracle-and-head-ref-source-probes-complete; production-transport-and-polling-unvalidated",
-      "task": "Actual file/Git captures and seven HEAD/ref pair probes passed; ordinary/linked, detached, packed-ref and non-ASCII branches covered. Full gitBackendOf fetch/refresh and live transport remain separate.",
-      "completion_condition": "Completed within registered source-probe scope. Optional backend fetch extension must preserve pinned argv and actual captured outputs and distinguish source behavior from production polling."
+      "status": "real-oracle-head-ref-and-uncommitted-backend-sequences-complete; production-transport-and-polling-unvalidated",
+      "task": "Actual Git/file captures, seven HEAD/ref pair probes and fixed commit/checkout backend sequences passed; no functional signal. Production loading, transport, live polling and races remain outside captured-response evidence.",
+      "completion_condition": "Completed within registered source component scopes; identify an official no-model live interface before claiming production refresh behavior."
     },
     {
       "id": "C3",
@@ -141,11 +142,6 @@
         "python -m runners.run_free_followup --upstream .private/upstream --item N3 --engine-289"
       ],
       "status": "unexecuted; optional extra version coverage, not a production failure lead"
-    },
-    {
-      "id": "X2",
-      "task": "Prepare a fixed real-Git commit/checkout sequence for gitBackendOf.fetchDiff/fetchHunks: capture the exact pinned subprocess argv/results and assert updated file counts and hunk bytes before/after HEAD movement. Source backend only; no live transport claim.",
-      "status": "not-implemented; requires a new bounded protocol, no signal currently identified"
     }
   ],
   "original_goal_remaining_at_current_constraints": [
@@ -164,5 +160,18 @@
       "status": "no-current-executable-report-case",
       "condition": "A novel current-version production E3/E4 case, minimum fixture, duplicate check and independent review are still required. No threshold reduction."
     }
-  ]
+  ],
+  "backend_refresh": {
+    "id": "X2",
+    "status": "complete-no-functional-signal",
+    "report": "docs/backend-refresh.md",
+    "record": "results/client-tests/backend-refresh-X2.json",
+    "scenario_executions_passed": 4,
+    "scenario_executions_failed": 0,
+    "state_checks": 20,
+    "fresh_fixture_batches": 2,
+    "model_calls": 0,
+    "production_bug_confirmed": false,
+    "independent_production_case_review": "not-triggered-no-signal"
+  }
 }

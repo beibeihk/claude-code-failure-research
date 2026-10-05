@@ -1,12 +1,12 @@
 {
-  "validated_at": "2026-10-05T02:50:22.038559+00:00",
+  "validated_at": "2026-10-05T03:54:24.0935957Z",
   "kind": "offline-harness-validation",
   "python_version": "3.11.5",
-  "tests_passed": 63,
+  "tests_passed": 64,
   "tests_failed": 0,
-  "duration_seconds": 10.048,
+  "duration_seconds": 16.0,
   "repository_checks": {
-    "schema_documents_validated": 23,
+    "schema_documents_validated": 24,
     "candidates_screened": 28,
     "privacy_metadata_checks": "pass",
     "local_links": "pass",
@@ -14,5 +14,5 @@
   },
   "runner_dry_run": "pass",
   "real_claude_model_calls": 0,
-  "notes": "Includes mocked CLI integration and actual fixture oracle tests; not agent performance evidence"
+  "notes": "Includes mocked CLI integration, actual fixture oracle tests and X2 raw-patch byte oracle; not agent performance evidence"
 }

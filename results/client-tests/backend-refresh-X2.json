@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "03c90125-b4c1-4b39-a3a0-05eb92244bec",
+  "date": "2026-10-05T11:51:22.404723+08:00",
+  "kind": "official-client-test-engine",
+  "suite": "diff",
+  "selection": "X2",
+  "version": "2.1.289 (Claude Code)",
+  "upstream_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
+  "upstream_mod_sha256": "50e5d9a90c7323afcc3899e8f30eabddfab12a04d0862bee8bf2fa9db2cf0d15",
+  "hooks_source_sha256": "49a49543222c6be8c4b904bb94e8eb8286ded35ebe5f90666669fcd405157ac1",
+  "authored_test_sha256": "a5f504c99a1652f5ac56240bd48e2b1981ea5a400618dcbc424f93d83a391a21",
+  "protocol_sha256": "7e1319040bff41c6f792282f5e1ac7b71f2813c00a58d2145ecb8615938c3aaf",
+  "executable_sha256": "bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b",
+  "model_calls": 0,
+  "coding_trials": 0,
+  "billed_model_cost_usd": 0,
+  "per_test_timeout_ms": 5000,
+  "scope": "Same unchanged source backend across captured real commit/checkout snapshots; no live transport, UI or model trials",
+  "repetitions": [
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 1,
+      "observations": [
+        {
+          "scenario": "ordinary",
+          "stage": "before-commit",
+          "files_count": 2,
+          "lines_added": 2,
+          "lines_removed": 2,
+          "hunks_count": 2,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "ordinary",
+          "stage": "after-commit-clean",
+          "files_count": 0,
+          "lines_added": 0,
+          "lines_removed": 0,
+          "hunks_count": 0,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "ordinary",
+          "stage": "after-commit-edited",
+          "files_count": 1,
+          "lines_added": 1,
+          "lines_removed": 1,
+          "hunks_count": 1,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "ordinary",
+          "stage": "after-checkout-clean",
+          "files_count": 0,
+          "lines_added": 0,
+          "lines_removed": 0,
+          "hunks_count": 0,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "ordinary",
+          "stage": "after-checkout-edited",
+          "files_count": 1,
+          "lines_added": 1,
+          "lines_removed": 1,
+          "hunks_count": 1,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "before-commit",
+          "files_count": 2,
+          "lines_added": 2,
+          "lines_removed": 2,
+          "hunks_count": 2,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "after-commit-clean",
+          "files_count": 0,
+          "lines_added": 0,
+          "lines_removed": 0,
+          "hunks_count": 0,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "after-commit-edited",
+          "files_count": 1,
+          "lines_added": 1,
+          "lines_removed": 1,
+          "hunks_count": 1,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "after-checkout-clean",
+          "files_count": 0,
+          "lines_added": 0,
+          "lines_removed": 0,
+          "hunks_count": 0,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "after-checkout-edited",
+          "files_count": 1,
+          "lines_added": 1,
+          "lines_removed": 1,
+          "hunks_count": 1,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        }
+      ],
+      "test_cases": [
+        {
+          "name": "X2-backend-commit-checkout > ordinary five-state sequence",
+          "status": "pass",
+          "elapsed_ms": 10.49,
+          "error_kind": null
+        },
+        {
+          "name": "X2-backend-commit-checkout > linked five-state sequence",
+          "status": "pass",
+          "elapsed_ms": 4.9,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 1,
+      "batch": 1,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.69,
+      "log_sha256": "cb0ba769edc927b5aee36e4428bf8dacb4965b1ad3dbd70618ebf3a30a2cb522",
+      "executed_tree_sha256": "adba80ce9d76993e57bdee6c603d05fc00b3d5cff3475bf3ece38ca79ba292ac",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "e69a0946d7d7167677ea46d47ff4dde4609c106f21249261453a3b1d02bf3d9d"
+    },
+    {
+      "passed": 2,
+      "failed": 0,
+      "failed_tests": [],
+      "tests_run": 2,
+      "files_run": 1,
+      "observations": [
+        {
+          "scenario": "ordinary",
+          "stage": "before-commit",
+          "files_count": 2,
+          "lines_added": 2,
+          "lines_removed": 2,
+          "hunks_count": 2,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "ordinary",
+          "stage": "after-commit-clean",
+          "files_count": 0,
+          "lines_added": 0,
+          "lines_removed": 0,
+          "hunks_count": 0,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "ordinary",
+          "stage": "after-commit-edited",
+          "files_count": 1,
+          "lines_added": 1,
+          "lines_removed": 1,
+          "hunks_count": 1,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "ordinary",
+          "stage": "after-checkout-clean",
+          "files_count": 0,
+          "lines_added": 0,
+          "lines_removed": 0,
+          "hunks_count": 0,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "ordinary",
+          "stage": "after-checkout-edited",
+          "files_count": 1,
+          "lines_added": 1,
+          "lines_removed": 1,
+          "hunks_count": 1,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "before-commit",
+          "files_count": 2,
+          "lines_added": 2,
+          "lines_removed": 2,
+          "hunks_count": 2,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "after-commit-clean",
+          "files_count": 0,
+          "lines_added": 0,
+          "lines_removed": 0,
+          "hunks_count": 0,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "after-commit-edited",
+          "files_count": 1,
+          "lines_added": 1,
+          "lines_removed": 1,
+          "hunks_count": 1,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "after-checkout-clean",
+          "files_count": 0,
+          "lines_added": 0,
+          "lines_removed": 0,
+          "hunks_count": 0,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        },
+        {
+          "scenario": "linked",
+          "stage": "after-checkout-edited",
+          "files_count": 1,
+          "lines_added": 1,
+          "lines_removed": 1,
+          "hunks_count": 1,
+          "exact_bytes_match": true,
+          "argv_init_match": true,
+          "backend_reused": true,
+          "baseline_reads": 1
+        }
+      ],
+      "test_cases": [
+        {
+          "name": "X2-backend-commit-checkout > ordinary five-state sequence",
+          "status": "pass",
+          "elapsed_ms": 9.96,
+          "error_kind": null
+        },
+        {
+          "name": "X2-backend-commit-checkout > linked five-state sequence",
+          "status": "pass",
+          "elapsed_ms": 4.74,
+          "error_kind": null
+        }
+      ],
+      "complete": true,
+      "trial": 2,
+      "batch": 2,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.7,
+      "log_sha256": "c60fa73d5a60136fce146fa01b64d99e96065ecada0b3635f7f62080384e257a",
+      "executed_tree_sha256": "59d4dd663be540a84128182250027b33ae06173a0c4a38ac365df22a5ec38461",
+      "hooks_implementation_unchanged": true,
+      "capture_sha256": "9d6b8a27434d4ed6861562ba078aa9c9cbca6db50db0f428417169477326b61f"
+    }
+  ],
+  "protocol_registration_commit": "0ec092022140f5d4b23080a2686c341c01d33d63",
+  "public_review": {
+    "reviewed": true,
+    "synthetic_observations_only": true,
+    "raw_log_exported": false
+  }
+}

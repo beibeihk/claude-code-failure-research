@@ -31,6 +31,12 @@ checksum-pinned private 2.1.289 engine. The global CLI stays 2.1.288. Both engin
 versions pass the fixed-source contracts; no production fix or model evidence
 is inferred.
 
+The subsequent [X2 backend sequence](docs/backend-refresh.md) passed 4/4
+scenario executions across two fresh batches (20 state fetch/hunk checks).
+Actual commit/checkout captures fed one unchanged source backend per sequence;
+counts and hunk strings updated correctly. Production transport/UI and Claude
+model behavior remain untested.
+
 ## What is implemented
 
 - A fresh-repository CLI runner with preregistered controls, randomized run order,

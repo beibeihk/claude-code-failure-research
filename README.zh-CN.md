@@ -24,6 +24,11 @@ fixture，18 个自创用例共 **36/36 次执行通过**，无功能失败信�
 既有用例 36/36 次执行通过。全局 CLI 的版本与文件 SHA256 未变，仍为
 2.1.288。新引擎验证的是固定源码的测试契约兼容性，不代表生产修复或模型表现。
 
+最新完成的 [X2 后端序列实验](docs/backend-refresh.md)在两批全新 fixture 中
+通过 **4/4 次序列用例执行**，包含 20 次状态统计／hunk 检查。实际 commit、
+checkout 的采集结果送入同一个未修改的源码后端，计数与 hunk 内容均正确更新；
+生产传输、界面刷新与 Claude 模型行为仍未实测。
+
 当前可用交付物：
 
 - [实验方法](docs/methodology.md)、[分类路由](docs/issue-routing.md)、[技术报告](docs/technical-report.md)。
