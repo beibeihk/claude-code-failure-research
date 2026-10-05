@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "registered_date": "2026-10-05",
   "purpose": "Qualify existing Windows test-engine timeout and official test-fixture path observations for correct issue routing; do not substitute source component passes for a report",
   "source_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
@@ -26,6 +26,7 @@
     "fixed_order": ["unmodified-register:3", "portable-register:3", "portable-serial:1"],
     "command_flag": "--continue-after-incomplete",
     "scope_change": "Run the already registered file-isolation/path controls first, followed by serial whole-suite control. Do not rerun unmodified-full or start portable-full in this continuation; those planned portable-full repetitions remain unexecuted. This avoids more unbounded full dispatch while preserving the observed invalid attempt.",
-    "unchanged": "Register assertions, hooks, path correction, test deadlines, serial restoration and original registered repetitions stay unchanged. Commit this amendment before continuation execution."
+    "unchanged": "Register assertions, hooks, path correction, test deadlines, serial restoration and original registered repetitions stay unchanged. Commit this amendment before continuation execution.",
+    "setup_failure": "Continuation cdc29efc-d304-4ea8-bbe8-90524ac6aa4f failed during Python copytree before any plugin test invocation: the longer arm directory crossed the native Windows destination-path length limit. Keep partial private copy; zero case executions. Shorten only private arm names to uf/pf/ps/ur/pr, preserve source/hook/assertion hashes. This is a research harness setup failure, not a Claude failure; no OS long-path settings edits. Full-dispatch incompleteness may have environmental confounds and is not promoted to a runner defect."
   }
 }

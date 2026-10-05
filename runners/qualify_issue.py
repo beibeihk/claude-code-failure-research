@@ -18,6 +18,7 @@ from runners.run_study import invoke
 ARMS = [('unmodified-full', 1), ('portable-full', 2), ('portable-serial', 1),
         ('unmodified-register', 3), ('portable-register', 3)]
 FOLLOWUP_ARMS = [('unmodified-register', 3), ('portable-register', 3), ('portable-serial', 1)]
+ARM_DIRS = dict(zip((arm for arm, _ in ARMS), ('uf', 'pf', 'ps', 'ur', 'pr')))
 
 
 def prepare(source, target, arm):
@@ -50,7 +51,7 @@ def main():
     shutil.copy2(args.upstream.resolve()/'LICENSE.md', cycle/'UPSTREAM-LICENSE.md')
     for arm, repetitions in FOLLOWUP_ARMS if args.continue_after_incomplete else ARMS:
         run_id = str(uuid.uuid4())
-        private = cycle/arm
+        private = cycle/ARM_DIRS[arm]
         target = private/'plugin'
         prepare(source, target, arm)
         if tree_hash(source/'hooks') != tree_hash(target/'hooks'):
