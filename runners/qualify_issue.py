@@ -11,7 +11,7 @@ import time
 import uuid
 
 from runners.run_client_tests import (ROOT, UPSTREAM_COMMIT, check_upstream,
-    client_test_env, parse_output, prepare_portable_control, run_serial_files, tree_hash)
+    client_test_env, parse_output, prepare_overlay, prepare_portable_control, run_serial_files, tree_hash)
 from runners.run_free_screen import engine_289, ENGINE_289_SHA256
 from runners.run_study import invoke
 
@@ -19,9 +19,12 @@ ARMS = [('unmodified-full', 1), ('portable-full', 2), ('portable-serial', 1),
         ('unmodified-register', 3), ('portable-register', 3)]
 FOLLOWUP_ARMS = [('unmodified-register', 3), ('portable-register', 3), ('portable-serial', 1)]
 ARM_DIRS = dict(zip((arm for arm, _ in ARMS), ('uf', 'pf', 'ps', 'ur', 'pr')))
+ARM_DIRS['path-diagnostic'] = 'pd'
 
 
 def prepare(source, target, arm):
+    if arm == 'path-diagnostic':
+        return prepare_overlay(source, 'diff', target)
     if arm.startswith('portable'):
         prepare_portable_control(source, 'diff', target)
     else:
@@ -37,7 +40,10 @@ def main():
     parser.add_argument('--upstream', required=True, type=Path)
     parser.add_argument('--continue-after-incomplete', action='store_true',
         help='Protocol 1.0.1 fixed continuation: registration file controls then serial suite; no full-dispatch retry')
+    parser.add_argument('--path-diagnostic', action='store_true', help='Protocol 1.0.3: unchanged authored literal/portable/no-marker diagnostic on current engine')
     args = parser.parse_args()
+    if args.path_diagnostic and args.continue_after_incomplete:
+        parser.error('Choose one registered phase')
     if os.name != 'nt': parser.error('This protocol is registered for Windows')
     source = check_upstream(args.upstream.resolve(), 'diff')
     cli, env = engine_289(), client_test_env()
@@ -49,7 +55,8 @@ def main():
     protocol = ROOT/'reports/issue-qualification-protocol.json'
     shutil.copy2(protocol, cycle/'protocol.json')
     shutil.copy2(args.upstream.resolve()/'LICENSE.md', cycle/'UPSTREAM-LICENSE.md')
-    for arm, repetitions in FOLLOWUP_ARMS if args.continue_after_incomplete else ARMS:
+    arms = [('path-diagnostic', 1)] if args.path_diagnostic else FOLLOWUP_ARMS if args.continue_after_incomplete else ARMS
+    for arm, repetitions in arms:
         run_id = str(uuid.uuid4())
         private = cycle/ARM_DIRS[arm]
         target = private/'plugin'
@@ -62,13 +69,15 @@ def main():
             'upstream_commit': UPSTREAM_COMMIT, 'upstream_mod_sha256': tree_hash(source),
             'executed_tree_sha256': tree_hash(target), 'hooks_implementation_unchanged': True,
             'original_register_test_sha256': hashlib.sha256((source/'tests/register.test.ts').read_bytes()).hexdigest(),
-            'executed_register_test_sha256': hashlib.sha256((target/'tests/register.test.ts').read_bytes()).hexdigest(),
+            'executed_register_test_sha256': hashlib.sha256((target/'tests/register.test.ts').read_bytes()).hexdigest() if (target/'tests/register.test.ts').is_file() else None,
             'protocol_sha256': hashlib.sha256(protocol.read_bytes()).hexdigest(),
             'executable_sha256': ENGINE_289_SHA256, 'per_test_timeout_ms': 5000, 'instrumented': False,
             'dispatch': 'sequential-test-files' if arm.endswith('serial') else 'engine-default',
             'model_calls': 0, 'coding_trials': 0, 'billed_model_cost_usd': 0,
             'scope': 'Official native test runner and original upstream test fixture; no production merge defect inferred',
             'repetitions': []}
+        if args.path_diagnostic:
+            record['authored_test_sha256'] = hashlib.sha256((target/'tests/merge-diagnostic.test.ts').read_bytes()).hexdigest()
         for trial in range(1, repetitions+1):
             start = time.monotonic()
             if arm.endswith('serial'):

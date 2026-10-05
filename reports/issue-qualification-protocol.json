@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "registered_date": "2026-10-05",
   "purpose": "Qualify existing Windows test-engine timeout and official test-fixture path observations for correct issue routing; do not substitute source component passes for a report",
   "source_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
@@ -28,5 +28,12 @@
     "scope_change": "Run the already registered file-isolation/path controls first, followed by serial whole-suite control. Do not rerun unmodified-full or start portable-full in this continuation; those planned portable-full repetitions remain unexecuted. This avoids more unbounded full dispatch while preserving the observed invalid attempt.",
     "unchanged": "Register assertions, hooks, path correction, test deadlines, serial restoration and original registered repetitions stay unchanged. Commit this amendment before continuation execution.",
     "setup_failure": "Continuation cdc29efc-d304-4ea8-bbe8-90524ac6aa4f failed during Python copytree before any plugin test invocation: the longer arm directory crossed the native Windows destination-path length limit. Keep partial private copy; zero case executions. Shorten only private arm names to uf/pf/ps/ur/pr, preserve source/hook/assertion hashes. This is a research harness setup failure, not a Claude failure; no OS long-path settings edits. Full-dispatch incompleteness may have environmental confounds and is not promoted to a runner defect."
+  },
+  "path_diagnostic_extension": {
+    "reason": "Three current-engine isolated original-file runs each completed with the same three merge-state assertion failures. First two one-expression portable controls each completed with 40 passes. Add a mechanism observation before reporting; do not change the old diagnostic assertions.",
+    "command_flag": "--path-diagnostic",
+    "registered_cases": "The existing original MIT research-tests/diff/merge-diagnostic.test.ts, unchanged: literal matcher with marker withheld, portable matcher with merge state delivered, no-marker ordinary diff control; one native invocation on private official 2.1.289 after the ongoing registered serial phase.",
+    "scope": "Capture only the synthetic /work path requested by fs.list and before/after UI predicates. This is scripted test-world evidence, not production filesystem transport. No replay using hand-invented observations.",
+    "wrapper_validation": "Then run the new public MIT isolation wrapper once per literal/portable mode, sequentially in shorter fresh private paths. Verify native completeness and case outcomes. These validation runs are recorded separately, not added to the three-repetition primary-arm frequency."
   }
 }
