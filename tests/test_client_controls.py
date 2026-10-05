@@ -73,12 +73,13 @@ class ClientControlTests(unittest.TestCase):
             original = tree_hash(source)
             seen = []
             def fake(*args):
+                self.assertEqual(args[0][0], 'private-pinned-engine')
                 active = list(source.rglob('*.test.ts'))
                 self.assertEqual(len(active), 1)
                 seen.append(active[0].relative_to(source).as_posix())
                 return '(pass) synthetic > case [1ms]\nRan 1 tests across 1 file.\n', '', 0, False
             with patch('runners.run_client_tests.invoke', fake):
-                raw, counts, exit_code, timed_out = run_serial_files(source, root, {}, 30, 1)
+                raw, counts, exit_code, timed_out = run_serial_files(source, root, {}, 30, 1, cli='private-pinned-engine')
             self.assertEqual(len(seen), 3)
             self.assertTrue(counts['complete'])
             self.assertEqual(counts['passed'], 3)

@@ -170,7 +170,7 @@ def prepare_focused_control(source, suite, destination, timeout_ms=None, instrum
     return destination
 
 
-def run_serial_files(target, private, env, timeout_seconds, trial):
+def run_serial_files(target, private, env, timeout_seconds, trial, cli='claude'):
     """Only this run's private overlay is renamed; original test bytes restored."""
     test_paths = sorted(p for p in target.rglob('*') if p.name.endswith(('.test.ts', '.test.tsx')))
     if not test_paths: raise ValueError('No test files to dispatch.')
@@ -184,7 +184,7 @@ def run_serial_files(target, private, env, timeout_seconds, trial):
             try:
                 started = time.monotonic()
                 stdout, stderr, exit_code, timed_out = invoke(
-                    ['claude','plugin','test',str(target)], '', private, env, timeout_seconds)
+                    [cli,'plugin','test',str(target)], '', private, env, timeout_seconds)
                 raw = stdout+'\n'+stderr
                 relative = path.relative_to(target).as_posix()
                 (private/f'trial-{trial}-file-{ordinal}.log').write_text(raw, encoding='utf-8')
