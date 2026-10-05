@@ -17,6 +17,7 @@ from runners.run_study import invoke
 
 ARMS = [('unmodified-full', 1), ('portable-full', 2), ('portable-serial', 1),
         ('unmodified-register', 3), ('portable-register', 3)]
+FOLLOWUP_ARMS = [('unmodified-register', 3), ('portable-register', 3), ('portable-serial', 1)]
 
 
 def prepare(source, target, arm):
@@ -33,6 +34,8 @@ def prepare(source, target, arm):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--upstream', required=True, type=Path)
+    parser.add_argument('--continue-after-incomplete', action='store_true',
+        help='Protocol 1.0.1 fixed continuation: registration file controls then serial suite; no full-dispatch retry')
     args = parser.parse_args()
     if os.name != 'nt': parser.error('This protocol is registered for Windows')
     source = check_upstream(args.upstream.resolve(), 'diff')
@@ -45,7 +48,7 @@ def main():
     protocol = ROOT/'reports/issue-qualification-protocol.json'
     shutil.copy2(protocol, cycle/'protocol.json')
     shutil.copy2(args.upstream.resolve()/'LICENSE.md', cycle/'UPSTREAM-LICENSE.md')
-    for arm, repetitions in ARMS:
+    for arm, repetitions in FOLLOWUP_ARMS if args.continue_after_incomplete else ARMS:
         run_id = str(uuid.uuid4())
         private = cycle/arm
         target = private/'plugin'

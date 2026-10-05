@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "registered_date": "2026-10-05",
   "purpose": "Qualify existing Windows test-engine timeout and official test-fixture path observations for correct issue routing; do not substitute source component passes for a report",
   "source_commit": "1c229fcd1e1e4e452e29a8f116b45fe4cfe2c528",
@@ -19,5 +19,13 @@
   "failure_and_invalidity": "Keep configured timeout, test-timeout versus assertion and incomplete-command metadata separate. No hidden retry or deadline inflation. Unexpected failures require diagnosis; do not fit new success criteria after results.",
   "publication_gate": "A current upstream test-fixture defect may be reported accurately as that component, if minimal public reproduction, controls, duplicate search, privacy and independent case review pass. No model account is required for such a report. At most one new Anthropic issue, no production/core failure claim from fixture evidence.",
   "search_and_review": "Review official current bug/feature forms and related issue/PR/comments; search exact test names, matcher and CLI timeout terms. Zero search hits is not proof of novelty. Submit only after a reviewer who did not design this cycle examines draft/data/fixture.",
-  "registration": "Protocol committed before native experiments; each source/overlay/protocol hash captured before invocation. Stage counts and deterministic repeats are not independent model trials."
+  "registration": "Protocol committed before native experiments; each source/overlay/protocol hash captured before invocation. Stage counts and deterministic repeats are not independent model trials.",
+  "prospective_continuation": {
+    "reason": "The first unmodified-full invocation exceeded its 120 s outer limit: 115 pass labels, two native case timeouts, no footer. Retain as incomplete, exclude from complete-suite frequencies; original protocol at commit bc1ba94 and private raw attempt are preserved.",
+    "prior_cycle": "44cae844-ae34-42aa-8709-2eedb342fa62",
+    "fixed_order": ["unmodified-register:3", "portable-register:3", "portable-serial:1"],
+    "command_flag": "--continue-after-incomplete",
+    "scope_change": "Run the already registered file-isolation/path controls first, followed by serial whole-suite control. Do not rerun unmodified-full or start portable-full in this continuation; those planned portable-full repetitions remain unexecuted. This avoids more unbounded full dispatch while preserving the observed invalid attempt.",
+    "unchanged": "Register assertions, hooks, path correction, test deadlines, serial restoration and original registered repetitions stay unchanged. Commit this amendment before continuation execution."
+  }
 }
